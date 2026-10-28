@@ -1,19 +1,28 @@
 ---
 name: reading
-version: 2026-04-29
-triggers: ["/reading", "process paper", "process collection", "paper note", "annotation", "zotero import", "read this paper"]
-tools: [zotero, filesystem]
-preconditions:
-  - Zotero running with Local API on port 23119
-  - Zotero MCP available (see `<vault-root>/system/Zotero MCP Upgrade Guide.md` if you maintain one)
-  - vault has a `papers/` folder where processed notes are written
-  - vault has a paper-note template the skill can read at the start of every run
-constraints:
-  - always pass `use_pdf_extraction: true` to `zotero_get_annotations` — never false
-  - annotation count must match between Zotero extraction and the final paper note — every reader annotation appears verbatim
+description: "Process academic papers from Zotero (or uploaded PDFs) into structured vault notes — annotations-first scientific source analysis"
 ---
 
 # Reading — Paper Processing Pipeline
+
+## Preconditions and constraints
+
+### Tools
+
+- `zotero`
+- `filesystem`
+
+### Preconditions
+
+- Zotero running with Local API on port 23119
+- Zotero MCP available (see `<vault-root>/system/Zotero MCP Upgrade Guide.md` if you maintain one)
+- vault has a `papers/` folder where processed notes are written
+- vault has a paper-note template the skill can read at the start of every run
+
+### Constraints
+
+- always pass `use_pdf_extraction: true` to `zotero_get_annotations` — never false
+- annotation count must match between Zotero extraction and the final paper note — every reader annotation appears verbatim
 
 Authoritative procedure for processing academic papers from Zotero (or uploaded PDFs) into structured vault notes. The output is a per-paper note in `papers/`; nothing else in the vault is touched.
 

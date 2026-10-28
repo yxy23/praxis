@@ -1,0 +1,30 @@
+{
+  "name": "vault-semantic",
+  "version": "2026-05-25",
+  "triggers": [
+    "/vault-semantic",
+    "semantic search",
+    "semantic retrieval",
+    "find similar",
+    "what's like",
+    "semantically similar"
+  ],
+  "tools": [
+    "filesystem",
+    "obsidian-cli"
+  ],
+  "preconditions": [
+    "Obsidian Desktop is running with the vault open",
+    "Smart Connections plugin enabled and indexed",
+    "obsidian CLI on PATH"
+  ],
+  "constraints": [
+    "never fabricate matches \u2014 only Smart Connections lookup results",
+    "abort if Smart Connections not loaded; do not fall back to graph or grep",
+    "cap output to top 30 by default",
+    "skill is read-only"
+  ],
+  "category": "research",
+  "cluster": "research-methods",
+  "skill_path": "~/.claude/skills/vault-semantic/SKILL.md"
+}

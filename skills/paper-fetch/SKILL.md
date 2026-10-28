@@ -1,22 +1,34 @@
 ---
 name: paper-fetch
-version: 2026-05-03
-triggers: ["/paper-fetch", "fetch pdf", "find pdf", "download pdf", "attach pdf", "get the pdf", "find the paper", "get full text", "papers without pdfs", "missing pdfs", "add pdf to zotero", "attach to zotero"]
-tools: [zotero, web_fetch, web_search, bash, filesystem]
-preconditions:
-  - Zotero running with Local API on port 23119
-  - Zotero MCP available
-  - a writable staging directory for downloads (default: ~/Library/Mobile Documents/com~apple~CloudDocs/Downloads/ on macOS, or any local path the user prefers)
-constraints:
-  - try the PDF cascade in order — do not jump to manual instructions without exhausting automated sources
-  - always verify the downloaded file is a valid PDF before attaching (file command or size check)
-  - never fabricate PDF URLs — only use URLs returned by APIs or search results
-  - Zotero local API does not support PATCH or direct attachment upload — use a staging directory + user drag as the attachment method
-  - batch mode must report results per-paper (not aggregate summary)
-  - always save PDFs with readable names: LastnameYear-Venue.pdf
+description: "Download PDFs and attach them to Zotero entries — multi-source cascade (Unpaywall, Semantic Scholar, arXiv, institutional repos, web search)"
 ---
 
 # paper-fetch — Download PDFs and attach them to Zotero entries
+
+## Preconditions and constraints
+
+### Tools
+
+- `zotero`
+- `web_fetch`
+- `web_search`
+- `bash`
+- `filesystem`
+
+### Preconditions
+
+- Zotero running with Local API on port 23119
+- Zotero MCP available
+- a writable staging directory for downloads (default: ~/Library/Mobile Documents/com~apple~CloudDocs/Downloads/ on macOS, or any local path the user prefers)
+
+### Constraints
+
+- try the PDF cascade in order — do not jump to manual instructions without exhausting automated sources
+- always verify the downloaded file is a valid PDF before attaching (file command or size check)
+- never fabricate PDF URLs — only use URLs returned by APIs or search results
+- Zotero local API does not support PATCH or direct attachment upload — use a staging directory + user drag as the attachment method
+- batch mode must report results per-paper (not aggregate summary)
+- always save PDFs with readable names: LastnameYear-Venue.pdf
 
 Finds open-access or repository PDFs for academic papers and delivers them to Zotero. Accepts a DOI, Zotero item key, author/year/title, or a Zotero collection name (batch mode). Tries a cascade of sources before reporting that a PDF is unavailable. Handles single papers or entire collections with missing PDFs.
 

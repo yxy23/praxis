@@ -1,21 +1,30 @@
 ---
 name: convert
-version: 2026-04-29
-triggers: ["/convert", "convert file", "convert document", "pandoc", "docx to latex", "docx to markdown", "latex to word", "stage collaborator edits"]
-tools: [filesystem, bash]
-preconditions:
-  - pandoc installed (`brew install pandoc` if missing)
-  - source file readable; target directory writable
-constraints:
-  - NEVER use `textutil` on a tracked-changes .docx — it flattens `<w:ins>`/`<w:del>` to plain text and corrupts the diff. Use pandoc with `--track-changes=accept|reject|all` or unzip the .docx and read `word/document.xml` directly.
-  - NEVER auto-merge collaborator edits into a target file. Always stage, diff, and wait for explicit instruction.
-  - Save Word/.docx outputs to `~/Library/Mobile Documents/com~apple~CloudDocs/Downloads/` (iCloud Downloads — syncs across your machines), NOT `~/Downloads/`, unless target path is explicitly specified.
-  - For Overleaf-tracked LaTeX repos: pull before any conversion that writes into the repo; commit + push after with the prescribed message format.
-  - Bibliography file `bibliography.bib` is managed by Zotero Better BibTeX — never edit manually.
-  - dial-back: missing pandoc is recoverable (offer brew install); a dirty git tree is a hard stop.
+description: "Convert documents between Word, LaTeX, and Markdown using pandoc; stage collaborator edits without auto-merging"
 ---
 
 # Convert — Document Format Conversion
+
+## Preconditions and constraints
+
+### Tools
+
+- `filesystem`
+- `bash`
+
+### Preconditions
+
+- pandoc installed (`brew install pandoc` if missing)
+- source file readable; target directory writable
+
+### Constraints
+
+- NEVER use `textutil` on a tracked-changes .docx — it flattens `<w:ins>`/`<w:del>` to plain text and corrupts the diff. Use pandoc with `--track-changes=accept|reject|all` or unzip the .docx and read `word/document.xml` directly.
+- NEVER auto-merge collaborator edits into a target file. Always stage, diff, and wait for explicit instruction.
+- Save Word/.docx outputs to `~/Library/Mobile Documents/com~apple~CloudDocs/Downloads/` (iCloud Downloads — syncs across your machines), NOT `~/Downloads/`, unless target path is explicitly specified.
+- For Overleaf-tracked LaTeX repos: pull before any conversion that writes into the repo; commit + push after with the prescribed message format.
+- Bibliography file `bibliography.bib` is managed by Zotero Better BibTeX — never edit manually.
+- dial-back: missing pandoc is recoverable (offer brew install); a dirty git tree is a hard stop.
 
 Pure procedural skill for converting documents between Word, LaTeX, and Markdown. No content origination — only format transformation with audit trail.
 
@@ -23,7 +32,7 @@ Earlier versions of this harness routed format-conversion work through a dedicat
 
 ## When to Run
 
-- User asks to convert a file between formats: "convert this docx to latex", "make a markdown version of this", "export the section to word for <colleague-name>".
+- User asks to convert a file between formats: "convert this docx to latex", "make a markdown version of this", "export the section to word for a co-author".
 - User shares a collaborator's tracked-changes .docx and wants it staged for review against the current draft.
 - User wants to merge approved collaborator edits into the live draft.
 - User invokes `/convert` directly with a file path.

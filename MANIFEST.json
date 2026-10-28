@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "version": "public/v2.0.0",
-  "tree_sha256": "0ef98c86518be39cf81f4d76b6884c9cf9df3008d0dd3dba0c60294fa6cdf24a",
+  "version": "public/v3.0.0",
+  "tree_sha256": "a0757ecbe48e86316281734e604e6f1fcd35ad89db9b367a3c60c4c50e6c19ec",
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "ac48cc3a4afc8fe45be6e92d1abec74861d83b9b3db912a9f6373e13473d3197",
-      "bytes": 380
+      "sha256": "6c681c7129e259242a7f2f0694c125a89ae0ead426db97da8221f698503c52b6",
+      "bytes": 459
     },
     {
       "path": "LICENSE",
@@ -15,28 +15,28 @@
     },
     {
       "path": "PUBLIC-MANIFEST.json",
-      "sha256": "22be308af2dd6c24618e118ad79f2aafdeae3efdc5d09ef38ce8a5a8f625008f",
-      "bytes": 4051
+      "sha256": "019ee8129841ed6e905d6ed15b65cb068376b9734cb0de9ae45522bfb4607fb8",
+      "bytes": 5201
     },
     {
       "path": "PUBLIC-SNAPSHOT.json",
-      "sha256": "ceb81933c1c20dfd42190115731d51b9942d5f4862e48e7ad51421c03f042c91",
+      "sha256": "b23a27412bb1143104efc0bdc57e5b8d4f4d1bfd7ad7a67a3a92c1a72f0735a1",
       "bytes": 366
     },
     {
       "path": "PUBLIC-SNAPSHOT.md",
-      "sha256": "b32ba26df0af5c23941d3757242f15c7776e10a9d6afb61af57620cf9c41c705",
+      "sha256": "0e508b1d7bdd35bfa5fac3ea1bec8e9487f55f499631647418c867d10065dceb",
       "bytes": 1943
     },
     {
       "path": "README.md",
-      "sha256": "787d56029312ce5c57bf1f9c5a8ba6d7d826cd8679ed8391caabbaa1823c2fef",
-      "bytes": 1646
+      "sha256": "8e9bec3e1aef31d17c37e8d31c307885530b5aaba905c87c00238551d0b3df66",
+      "bytes": 1677
     },
     {
       "path": "docs/user-guide.md",
-      "sha256": "b576f01e35b4f5f415d6229b8e5d8a2f0d3a8aa2812bdf286fbb557c0d8a25bb",
-      "bytes": 293
+      "sha256": "0770c1a55e9c60dccb9e81024009b6db5aaafe97421f723ce0782531b63151fb",
+      "bytes": 324
     },
     {
       "path": "scripts/pre-commit-hook.sh",
@@ -55,8 +55,8 @@
     },
     {
       "path": "skills/convert/SKILL.md",
-      "sha256": "fbdbcaed4dd6917f638c1dc26974cf9ab9b5893fc05048a9d3c408c589753d36",
-      "bytes": 8813
+      "sha256": "a5210b17c924c5b7d78b7da4f0717862025bd1497bb87885831a85ac1388ba38",
+      "bytes": 8802
     },
     {
       "path": "skills/convert/manifest-entry.json",
@@ -65,8 +65,8 @@
     },
     {
       "path": "skills/paper-fetch/SKILL.md",
-      "sha256": "b9a8d5f65de2a47232e17aacaca7e59ec0c6ad470b0027619f3bfc8e93bed18c",
-      "bytes": 6943
+      "sha256": "60a1298b5b957878bff2c2fd6e81651c41dd793ce389114ecc095f4c7749c0ac",
+      "bytes": 6914
     },
     {
       "path": "skills/paper-fetch/manifest-entry.json",
@@ -75,8 +75,8 @@
     },
     {
       "path": "skills/reading/SKILL.md",
-      "sha256": "8b899178b8dd6178e5d78684efaa83fd92722c1f5fcb34bd4c8cc5863fae138a",
-      "bytes": 8965
+      "sha256": "521b2a71137e6b16216ef48e85c16725fa50eee65b1f01948681621e2d0147ea",
+      "bytes": 9008
     },
     {
       "path": "skills/reading/manifest-entry.json",
@@ -85,13 +85,33 @@
     },
     {
       "path": "skills/research-survey/SKILL.md",
-      "sha256": "d1fe8a27fbe8765c0975cad5043cc5dfa1b9f2c4f0f62dce3762e26ae254419a",
-      "bytes": 9197
+      "sha256": "39730288f3d2a07be937e40b511a03cd646413412af4e56ebee6cc61dd4a7f4f",
+      "bytes": 11026
     },
     {
       "path": "skills/research-survey/manifest-entry.json",
       "sha256": "fee38a16e89baf75cc9a476a58d033cb642846a988b5b2030b78922bef733102",
       "bytes": 1066
+    },
+    {
+      "path": "skills/vault-graph/SKILL.md",
+      "sha256": "22ef966305138016140a2c2fe726760004d9c377cb7c6094c0318fa748955551",
+      "bytes": 9046
+    },
+    {
+      "path": "skills/vault-graph/manifest-entry.json",
+      "sha256": "0c48465f8bf14f5b83409f779dfea76833068a04aedfb4d2ffa47d9091af98cf",
+      "bytes": 906
+    },
+    {
+      "path": "skills/vault-semantic/SKILL.md",
+      "sha256": "88ec4fbad243bc2be4a0e5099fd59d02aead9a1ed6cc186dd0a643e2ee19fe2f",
+      "bytes": 7785
+    },
+    {
+      "path": "skills/vault-semantic/manifest-entry.json",
+      "sha256": "2864c23985dfd1906e14a188fb135e4cc361a502b07e0d0ce9dee0d8fe501d41",
+      "bytes": 795
     },
     {
       "path": "slash-commands/convert.md",
@@ -112,6 +132,16 @@
       "path": "slash-commands/research-survey.md",
       "sha256": "b6fadfac3a16c836a57c7e6549f7242e6ce49a5045da72c4f6dbb6ef477d4afb",
       "bytes": 1773
+    },
+    {
+      "path": "slash-commands/vault-graph.md",
+      "sha256": "52088bd99796fa6091867a7f67340e68e73c85dd6939406eb6f1d33860ab0cce",
+      "bytes": 1775
+    },
+    {
+      "path": "slash-commands/vault-semantic.md",
+      "sha256": "44590b3856dd4943c4848665a40e7b37088c1f95d8bed9c1a9cca2888b733727",
+      "bytes": 1630
     }
   ]
 }

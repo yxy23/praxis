@@ -1,22 +1,32 @@
 ---
 name: research-survey
-version: 2026-04-29
-triggers: ["/research-survey", "literature survey", "backward search", "forward search", "citation search", "find papers on"]
-tools: [filesystem, zotero, web_fetch]
-preconditions:
-  - Zotero running with Local API on port 23119
-  - Zotero MCP available (see `<vault-root>/system/Zotero MCP Upgrade Guide.md`)
-  - Semantic Scholar API reachable (https://api.semanticscholar.org)
-  - vault has `system/memory/agents/research-survey/reading-list.md` (created on first run if absent)
-constraints:
-  - never propose papers not actually returned by API or Zotero — never fabricate citations
-  - reading-list.md is append-only; each run adds a dated section, never rewrites prior runs
-  - Semantic Scholar API key is set in `~/.claude/settings.json` as `$SEMANTIC_SCHOLAR_API_KEY`; pass on every call as `-H "x-api-key: $SEMANTIC_SCHOLAR_API_KEY"`. Authenticated rate limit is 1 req/sec sustained, with bursts of several hundred per minute tolerated
-  - if Scite.ai integration unavailable, fall back to Semantic Scholar only — graceful degradation
-  - dial-back: missing DOI is recoverable (use title search); missing API access is recoverable (Zotero-only mode)
+description: "Three-phase systematic literature survey — internal Zotero/vault check, backward citation mining, forward citation tracking; output to append-only reading-list.md"
 ---
 
 # Research Survey — Systematic Literature Search
+
+## Preconditions and constraints
+
+### Tools
+
+- `filesystem`
+- `zotero`
+- `web_fetch`
+
+### Preconditions
+
+- Zotero running with Local API on port 23119
+- Zotero MCP available (see `<vault-root>/system/Zotero MCP Upgrade Guide.md`)
+- Semantic Scholar API reachable (https://api.semanticscholar.org)
+- vault has `system/memory/agents/research-survey/reading-list.md` (created on first run if absent)
+
+### Constraints
+
+- never propose papers not actually returned by API or Zotero — never fabricate citations
+- reading-list.md is append-only; each run adds a dated section, never rewrites prior runs
+- Semantic Scholar API key is set in `~/.claude/settings.json` as `$SEMANTIC_SCHOLAR_API_KEY`; pass on every call as `-H "x-api-key: $SEMANTIC_SCHOLAR_API_KEY"`. Authenticated rate limit is 1 req/sec sustained, with bursts of several hundred per minute tolerated
+- if Scite.ai integration unavailable, fall back to Semantic Scholar only — graceful degradation
+- dial-back: missing DOI is recoverable (use title search); missing API access is recoverable (Zotero-only mode)
 
 Three-phase literature survey skill: internal Zotero/vault survey → backward citation mining → forward citation tracking. Builds an iteratively-deepening reading list of papers worth adding to Zotero.
 
@@ -44,13 +54,28 @@ Earlier versions of this harness routed research/literature work through a dedic
 
 Check what's already in vault and Zotero before searching outward.
 
-**Step 1a — Vault notes**
+**Step 1a — Vault notes (graph + flat + semantic, three-leg augmented)**
 
-```
-search_vault_simple(query="<topic keywords>")
-```
+Run **all three** retrieval methods in parallel and merge:
 
-Read all matching `papers/*.md` notes. These are fully-processed primary sources. Use them as anchors for Phase 2/3.
+1. `/vault-graph <topic>` (Full mode) — graph traversal from concept/hub/project seeds; returns ranked nodes + gap report.
+2. `search_vault_simple(query="<topic keywords>")` (MCP) — keyword-matched notes anywhere in vault.
+3. `/vault-semantic <topic>` — semantic similarity over pre-computed Smart Connections embeddings; catches notes whose content is similar to the query but match neither wikilinks nor keywords.
+
+Merge with provenance flags:
+- **In all three** → highest confidence; lead with these as anchor candidates.
+- **In two of three** → strong candidates.
+- **Graph-only** → curated structure the user wikilinked; valuable for cross-domain analogies.
+- **Flat-only** → **graph gap candidate** ("may need wiring").
+- **Semantic-only** → **the most informative novel signal**: content-similar but not wikilinked anywhere relevant AND no keyword match. These are the cross-domain analogies the curation hasn't reached. Surface separately as "content-similar; consider connection / citation."
+
+Rationale: each leg has different recall failures. Graph misses material not yet wikilinked; flat misses material wikilinked despite keyword mismatch; semantic misses material that doesn't yet exist in the embedding index (newly added notes). The three legs are complementary, not interchangeable.
+
+Read the top-ranked `papers/*.md` notes from the merged set. Use them as anchors for Phase 2/3.
+
+Surface the gap report from `/vault-graph` in the final synthesis brief. Also surface the keyword-only set as a separate "needs wiring" list — these are the notes the user may want to wikilink into the topic's neighborhood before locking the lit-review.
+
+If Obsidian Desktop is not running, `/vault-graph` returns empty; fall back to flat search alone for this run and note the degradation in the output.
 
 **Step 1b — Zotero items not yet processed**
 

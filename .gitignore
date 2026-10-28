@@ -22,6 +22,6 @@ __pycache__/
 # Sanitization scratch files (never commit)
 *.sanitize-scratch.md
 
-scripts/.sanitize-rules.local
-
+# Private leak-pattern list (real names) — never committed to the public repo
 scripts/.leak-patterns.local
+scripts/.sanitize-rules.local

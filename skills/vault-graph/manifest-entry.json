@@ -1,0 +1,32 @@
+{
+  "name": "vault-graph",
+  "version": "2026-05-25",
+  "triggers": [
+    "/vault-graph",
+    "graph search",
+    "graph-aware search",
+    "vault graph",
+    "graph retrieval",
+    "expand from",
+    "graph neighborhood",
+    "what links to"
+  ],
+  "tools": [
+    "filesystem",
+    "obsidian-cli"
+  ],
+  "preconditions": [
+    "Obsidian Desktop is running with the vault open",
+    "obsidian CLI on PATH",
+    "vault has concepts/, hubs/, projects/ folders"
+  ],
+  "constraints": [
+    "never fabricate links \u2014 only nodes from CLI or grep",
+    "obsidian search is broken in installer 1.12.x; use filesystem grep for keyword seeds",
+    "cap expansion to 2 hops total; cap output to top 30 by default",
+    "skill is read-only \u2014 gap fixes are recommendations, never edits"
+  ],
+  "category": "research",
+  "cluster": "research-methods",
+  "skill_path": "~/.claude/skills/vault-graph/SKILL.md"
+}

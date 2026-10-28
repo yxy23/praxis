@@ -1,6 +1,6 @@
-# Praxis v2.0.0 — partial public reconstruction
+# Praxis v3.0.0 — partial public reconstruction
 
-Source checkpoint: `c36960799e32e67879f6b8576e5f8e4f93658821`. Source kind: `release-snapshot`.
+Source checkpoint: `f620a2137755762cb14b3ab152363c88c04b8ca9`. Source kind: `release-snapshot`.
 
 This newly prepared archive exposes only reusable research methods and selected generic technical components. It is not the full original release. Original personal workflow content and its Git history remain excluded.
 
@@ -12,6 +12,8 @@ Available research skills:
 - paper-fetch
 - reading
 - research-survey
+- vault-graph
+- vault-semantic
 
 Personal lifecycle, administration, editorial, voice, writing, teaching, meetings, mail, travel, and reading-management procedures are excluded as complete categories, together with their stubs, manifests, templates, schedules, hooks, and manuals. No accumulated knowledge, institutional registry, charter, fixture, live state, or captured record is included.
 
