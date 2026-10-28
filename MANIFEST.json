@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "version": "public/v1.0.0",
+  "tree_sha256": "cf0ffbbc576621f9ac3cfac457092d8c9bcd6c345e8eb5923c592184175a25af",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "cdf8c4e4e43ea9e8180ad4006ac7984f3100cd6cb148fe2c34b0e85a5e1a5104",
+      "bytes": 410
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "afe20043543c98afe41d9182b163c7e087e978800db6d79300bb8ce613a5f73a",
+      "bytes": 1069
+    },
+    {
+      "path": "PUBLIC-MANIFEST.json",
+      "sha256": "1b70626f77f9b4e0c846f86ae6f14abad31d4cc33aaedcbdd8e16d1d4b119fba",
+      "bytes": 1416
+    },
+    {
+      "path": "PUBLIC-SNAPSHOT.json",
+      "sha256": "8436501f4175fa975fb75ce8c832f56c30a5d6903e4fe73c045c333b7f01b04b",
+      "bytes": 366
+    },
+    {
+      "path": "PUBLIC-SNAPSHOT.md",
+      "sha256": "f647710982a0b10b160af3edec7b5fef4be569b4bb48bfd3203e5920644f94b4",
+      "bytes": 1942
+    },
+    {
+      "path": "README.md",
+      "sha256": "239c9fc32620d0b07df47070c030463aed041dff8936f420c5401672adcebe62",
+      "bytes": 1679
+    },
+    {
+      "path": "docs/user-guide.md",
+      "sha256": "48be43d8312629f9470f1aea7680f24b2401c546e2d3e4db74fae6f663cd1b4e",
+      "bytes": 326
+    },
+    {
+      "path": "scripts/sanitize.sh",
+      "sha256": "c70012a003fe274adc4da84d1de1556f5a36baa705b09f30a62df8a18f579fd2",
+      "bytes": 1633
+    }
+  ]
+}

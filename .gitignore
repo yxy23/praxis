@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local state / scratch
+/tmp/
+/scratch/
+*.local
+
+# User-specific config (install script reads from env or ~/.claude-skills-toolkit-config.sh)
+~/.claude-skills-toolkit-config.sh
+.user-config.sh
+
+# Sanitization scratch files (never commit)
+*.sanitize-scratch.md
+
+scripts/.sanitize-rules.local
+
+scripts/.leak-patterns.local

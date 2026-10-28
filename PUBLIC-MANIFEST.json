@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "snapshot": "v1.0.0",
+  "source_kind": "release-snapshot",
+  "projection_scope": "partial research-methods-only reconstruction",
+  "source_commit": "65e75b0ad0ae73c31fda919688fed3fb3aff4a03",
+  "content_tree_sha256": "1c60b8cfff2bfef73e015aea79125c73e15883cff36f63a27af4e629a99c4b20",
+  "tree_sha256": "1c60b8cfff2bfef73e015aea79125c73e15883cff36f63a27af4e629a99c4b20",
+  "omitted_selected_source_paths": 26,
+  "files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha256": "cdf8c4e4e43ea9e8180ad4006ac7984f3100cd6cb148fe2c34b0e85a5e1a5104",
+      "bytes": 410
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "sha256": "afe20043543c98afe41d9182b163c7e087e978800db6d79300bb8ce613a5f73a",
+      "bytes": 1069
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha256": "239c9fc32620d0b07df47070c030463aed041dff8936f420c5401672adcebe62",
+      "bytes": 1679,
+      "origin": "new scoped archival documentation"
+    },
+    {
+      "path": "docs/user-guide.md",
+      "mode": "100644",
+      "sha256": "48be43d8312629f9470f1aea7680f24b2401c546e2d3e4db74fae6f663cd1b4e",
+      "bytes": 326,
+      "origin": "new scoped archival documentation"
+    },
+    {
+      "path": "scripts/sanitize.sh",
+      "mode": "100755",
+      "sha256": "c70012a003fe274adc4da84d1de1556f5a36baa705b09f30a62df8a18f579fd2",
+      "bytes": 1633
+    }
+  ]
+}
