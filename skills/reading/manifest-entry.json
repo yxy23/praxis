@@ -26,5 +26,5 @@
   ],
   "category": "research",
   "cluster": "research-toolkit",
-  "skill_path": "system/skills/reading/SKILL.md"
+  "skill_path": "~/.claude/skills/reading/SKILL.md"
 }

@@ -16,7 +16,7 @@ triggers:
 
 Read, in this order, before producing any output:
 
-1. `<vault-root>/system/skills/paper-fetch/SKILL.md` — full PDF acquisition cascade (Unpaywall → Semantic Scholar → arXiv → institutional repos → ResearchGate / author pages → publisher OA → Google Scholar), download verification, Zotero delivery patterns.
+1. `~/.claude/skills/paper-fetch/SKILL.md` — full PDF acquisition cascade (Unpaywall → Semantic Scholar → arXiv → institutional repos → ResearchGate / author pages → publisher OA → Google Scholar), download verification, Zotero delivery patterns.
 
 ## What this skill does
 

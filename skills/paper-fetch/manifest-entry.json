@@ -35,5 +35,5 @@
   ],
   "category": "research",
   "cluster": "research-toolkit",
-  "skill_path": "system/skills/paper-fetch/SKILL.md"
+  "skill_path": "~/.claude/skills/paper-fetch/SKILL.md"
 }

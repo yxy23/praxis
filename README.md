@@ -1,6 +1,6 @@
-# Praxis pre-refactor-2026-05-11 — partial public reconstruction
+# Praxis v2.0.0 — partial public reconstruction
 
-Source checkpoint: `b911d211fe6d969aceec7898b00023d6226fef86`. Source kind: `archival-snapshot`.
+Source checkpoint: `c36960799e32e67879f6b8576e5f8e4f93658821`. Source kind: `release-snapshot`.
 
 This newly prepared archive exposes only reusable research methods and selected generic technical components. It is not the full original release. Original personal workflow content and its Git history remain excluded.
 

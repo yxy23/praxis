@@ -29,5 +29,5 @@
   ],
   "category": "research",
   "cluster": "research-toolkit",
-  "skill_path": "system/skills/research-survey/SKILL.md"
+  "skill_path": "~/.claude/skills/research-survey/SKILL.md"
 }

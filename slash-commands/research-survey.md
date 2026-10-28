@@ -12,7 +12,7 @@ triggers:
 
 Read, in this order, before producing any output:
 
-1. `<vault-root>/system/skills/research-survey/SKILL.md` — three-phase pipeline, output format, failure modes.
+1. `~/.claude/skills/research-survey/SKILL.md` — three-phase pipeline, output format, failure modes.
 3. `<vault-root>/system/memory/agents/research-survey/reading-list.md` (if exists) — prior runs to dedupe.
 
 ## What to do
@@ -41,7 +41,7 @@ If user passed `resume`, run **Resume mode**:
 
 ## Where artifacts live
 
-- Skill folder: `system/skills/research-survey/`
+- Skill folder: `~/.claude/skills/research-survey/`
 - Reading list: `system/memory/agents/research-survey/reading-list.md`
 - Vault notes: `papers/<authors-year>.md` (created by `/reading`)
 - Zotero: Local API on port 23119

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "public/pre-refactor-2026-05-11",
-  "source_label": "pre-refactor-2026-05-11; sanitized partial reconstruction from b911d211fe6d969aceec7898b00023d6226fef86 (2026-05-10T02:10:34+01:00)",
+  "version": "public/v2.0.0",
+  "source_label": "v2.0.0; sanitized partial reconstruction from c36960799e32e67879f6b8576e5f8e4f93658821 (2026-05-11T22:49:03+01:00)",
   "notice": "Sanitized reconstruction prepared for public distribution. This is not the original development history. Historical runtime behavior has not been requalified."
 }

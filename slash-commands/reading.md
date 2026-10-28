@@ -11,7 +11,7 @@ triggers:
 
 Read, in this order, before producing any output:
 
-1. `<vault-root>/system/skills/reading/SKILL.md` — full processing sequence, sacred-spaces rule, output checklist.
+1. `~/.claude/skills/reading/SKILL.md` — full processing sequence, sacred-spaces rule, output checklist.
 
 ## What this skill does
 

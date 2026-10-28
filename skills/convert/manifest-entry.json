@@ -28,5 +28,5 @@
   ],
   "category": "research-tools",
   "cluster": "document-tools",
-  "skill_path": "system/skills/convert/SKILL.md"
+  "skill_path": "~/.claude/skills/convert/SKILL.md"
 }

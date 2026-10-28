@@ -13,7 +13,7 @@ triggers:
 
 Read, in this order, before producing any output:
 
-1. `<vault-root>/system/skills/convert/SKILL.md` — modes, format matrix, save locations, failure modes.
+1. `~/.claude/skills/convert/SKILL.md` — modes, format matrix, save locations, failure modes.
 
 ## What to do
 
@@ -49,7 +49,7 @@ If the user said `bib-check`, run **BibTeX hygiene check**:
 
 ## Where artifacts live
 
-- Skill folder: `system/skills/convert/`
+- Skill folder: `~/.claude/skills/convert/`
 - iCloud Downloads (.docx outputs): `~/Library/Mobile Documents/com~apple~CloudDocs/Downloads/`
 - Overleaf repos: `~/Library/CloudStorage/Dropbox/overleaf-repos/<project>/`
 - Collaborator staging: `<project>/collaborator/<name>-<date>.tex`
