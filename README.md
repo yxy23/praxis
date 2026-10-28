@@ -1,6 +1,6 @@
-# Praxis v1.0.0 — partial public reconstruction
+# Praxis v1.1.0 — partial public reconstruction
 
-Source checkpoint: `65e75b0ad0ae73c31fda919688fed3fb3aff4a03`. Source kind: `release-snapshot`.
+Source checkpoint: `38b7831c5a2e7e0f737176cc4090faa808814e1a`. Source kind: `release-snapshot`.
 
 This newly prepared archive exposes only reusable research methods and selected generic technical components. It is not the full original release. Original personal workflow content and its Git history remain excluded.
 

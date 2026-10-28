@@ -15,8 +15,8 @@ __pycache__/
 /scratch/
 *.local
 
-# User-specific config (install script reads from env or ~/.claude-skills-toolkit-config.sh)
-~/.claude-skills-toolkit-config.sh
+# User-specific config (install script reads from env or ~/.praxis-config.sh)
+~/.praxis-config.sh
 .user-config.sh
 
 # Sanitization scratch files (never commit)

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "version": "public/v1.0.0",
-  "tree_sha256": "cf0ffbbc576621f9ac3cfac457092d8c9bcd6c345e8eb5923c592184175a25af",
+  "version": "public/v1.1.0",
+  "tree_sha256": "5fef586ed303c5cc9af633199aad419d46e1360dab5e6d469061882a66728e9c",
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "cdf8c4e4e43ea9e8180ad4006ac7984f3100cd6cb148fe2c34b0e85a5e1a5104",
-      "bytes": 410
+      "sha256": "ac48cc3a4afc8fe45be6e92d1abec74861d83b9b3db912a9f6373e13473d3197",
+      "bytes": 380
     },
     {
       "path": "LICENSE",
@@ -15,22 +15,22 @@
     },
     {
       "path": "PUBLIC-MANIFEST.json",
-      "sha256": "1b70626f77f9b4e0c846f86ae6f14abad31d4cc33aaedcbdd8e16d1d4b119fba",
-      "bytes": 1416
+      "sha256": "28e2dee3b0869bd20163a8a0902153939ecc4c10fed3bbcdcae7070b594ec32c",
+      "bytes": 1781
     },
     {
       "path": "PUBLIC-SNAPSHOT.json",
-      "sha256": "8436501f4175fa975fb75ce8c832f56c30a5d6903e4fe73c045c333b7f01b04b",
+      "sha256": "36e3fa3df6d1f646f70e64136c7bf507cf4c653e2e08a11ca0760958ff033473",
       "bytes": 366
     },
     {
       "path": "PUBLIC-SNAPSHOT.md",
-      "sha256": "f647710982a0b10b160af3edec7b5fef4be569b4bb48bfd3203e5920644f94b4",
+      "sha256": "3f644a9961a48624104a87ab2613a6120ebb9696491d99fc3b66c983a034586b",
       "bytes": 1942
     },
     {
       "path": "README.md",
-      "sha256": "239c9fc32620d0b07df47070c030463aed041dff8936f420c5401672adcebe62",
+      "sha256": "4ba824f897d6965a9b7033cc893db4e1fe8fa9822662de6ad8433ddcaba42f76",
       "bytes": 1679
     },
     {
@@ -39,9 +39,19 @@
       "bytes": 326
     },
     {
+      "path": "scripts/pre-commit-hook.sh",
+      "sha256": "2ffed7f26f32009ceeb66cd2f19fe69c30161772084719fd72adb6e8ed4f5a99",
+      "bytes": 5423
+    },
+    {
       "path": "scripts/sanitize.sh",
       "sha256": "c70012a003fe274adc4da84d1de1556f5a36baa705b09f30a62df8a18f579fd2",
       "bytes": 1633
+    },
+    {
+      "path": "scripts/setup-hooks.sh",
+      "sha256": "3b7040c09495d9540ac51bda31ae5f5278e791e2ba58ca28dab985c2390f73fc",
+      "bytes": 897
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "snapshot": "v1.0.0",
+  "snapshot": "v1.1.0",
   "source_kind": "release-snapshot",
   "projection_scope": "partial research-methods-only reconstruction",
-  "source_commit": "65e75b0ad0ae73c31fda919688fed3fb3aff4a03",
-  "content_tree_sha256": "1c60b8cfff2bfef73e015aea79125c73e15883cff36f63a27af4e629a99c4b20",
-  "tree_sha256": "1c60b8cfff2bfef73e015aea79125c73e15883cff36f63a27af4e629a99c4b20",
-  "omitted_selected_source_paths": 26,
+  "source_commit": "38b7831c5a2e7e0f737176cc4090faa808814e1a",
+  "content_tree_sha256": "8fae84887fed182832f33a2c500878945a54465524a2110c3936333368a2b214",
+  "tree_sha256": "8fae84887fed182832f33a2c500878945a54465524a2110c3936333368a2b214",
+  "omitted_selected_source_paths": 42,
   "files": [
     {
       "path": ".gitignore",
       "mode": "100644",
-      "sha256": "cdf8c4e4e43ea9e8180ad4006ac7984f3100cd6cb148fe2c34b0e85a5e1a5104",
-      "bytes": 410
+      "sha256": "ac48cc3a4afc8fe45be6e92d1abec74861d83b9b3db912a9f6373e13473d3197",
+      "bytes": 380
     },
     {
       "path": "LICENSE",
@@ -23,7 +23,7 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "sha256": "239c9fc32620d0b07df47070c030463aed041dff8936f420c5401672adcebe62",
+      "sha256": "4ba824f897d6965a9b7033cc893db4e1fe8fa9822662de6ad8433ddcaba42f76",
       "bytes": 1679,
       "origin": "new scoped archival documentation"
     },
@@ -35,10 +35,22 @@
       "origin": "new scoped archival documentation"
     },
     {
+      "path": "scripts/pre-commit-hook.sh",
+      "mode": "100755",
+      "sha256": "2ffed7f26f32009ceeb66cd2f19fe69c30161772084719fd72adb6e8ed4f5a99",
+      "bytes": 5423
+    },
+    {
       "path": "scripts/sanitize.sh",
       "mode": "100755",
       "sha256": "c70012a003fe274adc4da84d1de1556f5a36baa705b09f30a62df8a18f579fd2",
       "bytes": 1633
+    },
+    {
+      "path": "scripts/setup-hooks.sh",
+      "mode": "100755",
+      "sha256": "3b7040c09495d9540ac51bda31ae5f5278e791e2ba58ca28dab985c2390f73fc",
+      "bytes": 897
     }
   ]
 }
