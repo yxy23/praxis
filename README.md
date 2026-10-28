@@ -1,6 +1,6 @@
 # Praxis 4.5
 
-Praxis is a collection of agents, with the skills, memory and rules that let them work together. Orca provides the interaction and coordination host. Amplifier supplies the graph execution engine. Praxis 4.5 connects them through runner-backed execution and a verification layer with a hash ledger, so work can be traced from its sources and code to its runs and outputs.
+Praxis is a collection of agents, with the skills, memory and rules that let them work together. [Orca](https://github.com/stablyai/orca) provides the interaction and coordination host. [Amplifier](https://github.com/microsoft/amplifier) supplies the graph execution engine. Praxis 4.5 connects them through runner-backed execution and a verification layer with a hash ledger, so work can be traced from its sources and code to its runs and outputs.
 
 This public edition contains the generic runner and agent-integration source, seven technical/source methods, and installation tooling. Personal workflows and their related skills, templates, examples and records are excluded as whole categories.
 
@@ -19,7 +19,7 @@ Praxis adapters connect agent contracts to the host and engine. The hash ledger 
 
 ## Run the 4.5 engine
 
-The public runner prepares the pinned Amplifier engine and exercises graph execution with synthetic workers. On macOS arm64 with Python 3.14:
+The public runner prepares the pinned [Amplifier DOT runner engine](https://github.com/microsoft/amplifier-bundle-dot-runner) and exercises graph execution with synthetic workers. On macOS arm64 with Python 3.14:
 
 ```sh
 python3 scripts/prepare-engine.py --download --destination "$PWD/.praxis-engine"
