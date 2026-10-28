@@ -59,7 +59,7 @@ The [release history](docs/release-history.md) explains the 1.x, 2.x, 3.x, 4.x a
 
 ## Ingolstadt experiment
 
-The [Ingolstadt archive](experiments/ingolstadt/README.md) preserves all 1,532,391 journal events, scientific code, results and supporting records within a disclosed publication boundary. Local path fields are projected to portable locators; original hash commitments and a separate public chain make that change explicit. Large evidence files are distributed as checked release assets. The archive index records their status, checksums and verification commands.
+The [Ingolstadt archive](experiments/ingolstadt/README.md) preserves all 1,532,391 journal events, scientific code, results and supporting records within a disclosed publication boundary. Local path fields are projected to portable locators; original hash commitments and a separate public chain make that change explicit. Large evidence files are distributed as checked release assets. Download the [four evidence assets](https://github.com/yxy23/praxis/releases/tag/public/v4.5.0); the archive index gives checksums and verification commands. The [publication receipt](experiments/ingolstadt/PUBLICATION.json) records successful anonymous downloads and matching SHA-256 hashes.
 
 The [ICIS supplementary materials](papers/icis-2026/README.md) retain the exact submitted PDF, including author attribution and contact information.
 

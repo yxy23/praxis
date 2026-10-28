@@ -9,7 +9,7 @@ The archive preserves the **1,532,391-record experimental journal**, its hash co
 | [Document projection map](DOCUMENT-PROJECTION.json) | Exact source hashes and line omissions for scientific provenance documents | Scientific author instructions retained; private orientation/personal state spans omitted |
 | [Original journal audit](original-journal-audit.json) and [technical review](independent-technical-review.json) | Fresh full original scan, independent public stream verification and focused tamper checks | Integrity evidence, with stated scientific-review limits |
 
-The public journal expands to 75,352,240,251 bytes. Three numbered zstd parts total 2,481,269,121 bytes. The supporting archive is a separate compressed tar asset; [its manifest](ASSET-ARCHIVE-MANIFEST.json) gives the exact final size and SHA-256. Files are prepared and verified locally; this index does not itself establish that release-asset upload has completed. Publication is recorded separately by the release publisher.
+The public journal expands to 75,352,240,251 bytes. Three numbered zstd parts total 2,481,269,121 bytes. The supporting archive is a separate compressed tar asset; [its manifest](ASSET-ARCHIVE-MANIFEST.json) gives the exact final size and SHA-256. [All four evidence assets are published on GitHub](https://github.com/yxy23/praxis/releases/tag/public/v4.5.0). The [publication receipt](PUBLICATION.json) records successful anonymous downloads with matching byte counts and SHA-256 hashes.
 
 Download the three journal parts and `ingolstadt-scientific-assets.tar.zst` into a `release-assets/` directory beside this index. With Python 3 and the `zstd` command installed:
 

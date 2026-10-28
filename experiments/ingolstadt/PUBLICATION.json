@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "timestamp_utc": "2026-10-28T22:34:46.632846+00:00",
+  "repository": "https://github.com/yxy23/praxis",
+  "repository_id": 1437697751,
+  "release": "https://github.com/yxy23/praxis/releases/tag/public/v4.5.0",
+  "release_id": 427262768,
+  "release_tag": "public/v4.5.0",
+  "release_commit": "0e1bebfb46e8220afb17b8614bc07025b1a30d7e",
+  "anonymous_access": true,
+  "assets": [
+    {
+      "name": "ingolstadt-journal.public.jsonl.zst.part-000",
+      "bytes": 1000000000,
+      "sha256": "27e24f74e45efec2de24d2656eebb58cb9829b6418cf747546f873f4484f6fd9",
+      "url": "https://github.com/yxy23/praxis/releases/download/public/v4.5.0/ingolstadt-journal.public.jsonl.zst.part-000",
+      "asset_id": 686552225
+    },
+    {
+      "name": "ingolstadt-journal.public.jsonl.zst.part-001",
+      "bytes": 1000000000,
+      "sha256": "c47ddf176a2fc3510e58c794f0a6732b4b04da7fd7f6a0ec7edb354c8d2cf080",
+      "url": "https://github.com/yxy23/praxis/releases/download/public/v4.5.0/ingolstadt-journal.public.jsonl.zst.part-001",
+      "asset_id": 686552228
+    },
+    {
+      "name": "ingolstadt-journal.public.jsonl.zst.part-002",
+      "bytes": 481269121,
+      "sha256": "b926de117f0cccdbffe1a39dc8ad5d078ec95457a5232ef09d4455473cfec819",
+      "url": "https://github.com/yxy23/praxis/releases/download/public/v4.5.0/ingolstadt-journal.public.jsonl.zst.part-002",
+      "asset_id": 686552226
+    },
+    {
+      "name": "ingolstadt-scientific-assets.tar.zst",
+      "bytes": 277705316,
+      "sha256": "728bf266ab0e68d4987a3fddd80ede747a54ac675ceb935bcc803876856af316",
+      "url": "https://github.com/yxy23/praxis/releases/download/public/v4.5.0/ingolstadt-scientific-assets.tar.zst",
+      "asset_id": 686552224
+    }
+  ],
+  "total_asset_bytes": 2758974437,
+  "verification": "Every release asset was downloaded anonymously in full; byte count and SHA-256 matched its reviewed publication input and GitHub asset digest.",
+  "scope": "Publication and byte identity verification; scientific review and native runtime qualification have separate evidence and limits."
+}
