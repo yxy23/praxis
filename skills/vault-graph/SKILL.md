@@ -5,12 +5,11 @@ description: "Graph-aware vault retrieval — seed from concepts/hubs/projects, 
 
 # Vault-Graph — Graph-Aware Vault Retrieval
 
+Replaces flat keyword search as the default retrieval primitive for the vault. Surfaces notes that are *graph-adjacent* to a query — connected via wikilinks, backlinks, hubs, and shared concepts — not just textually matching. Years of curated `[[wikilink]]` structure carry signal that flat grep throws away.
+
+Use `/vault-graph <query>` directly or as retrieval support for `/research-survey`. Combine graph and keyword results with provenance.
+
 ## Preconditions and constraints
-
-### Tools
-
-- `filesystem`
-- `obsidian-cli`
 
 ### Preconditions
 
@@ -24,10 +23,6 @@ description: "Graph-aware vault retrieval — seed from concepts/hubs/projects, 
 - if Obsidian Desktop is not running, all `obsidian` CLI calls fail silently; fall back to filesystem grep + frontmatter parse for backlinks
 - `obsidian search` is known broken in installer 1.12.x; use filesystem `grep -r -l` for keyword seeds, not CLI search
 - cap expansion to 2 hops total; cap output to top 30 ranked nodes by default
-
-Replaces flat keyword search as the default retrieval primitive for the vault. Surfaces notes that are *graph-adjacent* to a query — connected via wikilinks, backlinks, hubs, and shared concepts — not just textually matching. Years of curated `[[wikilink]]` structure carry signal that flat grep throws away.
-
-Use `/vault-graph <query>` directly or as retrieval support for `/research-survey`. Combine graph and keyword results with provenance.
 
 ## How to Use
 

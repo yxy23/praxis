@@ -1,6 +1,6 @@
-# Praxis v3.0.0 — partial public reconstruction
+# Praxis v4.0-checkpoint-20260906 — partial public reconstruction
 
-Source checkpoint: `f620a2137755762cb14b3ab152363c88c04b8ca9`. Source kind: `release-snapshot`.
+Source checkpoint: `9c9a99c5a8df61533bd865ead4d38525f8226c71`. Source kind: `historical-source-checkpoint`.
 
 This newly prepared archive exposes only reusable research methods and selected generic technical components. It is not the full original release. Original personal workflow content and its Git history remain excluded.
 

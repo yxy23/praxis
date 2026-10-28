@@ -15,17 +15,6 @@
     "filesystem",
     "bash"
   ],
-  "preconditions": [
-    "pandoc installed",
-    "source file readable; target directory writable"
-  ],
-  "constraints": [
-    "NEVER use textutil on a tracked-changes .docx \u2014 corrupts the diff",
-    "NEVER auto-merge collaborator edits \u2014 always stage, diff, wait for explicit instruction",
-    "Save Word output to iCloud Downloads by default, not ~/Downloads/",
-    "Pull before write-conversion in Overleaf repos; commit + push after",
-    "bibliography.bib is managed by Zotero Better BibTeX \u2014 never edit manually"
-  ],
   "category": "research-tools",
   "cluster": "document-tools",
   "skill_path": "~/.claude/skills/convert/SKILL.md"

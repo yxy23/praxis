@@ -5,12 +5,10 @@ description: "Process academic papers from Zotero (or uploaded PDFs) into struct
 
 # Reading — Paper Processing Pipeline
 
+Authoritative procedure for processing academic papers from Zotero (or uploaded PDFs) into structured vault notes. The output is a per-paper note in `papers/`; nothing else in the vault is touched.
+
+
 ## Preconditions and constraints
-
-### Tools
-
-- `zotero`
-- `filesystem`
 
 ### Preconditions
 
@@ -23,8 +21,6 @@ description: "Process academic papers from Zotero (or uploaded PDFs) into struct
 
 - always pass `use_pdf_extraction: true` to `zotero_get_annotations` — never false
 - annotation count must match between Zotero extraction and the final paper note — every reader annotation appears verbatim
-
-Authoritative procedure for processing academic papers from Zotero (or uploaded PDFs) into structured vault notes. The output is a per-paper note in `papers/`; nothing else in the vault is touched.
 
 ## Invocation
 
@@ -70,13 +66,13 @@ If the vault has both:
 
 ## Processing Sequence
 
-### Step 0 — Read the templates (every run, no exceptions)
+### Step 0 — Read the templates and the analysis frame (every run, no exceptions)
 
 ```
 read_file("<vault-root>/Templates/paper-note-template.md")
 ```
 
-Read the note template before every processing run. This file (the skill itself) is the authoritative source of truth for the pipeline; the template provides the note structure. Adjust the template path to whatever your vault uses.
+Read the configured research-note template before processing. Apply the genre-specific analysis steps below.
 
 ### Step 0.5 — Retrieve ALL annotations BEFORE reading the paper
 
@@ -129,11 +125,11 @@ Confirm title match. Set `source: zotero`.
 **Uploaded PDF (no Zotero match):**
 Extract metadata from header/first page. Check Zotero. If found → switch to Zotero path. If not → set `source: uploaded`.
 
-### Step 2 — Determine paper type
+### Step 2 — Determine paper type (genre)
 
-Classify as: `theoretical | formal-model | empirical | design-science | mixed`
+Classify as: `conceptual | formal-model | quantitative | qualitative | design-science | mixed`
 
-This determines which sections are required (formal model walkthrough, empirical architecture, or both).
+Genre selects the methodological branch of the on-its-own-terms analysis: formal → model walkthrough; quantitative → empirical/identification architecture; qualitative → qualitative architecture (logical construction, evidence chain, discourse); conceptual → conceptual architecture (argument structure, theoretical move, boundary conditions). `mixed` gets the relevant branches, not all of them.
 
 ### Step 3 — Read the full paper
 
@@ -145,6 +141,27 @@ If unavailable: search the web (arXiv, journal site) and use `web_fetch`.
 Read with annotations from Step 0.5 in mind. The goal is to deepen the user's first-pass reading, not produce an independent summary.
 
 ### Step 4 — Search the vault for connections
+
+Before the flat vault lookup, run the shared source-level retrieval path:
+
+```bash
+python3 <vault-root>/system/semantic-index/retrieve.py search \
+  "[paper topic, key constructs]" --top 10
+```
+
+Keep the returned `source`, `path`, `absolute_path`, and score with the
+evidence. Read selected sources one at a time through the same interface (or
+the authoritative Zotero annotation/full-text tools when annotations are
+required):
+
+```bash
+python3 <vault-root>/system/semantic-index/retrieve.py read <source> <path>
+```
+
+This source-level retrieval interface finds Zotero PDFs, Readwise captures, and Obsidian notes; it does not interpret
+the paper or replace the annotation-first rules below.
+
+Then run the vault-specific lookup for connections:
 
 ```
 search_vault_smart(query="[paper topic, key constructs]")
@@ -159,22 +176,15 @@ Do NOT modify hub pages at this stage.
 Save to: `papers/[authors-year].md`
 Naming convention: `firstauthor-secondauthor-thirdauthor-YYYY.md` (up to three authors) or `firstauthor-etal-YYYY.md` (four+ authors), all lowercase.
 
-Follow the paper-note template exactly. Every section in the template must appear.
 
-**Architecture of the Argument** — what move does the paper make? What is the minimum machinery needed? Why is a model or study required at all?
+**Read on Its Own Terms — Rhetorical moves** (every paper; Burke + move-analysis blend): terministic screen (god-/devil-terms; what the vocabulary selects vs hides); representative anecdote (the case made to stand for the whole — apt or narrowing?); pentad + driving ratio (act/scene/agent/agency/purpose; which ratio carries the persuasion); contribution moves (territory → niche → occupy; is the gap real or manufactured? what assumption is problematized?); identification (what the reader must accept for the argument to feel inevitable). Use the lens that fits; mark "not the salient move here" where one doesn't apply. Do not force the pentad onto a paper it does not illuminate.
 
-**Formal Model Walkthrough** *(if `paper_type` includes `formal-model`)* — walk through every key equation with three layers: (1) the math, (2) plain English, (3) intuition + what's doing the work. Explain the model variables and the role each plays in the result.
+**Methodological moves — branch by genre** (apply only the matching branch):
+- **Empirical / Quantitative Architecture** *(if `quantitative` or `mixed`)* — research questions in empirical terms; context + generalisability boundary; design with causal-inference assessment; data/sample (N, span, selection, limits); identification strategy with full threat table (endogeneity, OVB, measurement, selection, external validity); findings with effect sizes and practical magnitude. Findings on the paper's own terms — no connection to the user's frameworks here.
+- **Qualitative Architecture** *(if `qualitative` or `mixed`)* — logical construction (grounded / process / comparative-case / interpretive / critical); evidence chain (data → codes → constructs → claims; is each step warranted?); analytic moves (constant comparison, temporal bracketing, narrative/discourse analysis); the work of the representative quote (illustrating vs being asked to prove); trustworthiness (triangulation, negative cases, reflexivity).
+- **Conceptual Architecture** *(if `conceptual`)* — argument architecture (premises → mechanism → claims; where is the unstated leap?); type of theoretical move (borrow/blend/bridge/problematize, and which order of assumption); boundary conditions + falsifiability; internal consistency.
 
-**Empirical Architecture** *(if `paper_type` includes `empirical` or `mixed`)* — mandatory, all six components:
-1. Research questions in empirical (causal/predictive) terms
-2. Study context including generalisability boundary
-3. Method and research design with explicit causal inference assessment
-4. Data and sample: N, time span, selection, limitations
-5. Analytical approach with full threat assessment table (endogeneity, OVB, measurement, selection, external validity)
-6. Major findings with effect sizes, practical magnitude, and connection to the user's frameworks
-
-
-
+**Critical Notes** — the user's assessment of the paper on its own terms (strengths, limits, disagreements), anchored in their annotations.
 
 **Annotations Section** — all highlights as `> [!quote]` callouts; all reader margin notes as `> [!critical]` callouts. No highlight may be omitted.
 
@@ -187,12 +197,12 @@ Before marking a paper processed, verify:
 - [ ] All N annotations retrieved and counted
 - [ ] Annotation count matches what appears in the note
 - [ ] Every reader margin note appears in Critical Notes and Annotations sections
-- [ ] If empirical or mixed — all six Empirical Architecture fields completed
+- [ ] Rhetorical-move analysis present (terministic screen, representative anecdote, pentad/ratio, contribution moves, identification)
+- [ ] Genre-appropriate methodological branch completed (formal / quantitative / qualitative / conceptual)
 - [ ] Connections section links to existing `papers/` and `hubs/` entries
 
 ## Quality Standard
 
-Pick one fully-processed formal-model note in your `papers/` folder as the benchmark exemplar. Match that depth for every formal model: three-layer explanations for each equation, variables explained and assumptions assessed.
 
 ## Failure Modes
 

@@ -5,12 +5,11 @@ description: "Convert documents between Word, LaTeX, and Markdown using pandoc; 
 
 # Convert — Document Format Conversion
 
+Pure procedural skill for converting documents between Word, LaTeX, and Markdown. No content origination — only format transformation with audit trail.
+
+Earlier versions of this harness routed format-conversion work through a dedicated functional agent; this skill replaces that pattern.
+
 ## Preconditions and constraints
-
-### Tools
-
-- `filesystem`
-- `bash`
 
 ### Preconditions
 
@@ -26,13 +25,9 @@ description: "Convert documents between Word, LaTeX, and Markdown using pandoc; 
 - Bibliography file `bibliography.bib` is managed by Zotero Better BibTeX — never edit manually.
 - dial-back: missing pandoc is recoverable (offer brew install); a dirty git tree is a hard stop.
 
-Pure procedural skill for converting documents between Word, LaTeX, and Markdown. No content origination — only format transformation with audit trail.
-
-Earlier versions of this harness routed format-conversion work through a dedicated functional agent; this skill replaces that pattern.
-
 ## When to Run
 
-- User asks to convert a file between formats: "convert this docx to latex", "make a markdown version of this", "export the section to word for a co-author".
+- User asks to convert a file between formats: "convert this docx to latex", "make a markdown version of this", "export the section to word for <colleague-name>".
 - User shares a collaborator's tracked-changes .docx and wants it staged for review against the current draft.
 - User wants to merge approved collaborator edits into the live draft.
 - User invokes `/convert` directly with a file path.

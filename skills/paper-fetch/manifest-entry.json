@@ -20,19 +20,6 @@
     "bash",
     "filesystem"
   ],
-  "preconditions": [
-    "Zotero running with Local API on port 23119",
-    "Zotero MCP available",
-    "a writable staging directory for downloads"
-  ],
-  "constraints": [
-    "try the PDF cascade in order \u2014 do not jump to manual instructions without exhausting automated sources",
-    "always verify the downloaded file is a valid PDF before attaching",
-    "never fabricate PDF URLs \u2014 only use URLs returned by APIs or search results",
-    "Zotero local API does not support PATCH or direct attachment upload",
-    "batch mode reports results per-paper",
-    "always save PDFs with readable names: LastnameYear-Venue.pdf"
-  ],
   "category": "research",
   "cluster": "research-toolkit",
   "skill_path": "~/.claude/skills/paper-fetch/SKILL.md"

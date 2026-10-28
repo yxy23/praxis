@@ -5,13 +5,11 @@ description: "Three-phase systematic literature survey — internal Zotero/vault
 
 # Research Survey — Systematic Literature Search
 
+Three-phase literature survey skill: internal Zotero/vault survey → backward citation mining → forward citation tracking. Builds an iteratively-deepening reading list of papers worth adding to Zotero.
+
+Earlier versions of this harness routed research/literature work through a dedicated functional agent; this skill replaces that pattern.
+
 ## Preconditions and constraints
-
-### Tools
-
-- `filesystem`
-- `zotero`
-- `web_fetch`
 
 ### Preconditions
 
@@ -27,10 +25,6 @@ description: "Three-phase systematic literature survey — internal Zotero/vault
 - Semantic Scholar API key is set in `~/.claude/settings.json` as `$SEMANTIC_SCHOLAR_API_KEY`; pass on every call as `-H "x-api-key: $SEMANTIC_SCHOLAR_API_KEY"`. Authenticated rate limit is 1 req/sec sustained, with bursts of several hundred per minute tolerated
 - if Scite.ai integration unavailable, fall back to Semantic Scholar only — graceful degradation
 - dial-back: missing DOI is recoverable (use title search); missing API access is recoverable (Zotero-only mode)
-
-Three-phase literature survey skill: internal Zotero/vault survey → backward citation mining → forward citation tracking. Builds an iteratively-deepening reading list of papers worth adding to Zotero.
-
-Earlier versions of this harness routed research/literature work through a dedicated functional agent; this skill replaces that pattern.
 
 ## When to Run
 
@@ -54,15 +48,26 @@ Earlier versions of this harness routed research/literature work through a dedic
 
 Check what's already in vault and Zotero before searching outward.
 
-**Step 1a — Vault notes (graph + flat + semantic, three-leg augmented)**
+**Step 1a — Internal evidence (shared Nomic plus graph + flat + semantic)**
 
-Run **all three** retrieval methods in parallel and merge:
+Run the shared source-level retrieval first:
+
+```bash
+python3 <vault-root>/system/semantic-index/retrieve.py search "<topic>" --top 20
+```
+
+The shared Nomic index spans Zotero PDFs, Readwise captures, and Obsidian
+notes. Preserve its `source`, `path`, `absolute_path`, and score; it is the
+source-level evidence surface for the literature survey.
+
+Then run **all three** vault retrieval methods in parallel and merge:
 
 1. `/vault-graph <topic>` (Full mode) — graph traversal from concept/hub/project seeds; returns ranked nodes + gap report.
 2. `search_vault_simple(query="<topic keywords>")` (MCP) — keyword-matched notes anywhere in vault.
 3. `/vault-semantic <topic>` — semantic similarity over pre-computed Smart Connections embeddings; catches notes whose content is similar to the query but match neither wikilinks nor keywords.
 
-Merge with provenance flags:
+Merge with provenance flags. Shared-Nomic hits are source-level anchors;
+Smart Connections hits remain section-level vault neighbors:
 - **In all three** → highest confidence; lead with these as anchor candidates.
 - **In two of three** → strong candidates.
 - **Graph-only** → curated structure the user wikilinked; valuable for cross-domain analogies.

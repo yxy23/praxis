@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "public/v3.0.0",
-  "source_label": "v3.0.0; sanitized partial reconstruction from f620a2137755762cb14b3ab152363c88c04b8ca9 (2026-07-18T16:56:26+08:00)",
+  "version": "public/v4.0-checkpoint-20260906",
+  "source_label": "v4.0-checkpoint-20260906; sanitized partial reconstruction from 9c9a99c5a8df61533bd865ead4d38525f8226c71 (2026-09-06T08:11:56+01:00)",
   "notice": "Sanitized reconstruction prepared for public distribution. This is not the original development history. Historical runtime behavior has not been requalified."
 }

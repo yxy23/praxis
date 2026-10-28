@@ -5,15 +5,13 @@ description: "Download PDFs and attach them to Zotero entries — multi-source c
 
 # paper-fetch — Download PDFs and attach them to Zotero entries
 
+Finds open-access or repository PDFs for academic papers and delivers them to Zotero. Accepts a DOI, Zotero item key, author/year/title, or a Zotero collection name (batch mode). Tries a cascade of sources before reporting that a PDF is unavailable. Handles single papers or entire collections with missing PDFs.
+
+This skill bridges `/research-survey` (which identifies papers to read) and `/reading` (which processes them into vault notes). A paper without a PDF cannot be fully processed by `/reading`.
+
+---
+
 ## Preconditions and constraints
-
-### Tools
-
-- `zotero`
-- `web_fetch`
-- `web_search`
-- `bash`
-- `filesystem`
 
 ### Preconditions
 
@@ -29,12 +27,6 @@ description: "Download PDFs and attach them to Zotero entries — multi-source c
 - Zotero local API does not support PATCH or direct attachment upload — use a staging directory + user drag as the attachment method
 - batch mode must report results per-paper (not aggregate summary)
 - always save PDFs with readable names: LastnameYear-Venue.pdf
-
-Finds open-access or repository PDFs for academic papers and delivers them to Zotero. Accepts a DOI, Zotero item key, author/year/title, or a Zotero collection name (batch mode). Tries a cascade of sources before reporting that a PDF is unavailable. Handles single papers or entire collections with missing PDFs.
-
-This skill bridges `/research-survey` (which identifies papers to read) and `/reading` (which processes them into vault notes). A paper without a PDF cannot be fully processed by `/reading`.
-
----
 
 ## How to Use
 

@@ -1,6 +1,6 @@
 {
   "name": "vault-semantic",
-  "version": "2026-05-25",
+  "version": "2026-08-21",
   "triggers": [
     "/vault-semantic",
     "semantic search",
@@ -12,17 +12,6 @@
   "tools": [
     "filesystem",
     "obsidian-cli"
-  ],
-  "preconditions": [
-    "Obsidian Desktop is running with the vault open",
-    "Smart Connections plugin enabled and indexed",
-    "obsidian CLI on PATH"
-  ],
-  "constraints": [
-    "never fabricate matches \u2014 only Smart Connections lookup results",
-    "abort if Smart Connections not loaded; do not fall back to graph or grep",
-    "cap output to top 30 by default",
-    "skill is read-only"
   ],
   "category": "research",
   "cluster": "research-methods",

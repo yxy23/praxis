@@ -5,12 +5,11 @@ description: "Semantic similarity retrieval via Smart Connections plugin — thi
 
 # Vault-Semantic — Semantic Similarity Retrieval
 
+Third leg of the retrieval stool, complementing `/vault-graph` (structural) and flat keyword search (lexical). Pipes through the Smart Connections plugin's pre-computed vault embeddings (model: `TaylorAI/bge-micro-v2`, 384-dim) to find notes whose content is semantically similar to a query — including notes that match neither wikilinks nor keywords.
+
+Use `/vault-semantic <query>` directly or as semantic retrieval support for `/research-survey`.
+
 ## Preconditions and constraints
-
-### Tools
-
-- `filesystem`
-- `obsidian-cli`
 
 ### Preconditions
 
@@ -24,10 +23,6 @@ description: "Semantic similarity retrieval via Smart Connections plugin — thi
 - if Smart Connections is not loaded or index is empty, abort with clear message (do not fall back to graph or grep — those are separate skills)
 - cap output to top 30 by default; user can request `top=N` for deeper exploration
 - skill is read-only — no edits to vault content
-
-Third leg of the retrieval stool, complementing `/vault-graph` (structural) and flat keyword search (lexical). Pipes through the Smart Connections plugin's pre-computed vault embeddings (model: `TaylorAI/bge-micro-v2`, 384-dim) to find notes whose content is semantically similar to a query — including notes that match neither wikilinks nor keywords.
-
-Use `/vault-semantic <query>` directly or as semantic retrieval support for `/research-survey`.
 
 ## When to Use Over Graph or Flat
 
@@ -58,20 +53,101 @@ Smart Connections returns section-level granularity by default (e.g., `papers/fo
 1. Check Obsidian Desktop is running: `obsidian vault info=name` returns non-empty.
 2. Check Smart Connections is loaded: query plugin presence via eval.
 3. Check index isn't empty: confirm `.smart-env/multi/` has files (≥ 100 expected for any active vault).
+4. Check the Smart Environment collections are ready. Smart Connections 4.x may
+   leave the environment at `state: init` until a view or API consumer loads it.
+   Plugin presence alone is therefore insufficient.
 
 If any check fails, abort with diagnostic message. Do not silently degrade.
 
-### Phase 1 — Async lookup
+#### Smart Connections 4.x lazy-load gate
 
-Smart Connections' `lookup()` returns a Promise. The `obsidian eval` command does NOT await Promises directly (eval returns immediately). Pattern: fire the lookup, store result on `window`, poll a second eval until populated.
+Resolve the active vault name once and use it on every CLI call. If
+`smart_sources` and `lookup_lists` are not ready, start `env.load()` inside a
+non-Promise wrapper so `obsidian eval` returns immediately, then poll for the
+collections. Loading the environment is read-only with respect to vault notes;
+it opens the existing `.smart-env` index.
 
 ```bash
-# Fire
-obsidian eval code='window._vs = "PENDING"; app.plugins.plugins["smart-connections"].env.smart_sources.lookup({hypotheticals: ["<query>"]}).then(r => { window._vs = r.slice(0, 30).map(x => ({path: x.item ? x.item.path : x.path, score: x.score})); }).catch(e => { window._vs = "ERROR: " + e.message; });'
+VAULT_NAME=$(obsidian vault info=name)
+
+# Probe
+ready=$(obsidian vault="$VAULT_NAME" eval code='{
+  const p=app.plugins.plugins["smart-connections"];
+  p?.env?.smart_sources && p?.env?.lookup_lists ? "READY" :
+  p ? "NOT_READY" : "PLUGIN_MISSING"
+}')
+
+case "$ready" in
+  *PLUGIN_MISSING*) echo "Smart Connections plugin is not loaded." >&2; exit 1 ;;
+  *NOT_READY*)
+    obsidian vault="$VAULT_NAME" eval code='(()=>{
+      const p=app.plugins.plugins["smart-connections"];
+      window._vs_load="PENDING";
+      Promise.resolve(p.env.load())
+        .then(()=>{window._vs_load="READY"})
+        .catch(e=>{window._vs_load="ERROR: "+e.message});
+      return "LOAD_STARTED";
+    })()' >/dev/null
+    for i in {1..30}; do
+      ready=$(obsidian vault="$VAULT_NAME" eval code='{
+        const e=app.plugins.plugins["smart-connections"]?.env;
+        e?.smart_sources && e?.lookup_lists ? "READY" :
+        (typeof window._vs_load === "string" ? window._vs_load : "PENDING")
+      }')
+      case "$ready" in
+        *READY*) break ;;
+        *ERROR*) echo "$ready" >&2; exit 1 ;;
+        *) sleep 1 ;;
+      esac
+    done
+    ;;
+esac
+
+case "$ready" in
+  *READY*) ;;
+  *) echo "Smart Connections environment did not become ready within 30s." >&2; exit 1 ;;
+esac
+```
+
+### Phase 1 — Async lookup
+
+Use Smart Connections 4.x's `lookup_lists` API. The compatibility branch keeps
+the prior `smart_sources.lookup()` API available for older installations. Both
+return a Promise, so fire the lookup inside a synchronous wrapper, store the
+eventual result on `window`, and poll in a second eval. Never interpolate a raw
+query into JavaScript: serialize it as JSON first.
+
+```bash
+# QUERY is the natural-language query; TOP is a validated integer, default 30.
+QUERY_JSON=$(jq -Rn --arg q "$QUERY" '$q')
+
+# Fire. The wrapper's explicit string return prevents the CLI from waiting on
+# the Promise. `smart_blocks` preserves section-level results when available.
+obsidian vault="$VAULT_NAME" eval code="(()=>{
+  const q=$QUERY_JSON;
+  const top=$TOP;
+  const env=app.plugins.plugins[\"smart-connections\"].env;
+  window._vs=\"PENDING\";
+  let promise;
+  if (env.lookup_lists?.new_item) {
+    const list=env.lookup_lists.new_item({query:q});
+    const results_collection_key=env.smart_blocks ? \"smart_blocks\" : \"smart_sources\";
+    promise=list.get_results({query:q,results_collection_key,limit:top});
+  } else if (env.smart_sources?.lookup) {
+    promise=env.smart_sources.lookup({hypotheticals:[q],filter:{limit:top}});
+  } else {
+    window._vs=\"ERROR: no supported Smart Connections lookup API\";
+    return \"ERROR\";
+  }
+  Promise.resolve(promise)
+    .then(r=>{window._vs=r.slice(0,top).map(x=>({path:x.item?.path||x.item?.key||x.path,score:x.score}))})
+    .catch(e=>{window._vs=\"ERROR: \"+e.message});
+  return \"FIRED\";
+})()" >/dev/null
 
 # Poll (up to ~10 seconds)
 for i in 1 2 3 4 5 6 7 8 9 10; do
-  result=$(obsidian eval code='typeof window._vs === "string" ? window._vs : JSON.stringify(window._vs)')
+  result=$(obsidian vault="$VAULT_NAME" eval code='typeof window._vs === "string" ? window._vs : JSON.stringify(window._vs)')
   case "$result" in
     *PENDING*) sleep 1 ;;
     *ERROR*) echo "$result" >&2; exit 1 ;;
@@ -134,14 +210,16 @@ Semantic-only hits are why this primitive matters: they catch cross-domain analo
 | Obsidian Desktop not running | Abort with: "Obsidian must be running for `/vault-semantic`. Please open Obsidian." |
 | Smart Connections not enabled | Abort with: "Smart Connections plugin is not loaded. Enable it in Obsidian settings." |
 | `.smart-env/multi/` empty or missing | Abort with: "Smart Connections index is empty. Trigger reindex in Obsidian: Smart Connections → Reload Sources." |
+| Plugin exists but collections are absent | Run the lazy-load gate once; abort if `smart_sources` and `lookup_lists` are still absent after 30s. |
 | `window._vs` stays `PENDING` past 10s | Abort with: "Lookup timed out. Check Smart Connections status; index may be rebuilding." |
 | Returned cosine scores all < 0.5 | Surface with warning: "No strong semantic matches; consider rephrasing query or check that vault is well-embedded for this topic." |
 
 ## CLI Reliability Notes
 
 - `obsidian eval` is the only path to Smart Connections from CLI; no other primitive (search, files, backlinks) exposes semantic similarity.
-- The async-store-poll pattern is required because `eval` doesn't await Promises — do not attempt to inline `await`.
-- Smart Connections internals (the path through `app.plugins.plugins["smart-connections"].env.smart_sources.lookup`) may change across plugin versions. If lookup() signature changes, this skill will break. Verify with a probe query if you upgrade Smart Connections.
+- Smart Connections 4.x can expose the plugin while leaving its environment at `init`; test collection readiness, not only plugin presence.
+- The async-store-poll pattern is required. Always return a non-Promise value from the firing eval; otherwise the CLI can wait indefinitely on the lookup or environment-load Promise.
+- Smart Connections internals may change across plugin versions. The preferred path is `env.lookup_lists.new_item(...).get_results(...)`; `env.smart_sources.lookup(...)` is compatibility-only. Verify with a probe query after every plugin upgrade.
 
 ## Constraints
 

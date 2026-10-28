@@ -1,30 +1,18 @@
 {
   "schema_version": 1,
-  "snapshot": "v3.0.0",
-  "source_kind": "release-snapshot",
+  "snapshot": "v4.0-checkpoint-20260906",
+  "source_kind": "historical-source-checkpoint",
   "projection_scope": "partial research-methods-only reconstruction",
-  "source_commit": "f620a2137755762cb14b3ab152363c88c04b8ca9",
-  "content_tree_sha256": "896b50a3abec839a2170812c965f22a62f279a038a575894201697799ebf7326",
-  "tree_sha256": "896b50a3abec839a2170812c965f22a62f279a038a575894201697799ebf7326",
-  "omitted_selected_source_paths": 92,
+  "source_commit": "9c9a99c5a8df61533bd865ead4d38525f8226c71",
+  "content_tree_sha256": "091ca6c6a540c6b396c422a59101df8992faf59f6835ae5660979fa9ff0ca6ce",
+  "tree_sha256": "091ca6c6a540c6b396c422a59101df8992faf59f6835ae5660979fa9ff0ca6ce",
+  "omitted_selected_source_paths": 105,
   "files": [
-    {
-      "path": ".gitignore",
-      "mode": "100644",
-      "sha256": "6c681c7129e259242a7f2f0694c125a89ae0ead426db97da8221f698503c52b6",
-      "bytes": 459
-    },
-    {
-      "path": "LICENSE",
-      "mode": "100644",
-      "sha256": "afe20043543c98afe41d9182b163c7e087e978800db6d79300bb8ce613a5f73a",
-      "bytes": 1069
-    },
     {
       "path": "README.md",
       "mode": "100644",
-      "sha256": "8e9bec3e1aef31d17c37e8d31c307885530b5aaba905c87c00238551d0b3df66",
-      "bytes": 1677,
+      "sha256": "b6aaab2b5a971777a6b55da58877aa2a4181d7a6ba606ec3d17dfa15c6eaad5a",
+      "bytes": 1707,
       "origin": "new scoped archival documentation"
     },
     {
@@ -35,94 +23,88 @@
       "origin": "new scoped archival documentation"
     },
     {
-      "path": "scripts/pre-commit-hook.sh",
-      "mode": "100755",
-      "sha256": "2ffed7f26f32009ceeb66cd2f19fe69c30161772084719fd72adb6e8ed4f5a99",
-      "bytes": 5423
-    },
-    {
-      "path": "scripts/sanitize.sh",
-      "mode": "100755",
-      "sha256": "c70012a003fe274adc4da84d1de1556f5a36baa705b09f30a62df8a18f579fd2",
-      "bytes": 1633
-    },
-    {
-      "path": "scripts/setup-hooks.sh",
-      "mode": "100755",
-      "sha256": "3b7040c09495d9540ac51bda31ae5f5278e791e2ba58ca28dab985c2390f73fc",
-      "bytes": 897
+      "path": "services/praxis-switchboard/state.py",
+      "mode": "100644",
+      "sha256": "24aa4f5cc993fe9773ba11307a657ab7f1784d8a475550f728ebb1716d18f2f0",
+      "bytes": 7262
     },
     {
       "path": "skills/convert/SKILL.md",
       "mode": "100644",
-      "sha256": "a5210b17c924c5b7d78b7da4f0717862025bd1497bb87885831a85ac1388ba38",
-      "bytes": 8802
+      "sha256": "b69452782a0de82e3b2efc741c2c8cda78030502cf274a3d760ee8c074e64ed3",
+      "bytes": 8771
     },
     {
       "path": "skills/convert/manifest-entry.json",
       "mode": "100644",
-      "sha256": "56b0847a757a75e5df1a17aa8f33212ca64f38dc10049a6d47bcf93c95b2bcdf",
-      "bytes": 945
+      "sha256": "f0e047ab3aeba8544cb49ae93a5c1844385f4e117a8cb065560a0599cf499a7c",
+      "bytes": 406
+    },
+    {
+      "path": "skills/orca-dispatch/session_usage.py",
+      "mode": "100644",
+      "sha256": "6f9baf0c999085bcc813ae72d0311b1a2b563ad80066c0883ea62954e2e15bc1",
+      "bytes": 16470
     },
     {
       "path": "skills/paper-fetch/SKILL.md",
       "mode": "100644",
-      "sha256": "60a1298b5b957878bff2c2fd6e81651c41dd793ce389114ecc095f4c7749c0ac",
-      "bytes": 6914
+      "sha256": "a75390a1112f3ec6feb5cfdc7652912e0e69975c2c71bae664467a72ab1991fe",
+      "bytes": 6838
     },
     {
       "path": "skills/paper-fetch/manifest-entry.json",
       "mode": "100644",
-      "sha256": "cad27eb28eef46cd16406ac3053a1a9d9170ee89621672f96a038a8a40fb5f56",
-      "bytes": 1131
+      "sha256": "18789a7c68c4648eaf0947944ecf74b943ceefa198c18c2215b2698c230db148",
+      "bytes": 491
     },
     {
       "path": "skills/reading/SKILL.md",
       "mode": "100644",
-      "sha256": "521b2a71137e6b16216ef48e85c16725fa50eee65b1f01948681621e2d0147ea",
-      "bytes": 9008
+      "sha256": "93e0db10d5ca5d6e3a15a761a321792f902291eaa099803e6006573a542cb5d6",
+      "bytes": 10962
     },
     {
       "path": "skills/reading/manifest-entry.json",
       "mode": "100644",
-      "sha256": "8c3ddc8c93ab82d11c790ab15c4ef3fb5c3a94de2a647b56525dbc5924923f5b",
-      "bytes": 819
+      "sha256": "543d5d9e1df5ffb41735e5b600ba06deaeb1bc24b576c1f472f48b0fdee8e5ec",
+      "bytes": 375
     },
     {
       "path": "skills/research-survey/SKILL.md",
       "mode": "100644",
-      "sha256": "39730288f3d2a07be937e40b511a03cd646413412af4e56ebee6cc61dd4a7f4f",
-      "bytes": 11026
+      "sha256": "dcc84881cb381aed41ce4e32ca86ec2c99400c8208b5bf62135cc079654328a2",
+      "bytes": 11441
     },
     {
       "path": "skills/research-survey/manifest-entry.json",
       "mode": "100644",
-      "sha256": "fee38a16e89baf75cc9a476a58d033cb642846a988b5b2030b78922bef733102",
-      "bytes": 1066
+      "sha256": "e3d79ca577ea258415e5b85b88274fe1f9cc0829b84435503517db06d4f8ff1d",
+      "bytes": 404
     },
     {
       "path": "skills/vault-graph/SKILL.md",
       "mode": "100644",
-      "sha256": "22ef966305138016140a2c2fe726760004d9c377cb7c6094c0318fa748955551",
-      "bytes": 9046
+      "sha256": "206a135d61c3623221b623ed3e165ccff1b18a51ff272a85ad063776014580fe",
+      "bytes": 9002
     },
     {
       "path": "skills/vault-graph/manifest-entry.json",
       "mode": "100644",
-      "sha256": "0c48465f8bf14f5b83409f779dfea76833068a04aedfb4d2ffa47d9091af98cf",
-      "bytes": 906
+      "sha256": "0600d2824abcc7747480b63a65b734409affa56699853ebf74351f0227b8ea75",
+      "bytes": 420
     },
     {
       "path": "skills/vault-semantic/SKILL.md",
       "mode": "100644",
-      "sha256": "88ec4fbad243bc2be4a0e5099fd59d02aead9a1ed6cc186dd0a643e2ee19fe2f",
-      "bytes": 7785
+      "sha256": "331051a786cc8e3e0000c39f1a97dbc7f51be40852ee4fa088cbec8633e91860",
+      "bytes": 10964
     },
     {
       "path": "skills/vault-semantic/manifest-entry.json",
       "mode": "100644",
-      "sha256": "2864c23985dfd1906e14a188fb135e4cc361a502b07e0d0ce9dee0d8fe501d41",
-      "bytes": 795
+      "sha256": "5d111ecc1b607083799a82c0229e206dcaf4d504cce64abc355d95f5f7a65659",
+      "bytes": 391
     },
     {
       "path": "slash-commands/convert.md",

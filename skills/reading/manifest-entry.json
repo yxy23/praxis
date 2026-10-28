@@ -14,16 +14,6 @@
     "zotero",
     "filesystem"
   ],
-  "preconditions": [
-    "Zotero running with Local API on port 23119",
-    "Zotero MCP available",
-    "vault has a papers/ folder for processed notes",
-    "vault has a paper-note template the skill can read"
-  ],
-  "constraints": [
-    "always pass use_pdf_extraction=true to zotero_get_annotations \u2014 never false",
-    "annotation count must match between extraction and final note \u2014 every reader annotation appears verbatim"
-  ],
   "category": "research",
   "cluster": "research-toolkit",
   "skill_path": "~/.claude/skills/reading/SKILL.md"

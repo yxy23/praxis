@@ -14,19 +14,6 @@
     "zotero",
     "web_fetch"
   ],
-  "preconditions": [
-    "Zotero running with Local API on port 23119",
-    "Zotero MCP available",
-    "Semantic Scholar API reachable",
-    "vault has system/memory/agents/research-survey/reading-list.md (created on first run if absent)"
-  ],
-  "constraints": [
-    "never fabricate citations \u2014 only papers actually returned by API or Zotero",
-    "reading-list.md is append-only; each run adds a dated section",
-    "Semantic Scholar rate limit: 100 req per 5 min (no key for this volume)",
-    "always pass use_pdf_extraction=true to Zotero annotation calls",
-    "graceful degradation: if Scite.ai unavailable, fall back to Semantic Scholar only"
-  ],
   "category": "research",
   "cluster": "research-toolkit",
   "skill_path": "~/.claude/skills/research-survey/SKILL.md"
