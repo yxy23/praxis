@@ -1,0 +1,32 @@
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local state / scratch
+/tmp/
+/scratch/
+*.local
+
+# User-specific config (install script reads from env or ~/.praxis-config.sh)
+~/.praxis-config.sh
+.user-config.sh
+.praxis-config.sh
+
+# Local engine dependencies and rehearsal state
+/.praxis-engine/
+/.praxis-rehearsal/
+
+# Sanitization scratch files (never commit)
+*.sanitize-scratch.md
+
+# Private leak-pattern list (real names) — never committed to the public repo
+scripts/.leak-patterns.local
+scripts/.sanitize-rules.local

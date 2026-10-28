@@ -1,19 +1,17 @@
 {
   "name": "vault-semantic",
-  "version": "2026-08-21",
+  "version": "4.5-public",
+  "tier": 1,
   "triggers": [
     "/vault-semantic",
-    "semantic search",
-    "semantic retrieval",
-    "find similar",
-    "what's like",
-    "semantically similar"
+    "$vault-semantic"
   ],
   "tools": [
-    "filesystem",
-    "obsidian-cli"
+    "Read",
+    "Bash"
   ],
   "category": "research",
-  "cluster": "research-methods",
-  "skill_path": "~/.claude/skills/vault-semantic/SKILL.md"
+  "cluster": "_solo",
+  "skill_path": "~/.claude/skills/vault-semantic/SKILL.md",
+  "knowledge_path": "system/memory/agents/vault-semantic/KNOWLEDGE.md"
 }

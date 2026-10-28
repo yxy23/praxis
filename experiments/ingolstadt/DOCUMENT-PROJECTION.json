@@ -1,0 +1,1617 @@
+{
+  "status": "scientific document projection prepared; original source hashes and exact line omissions retained",
+  "documents": [
+    {
+      "path": "analysis/ada/AUD1 execution protocol.md",
+      "source_sha256": "4b78848837d9f678072f764a2d9199ec366f7a64aa88f271bdb1fe2f625d4f2f",
+      "public_sha256": "4b78848837d9f678072f764a2d9199ec366f7a64aa88f271bdb1fe2f625d4f2f",
+      "source_bytes": 11854,
+      "public_bytes": 11854,
+      "changed_lines": 0
+    },
+    {
+      "path": "analysis/ada/Analysis contract and execution plan.md",
+      "source_sha256": "ea6c5bf93e5ee1c7d6bd91ba9747884d608c1983a778bfb5128b22bbead6358d",
+      "public_sha256": "4c80f87e778f96edec18b25741a24e60b49201b79957c67d7398ba259ded1025",
+      "source_bytes": 35893,
+      "public_bytes": 35831,
+      "changed_lines": 1
+    },
+    {
+      "path": "analysis/ada/chronology.md",
+      "source_sha256": "e00ad283865bd6fdf71763433d4f00c68e407cb71109d0bf2c940f4aec274ed7",
+      "public_sha256": "7fb43bbf505ae094ef25ceab67788cd30db668a397e4626a638970cc2b292740",
+      "source_bytes": 25568,
+      "public_bytes": 25608,
+      "changed_lines": 2
+    },
+    {
+      "path": "analysis/avery/phase2-analysis/REPRODUCE.md",
+      "source_sha256": "b0e29fc57081e3addf4bd756a4bd8854779da5a5d40727b5e47a03a71f5a1d05",
+      "public_sha256": "b0e29fc57081e3addf4bd756a4bd8854779da5a5d40727b5e47a03a71f5a1d05",
+      "source_bytes": 4177,
+      "public_bytes": 4177,
+      "changed_lines": 0
+    },
+    {
+      "path": "analysis/esther/Economy and identification reconciliation 2026-10-23.md",
+      "source_sha256": "4b271bfc5dedd3cfeaa2bd634ed867b3c5f32e1c6d9bd4418e8c67d75b8329e2",
+      "public_sha256": "cd943194caf1301679d6fe4d2e7f4253b59f61548f9c7bbc4808c3930cadd89d",
+      "source_bytes": 38746,
+      "public_bytes": 38238,
+      "changed_lines": 1
+    },
+    {
+      "path": "analysis/scully/phase2-reproduction/findings.md",
+      "source_sha256": "a2e0fd9811c142b180114df27352517c7b97dbabb6f94828f06fcd283587f9e1",
+      "public_sha256": "ca563128036e79dc4ae5b06f6b1b387b8a4163770de2f2241c23fe5ba2997718",
+      "source_bytes": 7944,
+      "public_bytes": 7673,
+      "changed_lines": 1
+    },
+    {
+      "path": "analysis/toby/b2-aud1-coding/coding-interpretation-note.md",
+      "source_sha256": "04114648a72ba58a9c30bf7af9365f5b717d63dfd3b557dfc04256f85207376a",
+      "public_sha256": "04114648a72ba58a9c30bf7af9365f5b717d63dfd3b557dfc04256f85207376a",
+      "source_bytes": 12495,
+      "public_bytes": 12495,
+      "changed_lines": 0
+    },
+    {
+      "path": "analysis/toby/b2-aud1-coding/early-exposure-and-correction-record.md",
+      "source_sha256": "99edc922fe8e939c7b6b835e497b4bc4cc1ed6366464217204b8d9f43c931bc5",
+      "public_sha256": "99edc922fe8e939c7b6b835e497b4bc4cc1ed6366464217204b8d9f43c931bc5",
+      "source_bytes": 4376,
+      "public_bytes": 4376,
+      "changed_lines": 0
+    },
+    {
+      "path": "analysis/toby/b2-aud1-coding/prior-exposure-declaration.md",
+      "source_sha256": "13999b6a30115ea448510a7b0eddfed1f080bf837dde7bbc692c02a6b05d70c3",
+      "public_sha256": "07e71539ac19df187436ec5878395ea99f8937080256675f6f984d46fa9cca44",
+      "source_bytes": 3232,
+      "public_bytes": 3206,
+      "changed_lines": 1
+    },
+    {
+      "path": "decisions/DEC-20261018-ICIS-HIDDEN-DOMAINS-ECONOMY.md",
+      "source_sha256": "f3757fd584e0e085e014ddcfd916b463fb6292b542d5f4041349670fba98fe92",
+      "public_sha256": "f3757fd584e0e085e014ddcfd916b463fb6292b542d5f4041349670fba98fe92",
+      "source_bytes": 4921,
+      "public_bytes": 4921,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261018-ICIS-HIDDEN-DOMAINS.md",
+      "source_sha256": "062249180247930d883d7a0404690452e5bf7d0a2def842a319c90db5b2a748b",
+      "public_sha256": "246b9fd2011579b116f7bcf7ac58d371750d4a5462c4cca165721762f0746abc",
+      "source_bytes": 5374,
+      "public_bytes": 5235,
+      "changed_lines": 1
+    },
+    {
+      "path": "decisions/DEC-20261018-ICIS-REPAIR-AND-GO.md",
+      "source_sha256": "79e1b4a63d728198a21998bb9433d943cea833fdbff2b418cf419f520a4f72aa",
+      "public_sha256": "79e1b4a63d728198a21998bb9433d943cea833fdbff2b418cf419f520a4f72aa",
+      "source_bytes": 2926,
+      "public_bytes": 2926,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-OPTION-1-OBSERVATION-DOSE-ADDENDUM-1.md",
+      "source_sha256": "ea2f0757aca1a907737bd85d5c03cde426d00c41ad2dd53f9abbfa97d6c686bd",
+      "public_sha256": "ea2f0757aca1a907737bd85d5c03cde426d00c41ad2dd53f9abbfa97d6c686bd",
+      "source_bytes": 6175,
+      "public_bytes": 6175,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-OPTION-1-OBSERVATION-DOSE.md",
+      "source_sha256": "7fdd2da7e446d5cc58f5eb82b80f07c1703cb092c68b17f183f55caa9fb1d0b3",
+      "public_sha256": "7fdd2da7e446d5cc58f5eb82b80f07c1703cb092c68b17f183f55caa9fb1d0b3",
+      "source_bytes": 5127,
+      "public_bytes": 5127,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-OPTION-2-HARD-CRITERION-ADDENDUM-1.md",
+      "source_sha256": "ed76a8c977ee458524501b19b31f0700f39c7ff3c5ecfbca96fe2c6c3c013d9e",
+      "public_sha256": "ed76a8c977ee458524501b19b31f0700f39c7ff3c5ecfbca96fe2c6c3c013d9e",
+      "source_bytes": 5485,
+      "public_bytes": 5485,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-OPTION-2-HARD-CRITERION.md",
+      "source_sha256": "1ddbd7045b6057fcebcc4bf7d9254342ae5e7ee7c3f74a43c0801003498075cc",
+      "public_sha256": "1ddbd7045b6057fcebcc4bf7d9254342ae5e7ee7c3f74a43c0801003498075cc",
+      "source_bytes": 6700,
+      "public_bytes": 6700,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-Q4-IDENTIFICATION-ADDENDUM-1.md",
+      "source_sha256": "d1c8f5bcbee58f730920a6245fafb21dd4ec19af01a54245877c1f0c69b1939a",
+      "public_sha256": "d1c8f5bcbee58f730920a6245fafb21dd4ec19af01a54245877c1f0c69b1939a",
+      "source_bytes": 3504,
+      "public_bytes": 3504,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-Q4-IDENTIFICATION.md",
+      "source_sha256": "cd82e1804dd66b806cd9f15924a9369bf7238b5f4a1c4dd581d0682654f6c789",
+      "public_sha256": "cd82e1804dd66b806cd9f15924a9369bf7238b5f4a1c4dd581d0682654f6c789",
+      "source_bytes": 5582,
+      "public_bytes": 5582,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-Q6-ANSWER-CHANNEL-ADDENDUM-1.md",
+      "source_sha256": "f37fc2d16634929143ef660f6ceb1b29cbb78fda33eea6889c427465d3592abf",
+      "public_sha256": "f37fc2d16634929143ef660f6ceb1b29cbb78fda33eea6889c427465d3592abf",
+      "source_bytes": 2820,
+      "public_bytes": 2820,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-Q6-ANSWER-CHANNEL.md",
+      "source_sha256": "53c024b1659dfe886bdbcca3a79485fd69dbedcb8508409bd55f40477bec4cdc",
+      "public_sha256": "53c024b1659dfe886bdbcca3a79485fd69dbedcb8508409bd55f40477bec4cdc",
+      "source_bytes": 8201,
+      "public_bytes": 8201,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-ROUTE-1-ACTOR-REPAIR-ADDENDUM-1.md",
+      "source_sha256": "1d76335f1b7e7d3f7eec93a900ca2c563ef537f6a145922e300203d9ca349de5",
+      "public_sha256": "c8a6a5433683b878ceca3ce7f8a352cf29f13b31a32a28a52096f6d072c2fe60",
+      "source_bytes": 4471,
+      "public_bytes": 4491,
+      "changed_lines": 1
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-ROUTE-1-ACTOR-REPAIR-ADDENDUM-2.md",
+      "source_sha256": "7aec11c3cc6d5ed5c044989012ffa729e8bcae47f0efe4785619a3718ad9ad3f",
+      "public_sha256": "894e8c3a6a0a70a720c54ce82291539719bc8333fd2a77aef38c9bd80a268fd5",
+      "source_bytes": 4901,
+      "public_bytes": 4921,
+      "changed_lines": 1
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-ROUTE-1-ACTOR-REPAIR.md",
+      "source_sha256": "e4f66e513b95178a2c9b74b818e278b119da6e11dcb45559779453746b7dd720",
+      "public_sha256": "46e59641520628854a20c8fdd52b7fa8960ee9c2f9457b9610eabea9e05c9033",
+      "source_bytes": 4287,
+      "public_bytes": 4307,
+      "changed_lines": 1
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-1.md",
+      "source_sha256": "b43938f961d240a10e83b6c0cd25785059981a3684beb295433ef2d5a9fa3d2c",
+      "public_sha256": "b43938f961d240a10e83b6c0cd25785059981a3684beb295433ef2d5a9fa3d2c",
+      "source_bytes": 4207,
+      "public_bytes": 4207,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-10.md",
+      "source_sha256": "377040a75f5221953cac63e1b1a931e64f16d6cbf04e30d172883b2811f20e50",
+      "public_sha256": "377040a75f5221953cac63e1b1a931e64f16d6cbf04e30d172883b2811f20e50",
+      "source_bytes": 6385,
+      "public_bytes": 6385,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-11.md",
+      "source_sha256": "69da46e518098b6e59b5d4603003eac0d666f04dfcecd6d1fc0841a049bf3eee",
+      "public_sha256": "69da46e518098b6e59b5d4603003eac0d666f04dfcecd6d1fc0841a049bf3eee",
+      "source_bytes": 6231,
+      "public_bytes": 6231,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-12.md",
+      "source_sha256": "8dc9b6d324f08873a0ef85a1005e65a480a9082fabc47a332d899dd85d6da9ee",
+      "public_sha256": "8dc9b6d324f08873a0ef85a1005e65a480a9082fabc47a332d899dd85d6da9ee",
+      "source_bytes": 9847,
+      "public_bytes": 9847,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-13.md",
+      "source_sha256": "240797599f16572e84d44eb2011276321ac8c77aaca0450f0be863a4696c7966",
+      "public_sha256": "240797599f16572e84d44eb2011276321ac8c77aaca0450f0be863a4696c7966",
+      "source_bytes": 7240,
+      "public_bytes": 7240,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-14.md",
+      "source_sha256": "b293d36ed099ec707171be84dab67316e980a3daf501ad07e59959ea31f4069e",
+      "public_sha256": "b293d36ed099ec707171be84dab67316e980a3daf501ad07e59959ea31f4069e",
+      "source_bytes": 11064,
+      "public_bytes": 11064,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-15.md",
+      "source_sha256": "2d831d1cef4d748ec1961d7713fd62b1cafc800bad97d2ca8d91e097a66e5123",
+      "public_sha256": "2d831d1cef4d748ec1961d7713fd62b1cafc800bad97d2ca8d91e097a66e5123",
+      "source_bytes": 12215,
+      "public_bytes": 12215,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-2.md",
+      "source_sha256": "609ac44e5e9f5a234671d727c992bff63a275e87cc536dd7d0a827d1d4b19b28",
+      "public_sha256": "609ac44e5e9f5a234671d727c992bff63a275e87cc536dd7d0a827d1d4b19b28",
+      "source_bytes": 3168,
+      "public_bytes": 3168,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-4.md",
+      "source_sha256": "2942227643a1e4fcd05d473a6ce6407e86d99e4177af88b600796acd3806df5c",
+      "public_sha256": "2942227643a1e4fcd05d473a6ce6407e86d99e4177af88b600796acd3806df5c",
+      "source_bytes": 3207,
+      "public_bytes": 3207,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-5.md",
+      "source_sha256": "977150c724c1e2de3acc80a12a6617870b8c7290baacbc9c372ff84a377f7a99",
+      "public_sha256": "977150c724c1e2de3acc80a12a6617870b8c7290baacbc9c372ff84a377f7a99",
+      "source_bytes": 3472,
+      "public_bytes": 3472,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-6.md",
+      "source_sha256": "39ab684d8728e0238bf20e6d4c356c7b7b332c203d21f0b0a2f4c602422094bc",
+      "public_sha256": "39ab684d8728e0238bf20e6d4c356c7b7b332c203d21f0b0a2f4c602422094bc",
+      "source_bytes": 4807,
+      "public_bytes": 4807,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-7.md",
+      "source_sha256": "6696faa1b0f796e16d3a8f190073a3e642ac9f08b0e73ca0f0160924cf36ee57",
+      "public_sha256": "6696faa1b0f796e16d3a8f190073a3e642ac9f08b0e73ca0f0160924cf36ee57",
+      "source_bytes": 6399,
+      "public_bytes": 6399,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-8.md",
+      "source_sha256": "4cec22b08305e2f55b6b65f8e02bdd3d9681b1fe84f8d9a59fbd03868951684c",
+      "public_sha256": "4cec22b08305e2f55b6b65f8e02bdd3d9681b1fe84f8d9a59fbd03868951684c",
+      "source_bytes": 5398,
+      "public_bytes": 5398,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000-ADDENDUM-9.md",
+      "source_sha256": "a8947a50b4d60d294a17f36214b0e7d74ce4d22e8afa5fbc3d09325c9e9e947e",
+      "public_sha256": "a8947a50b4d60d294a17f36214b0e7d74ce4d22e8afa5fbc3d09325c9e9e947e",
+      "source_bytes": 6978,
+      "public_bytes": 6978,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-CEILING-3000.md",
+      "source_sha256": "4216258aa9d7bfd837e430ccf30205451006697ed9999d7286a27d467eaf60a7",
+      "public_sha256": "4216258aa9d7bfd837e430ccf30205451006697ed9999d7286a27d467eaf60a7",
+      "source_bytes": 5202,
+      "public_bytes": 5202,
+      "changed_lines": 0
+    },
+    {
+      "path": "decisions/DEC-20261019-ICIS-STUDY-STOP-FRIDAY.md",
+      "source_sha256": "4dff0c2f4fbc7a2e026833d22f5293109f3bd38ccdc085f39c4bc43963af3ab8",
+      "public_sha256": "4dff0c2f4fbc7a2e026833d22f5293109f3bd38ccdc085f39c4bc43963af3ab8",
+      "source_bytes": 2210,
+      "public_bytes": 2210,
+      "changed_lines": 0
+    },
+    {
+      "path": "scientific-handoffs/ada-icis-hidden-domains-sap-2026-10-18.md",
+      "source_sha256": "179486cb5b84710d57ff1209d5046c249706fdc6ac284c21271b57490578bec0",
+      "public_sha256": "1cfac46a5f3ff4c25a4ee0c9660b4e20b19cefa3b2506e7b7d0813d3e5693551",
+      "source_bytes": 37521,
+      "public_bytes": 37108,
+      "changed_lines": 4
+    },
+    {
+      "path": "scientific-handoffs/athena-icis-hidden-domains-dose-spec-2026-10-19.md",
+      "source_sha256": "e4f3c31f04e10729da9f9545b1e32f680462781638eb6ff05a13354432ec8439",
+      "public_sha256": "3983f046035aae3ab32c2faa57f28301f26b4965a203389df0010af1e67ad11e",
+      "source_bytes": 35066,
+      "public_bytes": 34733,
+      "changed_lines": 6
+    },
+    {
+      "path": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "public_sha256": "1af49520549d6b03926f7b222dd9ab726217a68ddc4fca8bb564449a532693f3",
+      "source_bytes": 58465,
+      "public_bytes": 57507,
+      "changed_lines": 15
+    },
+    {
+      "path": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "public_sha256": "d03cb7e561b1c36cee3985520651ee209a7fee176a23f060061a4686d518106a",
+      "source_bytes": 58203,
+      "public_bytes": 55322,
+      "changed_lines": 37
+    },
+    {
+      "path": "scientific-handoffs/avery-icis-hidden-domains-dose-build-2026-10-19.md",
+      "source_sha256": "7e6659fcf2c5da124ae0f89f2c058362874b87969419fc557dee94ec610a7e6f",
+      "public_sha256": "c98f1fd7912cb633574e934e023a13d8c203e2c2c8bf8e65870582eb83fd9ac0",
+      "source_bytes": 19723,
+      "public_bytes": 19190,
+      "changed_lines": 3
+    },
+    {
+      "path": "scientific-handoffs/avery-icis-hidden-domains-qualification-attempt5-2026-10-19.md",
+      "source_sha256": "9ddcc208a2a62d447acf8ad34ed8e5f28a77a5fb70a95eae64330f5d0a7ad0df",
+      "public_sha256": "a5c5a59c3c0debbf2c7ee7891ad890916a75fbff54481ff4ac72df6d3775e7fc",
+      "source_bytes": 18000,
+      "public_bytes": 17936,
+      "changed_lines": 2
+    },
+    {
+      "path": "scientific-handoffs/avery-icis-hidden-domains-study-build-2026-10-19.md",
+      "source_sha256": "5a519faf82c274304b4fd7041a1c3549a44daf9ecf479a38a2482eeddae2b114",
+      "public_sha256": "372d67a5eb4211148810bef89d24671e9189a3d8fe71bb841191ccaa96709c4a",
+      "source_bytes": 16238,
+      "public_bytes": 15750,
+      "changed_lines": 3
+    },
+    {
+      "path": "scientific-handoffs/esther-icis-hidden-domains-dose-check-2026-10-19.md",
+      "source_sha256": "55c0a7fa1bad7db5350f23acec473eb6cb1a09650352d20c216500f9748d30f8",
+      "public_sha256": "73a09f51618021b13809816c7a1dd5c7cbea7c138673dd310de129e52494f208",
+      "source_bytes": 21502,
+      "public_bytes": 21337,
+      "changed_lines": 3
+    },
+    {
+      "path": "scientific-handoffs/esther-icis-hidden-domains-economy-check-2026-10-19.md",
+      "source_sha256": "b07034ac16eeb77ebf9bd57eecef60d4b527b63e7bce1d17820a964c37835755",
+      "public_sha256": "da3565cb9a97d9456d7eaf9ab400ec378008086b88e518d8f23ea2c6f5e1ae7d",
+      "source_bytes": 30002,
+      "public_bytes": 29861,
+      "changed_lines": 3
+    },
+    {
+      "path": "scientific-handoffs/esther-icis-hidden-domains-hard-check-2026-10-19.md",
+      "source_sha256": "a730314d540ba19762ddc968309e7ee77ad40dca6add15c6b47946ce055c93cc",
+      "public_sha256": "2873727ed7b1719ca1e5a92436421179c7df493011bc9cf123462b8c4c52fdf3",
+      "source_bytes": 26337,
+      "public_bytes": 26118,
+      "changed_lines": 3
+    },
+    {
+      "path": "scientific-handoffs/scully-icis-hidden-domains-hard-recheck-2026-10-19.md",
+      "source_sha256": "7cece5c13fb04954aa57b1e9ea642e066ae4f58932c20d5f22a8ae8aeafba4a1",
+      "public_sha256": "dcb2d6e0b4fafc86947763c7dae9dab8d587ebec81fb33037f1ecb163664bdd3",
+      "source_bytes": 21550,
+      "public_bytes": 21228,
+      "changed_lines": 8
+    },
+    {
+      "path": "scientific-handoffs/toby-icis-hidden-domains-dose-test-2026-10-19.md",
+      "source_sha256": "38805531a48e3b0f0c2851aa989f1ca24ce832fb0cb1288e3b8d490f875b1b64",
+      "public_sha256": "fbd8b87c0223ae8550f1cd580d9879e1f310958f0a7b0003da71131608593402",
+      "source_bytes": 18308,
+      "public_bytes": 18227,
+      "changed_lines": 3
+    },
+    {
+      "path": "scientific-handoffs/toby-icis-hidden-domains-economy-test-2026-10-19.md",
+      "source_sha256": "124eab411fb4207cba31959c9b63366aa47f13d5ede00af0ea3c830b6e6cadf6",
+      "public_sha256": "4424552dcfbcfac5c2e3e2d83b0120ad3a154657752918c2bb7549b56e873cf9",
+      "source_bytes": 21371,
+      "public_bytes": 21326,
+      "changed_lines": 1
+    },
+    {
+      "path": "scientific-handoffs/toby-icis-hidden-domains-hard-test-2026-10-19.md",
+      "source_sha256": "2aa59718650b8268cbfcc530857a3b6a37fc6344d559375206f25af2ec089f8d",
+      "public_sha256": "9aad6ef366fbd58e77eb860537947785b3ed6898e6fb7ff4ca92fe888a589bab",
+      "source_bytes": 19098,
+      "public_bytes": 19010,
+      "changed_lines": 2
+    },
+    {
+      "path": "scientific-handoffs/toby-icis-hidden-domains-q6-channel-2026-10-19.md",
+      "source_sha256": "5555e34c612d8aa7984c0102f646826b4d0021b46db61d71ec90884b70e3c081",
+      "public_sha256": "5555e34c612d8aa7984c0102f646826b4d0021b46db61d71ec90884b70e3c081",
+      "source_bytes": 15991,
+      "public_bytes": 15991,
+      "changed_lines": 0
+    },
+    {
+      "path": "scientific-handoffs/toby-icis-hidden-domains-route1-check-2026-10-19.md",
+      "source_sha256": "bae805acc7d94de26e887306b93de5bbb481e5c58b98f18f2491e5ba6a3eb1a1",
+      "public_sha256": "8eac2b54209574a22cab778b654dcf26269a4bdcebabe961b01958ec8fbf59c5",
+      "source_bytes": 12589,
+      "public_bytes": 12527,
+      "changed_lines": 1
+    },
+    {
+      "path": "scientific-handoffs/toby-icis-hidden-domains-route1b-check-2026-10-19.md",
+      "source_sha256": "bce970fbd9d0e3c62939903bf4a9c9627736d48fba0115ac301b9fd19d1ca31f",
+      "public_sha256": "eeaebff611b6a71da2cb1a3be54269da41aec1d524a37f410217852f0010b150",
+      "source_bytes": 11146,
+      "public_bytes": 11084,
+      "changed_lines": 1
+    },
+    {
+      "path": "scientific-handoffs/toby-icis-hidden-domains-route1c-check-2026-10-19.md",
+      "source_sha256": "9b4ab4e1c0d8d507920042aad42ec3c86c14b0ca74b691f5497211a204f0dca7",
+      "public_sha256": "0630eeb0fa5a69968ecc3150398eb7e032ead97a4391f758fe46276832f56ac6",
+      "source_bytes": 10930,
+      "public_bytes": 10868,
+      "changed_lines": 1
+    },
+    {
+      "path": "scientific-handoffs/toby-icis-hidden-domains-study-check-2026-10-19.md",
+      "source_sha256": "be79104f4613420fe9ef752b6486602e6e1cc3018478825e39039f96e03a9965",
+      "public_sha256": "b8676d322eea4da9cce7498de66ad4c3cb1f11218e1df45fb6eda4d3e13867ca",
+      "source_bytes": 15499,
+      "public_bytes": 15437,
+      "changed_lines": 1
+    },
+    {
+      "path": "study-record/commission.md",
+      "source_sha256": "b3336cbd0b9bf51f6776d7a66a47fed6cadbea9ceefc4c335023c4e1a3359025",
+      "public_sha256": "fc40369fc5dc9f698877447dd762a4e01733b6f3d6b0bd797ba142c698d739a3",
+      "source_bytes": 13051,
+      "public_bytes": 13060,
+      "changed_lines": 1
+    }
+  ],
+  "changes": [
+    {
+      "file": "analysis/ada/Analysis contract and execution plan.md",
+      "source_file_sha256": "ea6c5bf93e5ee1c7d6bd91ba9747884d608c1983a778bfb5128b22bbead6358d",
+      "source_line": 35,
+      "source_line_sha256": "055c1eb742952f970b4a5bb864e8f964382d95e5cbafd551bbfb70f09c3ed515",
+      "public_line_sha256": "cfec21fb467a149a9b5cf8648d35034526ba4acab600744e07f2952e6a1e9313",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "analysis/ada/chronology.md",
+      "source_file_sha256": "e00ad283865bd6fdf71763433d4f00c68e407cb71109d0bf2c940f4aec274ed7",
+      "source_line": 17,
+      "source_line_sha256": "a02569cf1d2685470da1e386aa4e22bae2d506f595cfa83291ba65c3617ee534",
+      "public_line_sha256": "60d5c53efa54455629f21a799a19e3737fc15d244222c275adf2434c092dd854",
+      "reasons": [
+        "personal-state remark; decision authority retained"
+      ]
+    },
+    {
+      "file": "analysis/ada/chronology.md",
+      "source_file_sha256": "e00ad283865bd6fdf71763433d4f00c68e407cb71109d0bf2c940f4aec274ed7",
+      "source_line": 18,
+      "source_line_sha256": "5ac2edf8071da751bd8eace6ffb5872bc8c64a9a7035e13e278f3a9633d7e737",
+      "public_line_sha256": "cfffbf3b0ddb580da9cd1534c179c50db8c76b3a0bb46acd2d8121bc53149397",
+      "reasons": [
+        "personal-state remark; decision authority retained"
+      ]
+    },
+    {
+      "file": "analysis/esther/Economy and identification reconciliation 2026-10-23.md",
+      "source_file_sha256": "4b271bfc5dedd3cfeaa2bd634ed867b3c5f32e1c6d9bd4418e8c67d75b8329e2",
+      "source_line": 189,
+      "source_line_sha256": "1d87c2cc2b136453997c44593cf698aff4553782ece8202c4f813431e620b305",
+      "public_line_sha256": "8273a21bab0ea530a928db6915e53e5b2ddd4923154a0a64624e2e5a6ecb4e75",
+      "reasons": [
+        "private skill/loader/correspondence workflow context; scientific coverage retained"
+      ]
+    },
+    {
+      "file": "analysis/scully/phase2-reproduction/findings.md",
+      "source_file_sha256": "a2e0fd9811c142b180114df27352517c7b97dbabb6f94828f06fcd283587f9e1",
+      "source_line": 53,
+      "source_line_sha256": "e851218a9ffe93368deebedfb73ff7bb8e0661cd3cf45ac1e1732f763569769d",
+      "public_line_sha256": "91b2401ffb9903f440b00647fac07ceda2e74dd80d27295747ed967626e35e72",
+      "reasons": [
+        "private personal/editorial/email workflow checklist"
+      ]
+    },
+    {
+      "file": "analysis/toby/b2-aud1-coding/prior-exposure-declaration.md",
+      "source_file_sha256": "13999b6a30115ea448510a7b0eddfed1f080bf837dde7bbc692c02a6b05d70c3",
+      "source_line": 8,
+      "source_line_sha256": "5e80c6177c233011539dd001ab6b9bb3be7a75dd7dd8d66d86c2af31c1f2e987",
+      "public_line_sha256": "262c666f3b23be409233ea0319dc0e03213239b75b59ceb3dd057e958e683333",
+      "reasons": [
+        "private workflow and administrative boilerplate"
+      ]
+    },
+    {
+      "file": "decisions/DEC-20261018-ICIS-HIDDEN-DOMAINS.md",
+      "source_file_sha256": "062249180247930d883d7a0404690452e5bf7d0a2def842a319c90db5b2a748b",
+      "source_line": 26,
+      "source_line_sha256": "2523f71a6f513ed7d890c0ac40a60834741316ec09ce95bb216dc2f7ded5dfcf",
+      "public_line_sha256": "89b73b8658d27f2ec41188bd579083276506b0bdc4f7ea19d01bbd93130c32ae",
+      "reasons": [
+        "off-ledger consultation summary"
+      ]
+    },
+    {
+      "file": "decisions/DEC-20261019-ICIS-ROUTE-1-ACTOR-REPAIR-ADDENDUM-1.md",
+      "source_file_sha256": "1d76335f1b7e7d3f7eec93a900ca2c563ef537f6a145922e300203d9ca349de5",
+      "source_line": 3,
+      "source_line_sha256": "304a77a66390e5754521d6c9df0fd6ce48713dbe7a4d34719f582550ab034151",
+      "public_line_sha256": "d5afe70a796611ab39fed09498d324fa347fa0e7c84d9c3ebc39c86930473145",
+      "reasons": [
+        "personal-state remark; decision authority retained"
+      ]
+    },
+    {
+      "file": "decisions/DEC-20261019-ICIS-ROUTE-1-ACTOR-REPAIR-ADDENDUM-2.md",
+      "source_file_sha256": "7aec11c3cc6d5ed5c044989012ffa729e8bcae47f0efe4785619a3718ad9ad3f",
+      "source_line": 3,
+      "source_line_sha256": "48b34f7b41c130baf76800d19a28919b168189e6f4583c5b4b14193135fc9a36",
+      "public_line_sha256": "600a0c0a372982db00646f9a3f1cea3764180137892f36b40be6008941d0996f",
+      "reasons": [
+        "personal-state remark; decision authority retained"
+      ]
+    },
+    {
+      "file": "decisions/DEC-20261019-ICIS-ROUTE-1-ACTOR-REPAIR.md",
+      "source_file_sha256": "e4f66e513b95178a2c9b74b818e278b119da6e11dcb45559779453746b7dd720",
+      "source_line": 23,
+      "source_line_sha256": "0a7b9968bd33b99a5c458eab204f0b5300b4640bae4de78bbbf2d922a4b67e60",
+      "public_line_sha256": "25fe339a313860693d2356d8f59e423a9d99e4b0b674b42f6c1863194ecc32b3",
+      "reasons": [
+        "personal-state remark; decision authority retained"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/ada-icis-hidden-domains-sap-2026-10-18.md",
+      "source_file_sha256": "179486cb5b84710d57ff1209d5046c249706fdc6ac284c21271b57490578bec0",
+      "source_line": 13,
+      "source_line_sha256": "04d0edd3231f57f5242378bcfacab67194cba07d42f1ac3af39b88f216df2c29",
+      "public_line_sha256": "c2d9aa0506c06218536c4889a29dc59eb4bc5ffddadc3b21a16a36e4d6ee6345",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/ada-icis-hidden-domains-sap-2026-10-18.md",
+      "source_file_sha256": "179486cb5b84710d57ff1209d5046c249706fdc6ac284c21271b57490578bec0",
+      "source_line": 18,
+      "source_line_sha256": "ec43d9fe6fef77eb1ee4680ebd452b51a880b9b29294e62f29f830142d5141c8",
+      "public_line_sha256": "e90f3886e191654c9319a1faa614dfa8eb13a4334185ff6f184fbe2ef0526709",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/ada-icis-hidden-domains-sap-2026-10-18.md",
+      "source_file_sha256": "179486cb5b84710d57ff1209d5046c249706fdc6ac284c21271b57490578bec0",
+      "source_line": 149,
+      "source_line_sha256": "d164c8cda3d74ef9c7ce31dd892084fc292865c99459dba6a462309b0ab6387c",
+      "public_line_sha256": "5c8b8ead5673bb5a1606d92c75823b9851aeaa3bc2abb4346e9f9d2b63f5b08c",
+      "reasons": [
+        "opaque local library locator and private loader orientation; citation/query/coverage retained"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/ada-icis-hidden-domains-sap-2026-10-18.md",
+      "source_file_sha256": "179486cb5b84710d57ff1209d5046c249706fdc6ac284c21271b57490578bec0",
+      "source_line": 163,
+      "source_line_sha256": "9b65f1a690dcefa97fbbbc0dfbe2416b35734d9a3c4810785c77253d1178b84f",
+      "public_line_sha256": "a83e834a86ffbdcbff9dec0d25ab2a60451412940267f913dfa0415bfdf0f1d8",
+      "reasons": [
+        "private runtime memory locator/orientation"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-dose-spec-2026-10-19.md",
+      "source_file_sha256": "e4f3c31f04e10729da9f9545b1e32f680462781638eb6ff05a13354432ec8439",
+      "source_line": 9,
+      "source_line_sha256": "adce1b31e87455e38774a4e2a77591b923915f24504ee3b32a48adf102436bd6",
+      "public_line_sha256": "888fc1b32447f73949a4a60a8a0fddd968c4ae6d59c73fa5161267b680df035a",
+      "reasons": [
+        "private workflow context"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-dose-spec-2026-10-19.md",
+      "source_file_sha256": "e4f3c31f04e10729da9f9545b1e32f680462781638eb6ff05a13354432ec8439",
+      "source_line": 15,
+      "source_line_sha256": "04d0edd3231f57f5242378bcfacab67194cba07d42f1ac3af39b88f216df2c29",
+      "public_line_sha256": "c2d9aa0506c06218536c4889a29dc59eb4bc5ffddadc3b21a16a36e4d6ee6345",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-dose-spec-2026-10-19.md",
+      "source_file_sha256": "e4f3c31f04e10729da9f9545b1e32f680462781638eb6ff05a13354432ec8439",
+      "source_line": 18,
+      "source_line_sha256": "5995820b3951473d2c0b565e73df28c6cdfe0896c41f2d38caa8cb0521e05a7c",
+      "public_line_sha256": "131fc1a2435a7272b44eae040454426174e86894d063a82e0a0663e0c5d1e678",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-dose-spec-2026-10-19.md",
+      "source_file_sha256": "e4f3c31f04e10729da9f9545b1e32f680462781638eb6ff05a13354432ec8439",
+      "source_line": 135,
+      "source_line_sha256": "698a5447c3340702f4960399ff9ac30be8c37bfbccd1476f6a68e278877e8699",
+      "public_line_sha256": "3a92672b331c4b96f29e7b31c690cfcf60e1bcda02a92a0c57e12b0c2da90892",
+      "reasons": [
+        "private runtime/configuration source binding"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-dose-spec-2026-10-19.md",
+      "source_file_sha256": "e4f3c31f04e10729da9f9545b1e32f680462781638eb6ff05a13354432ec8439",
+      "source_line": 136,
+      "source_line_sha256": "96ca6b1f281b40367cc00bb2f04b537e5045e48bd172ce44467ce8659a8b972f",
+      "public_line_sha256": "67786a5e1454f16619a9977b70de71601106aa1f4d18bb82931ede1fe4f98d60",
+      "reasons": [
+        "private runtime/configuration source binding"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-dose-spec-2026-10-19.md",
+      "source_file_sha256": "e4f3c31f04e10729da9f9545b1e32f680462781638eb6ff05a13354432ec8439",
+      "source_line": 137,
+      "source_line_sha256": "e15c6696168144918bed3097b26d756ce9f9a6b46b0590dc6d2d71d282862dba",
+      "public_line_sha256": "380d8028a7e7d944e057c0a32437703256fa496c3f711c918ed785239531cd11",
+      "reasons": [
+        "private runtime/configuration source binding"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 13,
+      "source_line_sha256": "04d0edd3231f57f5242378bcfacab67194cba07d42f1ac3af39b88f216df2c29",
+      "public_line_sha256": "c2d9aa0506c06218536c4889a29dc59eb4bc5ffddadc3b21a16a36e4d6ee6345",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 22,
+      "source_line_sha256": "a0baa7c9fc5f0e34c80429426394362986f57ef5565fcf6d064a6f74400373ed",
+      "public_line_sha256": "325b68f4ecf4d2b83669341ab551a8e1a7effb44b04c443aeb00227a76777592",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 26,
+      "source_line_sha256": "7f93da4221a33be828e03acf4461e9f44709f448d31f081ba79167edcb0e906c",
+      "public_line_sha256": "fd80876cc56152acfa52ac3a736bcfb2c03195ee6870d9d716101f5025a06932",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 32,
+      "source_line_sha256": "2440cbf0c65265c2c26d973fec3d76a3056fd60fbe10e102145c40cbb7e36ccf",
+      "public_line_sha256": "9af1e0fb9d591c6c21757b75fc2b7459223a227e3faf23946b12b52c841e12e3",
+      "reasons": [
+        "private workflow context"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 264,
+      "source_line_sha256": "03dc48f51be5ae53570f0e100277494d4c7c216790da5582cfbc1e1801f02e05",
+      "public_line_sha256": "f254c6a2cb8c1124df1036ca572f8b1c2afdc23be76c937ce9fced988681a7c2",
+      "reasons": [
+        "private workflow context"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 268,
+      "source_line_sha256": "29867198a51a9f94912b8b5abcfc2c7e030122801913bf1b9b16eebe95a2da32",
+      "public_line_sha256": "f1c39abbbd1657933a8159156a8e75cfca5c56741c4f56b5137df21a97f2dad7",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 269,
+      "source_line_sha256": "eba8148031784d4e10a0919b919c9f6af83f19b95b4f0daa87ff7939c8bc63f6",
+      "public_line_sha256": "1408707469b0ea6ee99f6f3c13132f426e12806054cc0213e59d62c466832992",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 270,
+      "source_line_sha256": "8aa52e48d1fe54f41ac0c37c2b92b8bcae8e03577e20df4d8e5cee9e6685aecf",
+      "public_line_sha256": "26d0ff8a833a0ea7685f40201743c723ef33166f3788ec08cc4521bea9998c9b",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 271,
+      "source_line_sha256": "2d6b7b8517c72e9490b84e4c1e928f9b36948bf218929765378d600dae024aaf",
+      "public_line_sha256": "56d237b1dc02a3542a3c8dc060be276619512978bbb5f5b99a178d5b6bf053f7",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 272,
+      "source_line_sha256": "c8c6a17c14a33ef2d4524f21b53e155f41b1ab4f99c3e031f4c61d56d13bce20",
+      "public_line_sha256": "24457f3a7f1bdc25227393460fa8dd759eb8c5808ead2644f6aa5bf7374abd5d",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 273,
+      "source_line_sha256": "d12289140ea102822776156576371cb4678f43dff64c2bcf3cf3756d39a78735",
+      "public_line_sha256": "22a9cc3110ae0dbcbf9e8aaa5a9cfb9a78c3d41c04c5b6c1493c74fbbddcd0d2",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 274,
+      "source_line_sha256": "78afcb68e457154c9f6bfc3fe4ad8f2df448e0b2719f45991a88827beb73f0c3",
+      "public_line_sha256": "18f4e6027bb6fa086b75589af7662ca3a936e1ec7581f2b1b4be4a2a219c2807",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 275,
+      "source_line_sha256": "8031da66e0e0e8f5d8d444a7b118a0d22e69e571e155767b45abc40a96f2e33e",
+      "public_line_sha256": "53525e7fe0e7409d3b40de2189dabaa068d5d6847f8a3a2e2e0538aea92dce16",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 276,
+      "source_line_sha256": "640028f4bb06de4a25d0a3a02fde0b3508d6794f68f63bbd50652a77154c53fc",
+      "public_line_sha256": "e9f379222c02ae52884fdb7a34c5b4f590c2b9bff34920501bb0025856dae4fb",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-economy-2026-10-19.md",
+      "source_file_sha256": "16531d73a38689f141bd7361b3605ae278e5d8763741d724a4c5307811fa9c33",
+      "source_line": 277,
+      "source_line_sha256": "6911030abf8d80886a973ae70f141b6623e7f9110460191cc9665a4f04e79865",
+      "public_line_sha256": "687dca68acd67a5071bad9297530dfdc9474fd501c61aa06e98291153400b179",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 13,
+      "source_line_sha256": "04d0edd3231f57f5242378bcfacab67194cba07d42f1ac3af39b88f216df2c29",
+      "public_line_sha256": "c2d9aa0506c06218536c4889a29dc59eb4bc5ffddadc3b21a16a36e4d6ee6345",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 15,
+      "source_line_sha256": "5995820b3951473d2c0b565e73df28c6cdfe0896c41f2d38caa8cb0521e05a7c",
+      "public_line_sha256": "131fc1a2435a7272b44eae040454426174e86894d063a82e0a0663e0c5d1e678",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 28,
+      "source_line_sha256": "154275d41545b8bab7de73ddbf6c0673d8aae446fda1bf0436ad2e2c30ccc47d",
+      "public_line_sha256": "76d97fc8fffab11801f59bfec0bad359c2351a39ff0434ff85ef7f0bc2791430",
+      "reasons": [
+        "private workflow context"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 216,
+      "source_line_sha256": "1ef644c24ff786175219cef99ebbd3082a6f6c139a6647db752fe76ca15ccb17",
+      "public_line_sha256": "8def48b609f4c6bfb849266dd2feca6c2c6bf071d807a9fa3b4c0f893949877b",
+      "reasons": [
+        "private workflow context"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 220,
+      "source_line_sha256": "698a5447c3340702f4960399ff9ac30be8c37bfbccd1476f6a68e278877e8699",
+      "public_line_sha256": "3a92672b331c4b96f29e7b31c690cfcf60e1bcda02a92a0c57e12b0c2da90892",
+      "reasons": [
+        "private runtime/configuration source binding"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 221,
+      "source_line_sha256": "96ca6b1f281b40367cc00bb2f04b537e5045e48bd172ce44467ce8659a8b972f",
+      "public_line_sha256": "67786a5e1454f16619a9977b70de71601106aa1f4d18bb82931ede1fe4f98d60",
+      "reasons": [
+        "private runtime/configuration source binding"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 222,
+      "source_line_sha256": "e15c6696168144918bed3097b26d756ce9f9a6b46b0590dc6d2d71d282862dba",
+      "public_line_sha256": "380d8028a7e7d944e057c0a32437703256fa496c3f711c918ed785239531cd11",
+      "reasons": [
+        "private runtime/configuration source binding"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 223,
+      "source_line_sha256": "a6c0111bab894260f4312faede3e8364bc385f2a4479d1971201862ee4215037",
+      "public_line_sha256": "0b4bbda94d41488a728b3a2d0bb893c3010a194cb8e42ee91689f4e667611b37",
+      "reasons": [
+        "private runtime/configuration source binding"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 224,
+      "source_line_sha256": "ebd053a3c3ee9ebf2ed24182ebe357027c376705cd78f2640c6f0bdfd7d537f3",
+      "public_line_sha256": "e29c297b592a76426e1f3cf90f5d8a165bbb8a6ef1e6625e18e0237b1060f6aa",
+      "reasons": [
+        "private runtime/configuration source binding"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 225,
+      "source_line_sha256": "53fc95fad0fbab7fc8ba9347e79f4d90229950e041470a3693f24eca6b203db2",
+      "public_line_sha256": "3c6e948806781f97c10f32e45c67177e729f5f6091b1cee9fe86947f8a6817bc",
+      "reasons": [
+        "private runtime/configuration source binding"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 226,
+      "source_line_sha256": "5e15a166621425af086a1f78c30835676092fee1001eaab2ee4df3e839b20d97",
+      "public_line_sha256": "44c5c4cbf6d45cb0fa4ce617e7d98d32fac50febe2d8d9d721e0886ab18f95a8",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 227,
+      "source_line_sha256": "091677cbe1142c8252bc8f9b41dba512ff80b552cace432125e49a5a81375f71",
+      "public_line_sha256": "0d9dd5246ed86cb0ba57bda326593e627ce23f1b516b52b32a75e417e52049f0",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 228,
+      "source_line_sha256": "5d1afbeaf3764e06925f2218c000c6e9df412212bcb2140cfc2d2365c29070e8",
+      "public_line_sha256": "8256ce40b7741d0eeb155629ea459b4d8df91a1b3c046679f6b0b342a106a29a",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 229,
+      "source_line_sha256": "27c71cb585c86f9742424b2d8fa601a4b77a95f2c1b9487da8659fdeced12667",
+      "public_line_sha256": "496830a28c28ea6f13e017236cf75346a3168b4ce5475bea90e8ff31bbb94bfd",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 230,
+      "source_line_sha256": "eba8148031784d4e10a0919b919c9f6af83f19b95b4f0daa87ff7939c8bc63f6",
+      "public_line_sha256": "1408707469b0ea6ee99f6f3c13132f426e12806054cc0213e59d62c466832992",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 231,
+      "source_line_sha256": "444e2c82fc9c40dacda127ae39dd797381592d2437e51fe853c10198a719f40a",
+      "public_line_sha256": "0b61d770d7396429e5042b1e05e0884942e134fc87af48e0de6869529afd9cd3",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 232,
+      "source_line_sha256": "74794b6c586f76d8e395c8fb2661ca552f034c34d6710b54a05d484f2921b3a6",
+      "public_line_sha256": "bd1ee02832a143f92b5e610217459da76ccf466155002cd1f3bc2105f8062152",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 233,
+      "source_line_sha256": "36bd4e7c717c36ffc91cc9a53e5d29a5fe2d118088948e14c04fef0c9d9fa28f",
+      "public_line_sha256": "3e9f6830fe3422e1b2bb027a4ccc2bbf487c4c9d71c51ef17be1d6bf3c9b9030",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 234,
+      "source_line_sha256": "f90c5af8d7e031595c08b58978871239dc974707116893bb6080354e6fdc5008",
+      "public_line_sha256": "14e6b7ad7ada7ae4d3813cf7294b14ad96046a70f662bff028c9212b44166060",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 235,
+      "source_line_sha256": "bd5361365a27360a87c99769558462754580d4c874447edf3a639ea8e3136f0d",
+      "public_line_sha256": "b33ddd921c38f620b6bf19145f321dd97c27d0c32c252dd73a6402c6fb9ce7de",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 236,
+      "source_line_sha256": "d42c0af931ad402e6eb1e953455a773c837cc38cc6eb570e8d0088b9effbd8ef",
+      "public_line_sha256": "477f024aaac7d68cbccc4e2116c43b8f24ce17e56d27f8b64e76ad845c7df020",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 237,
+      "source_line_sha256": "8aa52e48d1fe54f41ac0c37c2b92b8bcae8e03577e20df4d8e5cee9e6685aecf",
+      "public_line_sha256": "26d0ff8a833a0ea7685f40201743c723ef33166f3788ec08cc4521bea9998c9b",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 238,
+      "source_line_sha256": "ce5d4ec35f29cfea11f3f2f05cfc08516434eb2d07700747a1b73eb4bd2cd839",
+      "public_line_sha256": "7133fd7d20822add08853e02e253150d2f37186b62bccac8dee562feee54c241",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 239,
+      "source_line_sha256": "43f7f76ae8977e50ce3555e0dc9216ecde127e719eb961592abfd5b9fc8cd198",
+      "public_line_sha256": "0128404efcdbda847d997014c3fed168eccccb4f229c6f5db8f9663d1984de89",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 240,
+      "source_line_sha256": "2d6b7b8517c72e9490b84e4c1e928f9b36948bf218929765378d600dae024aaf",
+      "public_line_sha256": "56d237b1dc02a3542a3c8dc060be276619512978bbb5f5b99a178d5b6bf053f7",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 241,
+      "source_line_sha256": "27ea16b690a58a35a57eb2c02ebae058e89cd5b68f70f99f65557068d9a0a577",
+      "public_line_sha256": "4bb1fbe5374f2235be57c303e37f8982096d81068e622da312530739e42bc4dd",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 242,
+      "source_line_sha256": "dff3b0a2b1135fbf6149b12ad6a8135fdaa4b505546c7f12694a1e1a459b7556",
+      "public_line_sha256": "a19dc72c93ed83f01afc8db2aaf603b276977d62f3a3d01a5e598132db48da65",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 243,
+      "source_line_sha256": "fa1fce9b132195f38101e8f931b8a0bd5e440fcf3be758e62b10292d2f757774",
+      "public_line_sha256": "3c9945727aa6191dd56b18ce98c1f979379b0ef82cc95fd2668d85c6e2bec0b5",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 244,
+      "source_line_sha256": "c8c6a17c14a33ef2d4524f21b53e155f41b1ab4f99c3e031f4c61d56d13bce20",
+      "public_line_sha256": "24457f3a7f1bdc25227393460fa8dd759eb8c5808ead2644f6aa5bf7374abd5d",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 245,
+      "source_line_sha256": "d12289140ea102822776156576371cb4678f43dff64c2bcf3cf3756d39a78735",
+      "public_line_sha256": "22a9cc3110ae0dbcbf9e8aaa5a9cfb9a78c3d41c04c5b6c1493c74fbbddcd0d2",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 246,
+      "source_line_sha256": "88805dcd6d1efe2aaa827416314130b9b74558d91f404ec4213de9d1d51153d1",
+      "public_line_sha256": "7554367e7d27d14671ab1afa2a23421742c0ae6399c28fb6591421ae9ae7938a",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 247,
+      "source_line_sha256": "9b03e2cf92a94220eb752592501055e46fd8dfd2ae97bdb544624741f633b5e4",
+      "public_line_sha256": "77965ecf1557a7de1a1874568f2ad56cdecd5189ab17b3293e63d7d35cc3bea0",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 248,
+      "source_line_sha256": "a056bdbd4a242a14f25b9ebcf12b0a9a58029f51f7443abc512fbda3268cd6a7",
+      "public_line_sha256": "5d836ccd79ed66ada05f9ba80336b16af843f6e26e78fa11bea42f246bdd9835",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 249,
+      "source_line_sha256": "5eaeb00969a2be7b4c86968a334c29a9a42187d47ad3f824f08fe968eee5c957",
+      "public_line_sha256": "1d39839de8911f1ff187197aabfba7c8725ebe1c92ed1c1978be631b2db84889",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 250,
+      "source_line_sha256": "226345cb591c5ebab821fdcca7465b1f9e90afa72e4160d6126e4a09f1977155",
+      "public_line_sha256": "4311e3e12e9cb64c2e879971cd333e671b87bbc38b0998ae7009ff14c9cddcd3",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 251,
+      "source_line_sha256": "ddae097d8148351fb5349e251ac838e81a0de818c04a1a8ba051812ef085ace7",
+      "public_line_sha256": "66008a1a2c4ac55226065998536d8b62b41a535801ac42225f6e73f34ad36d36",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/athena-icis-hidden-domains-hard-spec-2026-10-19.md",
+      "source_file_sha256": "795b7f4f6e163bdb448cbb35225846383d7b3f8dc58866e332a3f175d8de2dca",
+      "source_line": 252,
+      "source_line_sha256": "87e7523dc0af71018af2ea54c1ae94eab43af90370180a199a6f140e54bb9cc8",
+      "public_line_sha256": "0a34221c3829d5d7f83c9e53b2120ef713805073167a7c6a8ef1f0eb4e41ce90",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/avery-icis-hidden-domains-dose-build-2026-10-19.md",
+      "source_file_sha256": "7e6659fcf2c5da124ae0f89f2c058362874b87969419fc557dee94ec610a7e6f",
+      "source_line": 11,
+      "source_line_sha256": "cfaaeffb6465aac4e4f6d311a8d5aaed65c58671509243d94b3efd3433371f5e",
+      "public_line_sha256": "8ecd2de936a6f499641b6584acd81c78f3c7c2087f8aa4be704b3c3eb560005d",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/avery-icis-hidden-domains-dose-build-2026-10-19.md",
+      "source_file_sha256": "7e6659fcf2c5da124ae0f89f2c058362874b87969419fc557dee94ec610a7e6f",
+      "source_line": 12,
+      "source_line_sha256": "85f226e1dac2034361a4198e652e9974cda268546834c1141a03f76c6cd4dc7d",
+      "public_line_sha256": "0e67d5431a7fefb6c80058998e46fe0004599022730b4bc0982bb92d411edb27",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/avery-icis-hidden-domains-dose-build-2026-10-19.md",
+      "source_file_sha256": "7e6659fcf2c5da124ae0f89f2c058362874b87969419fc557dee94ec610a7e6f",
+      "source_line": 142,
+      "source_line_sha256": "63df95fbb68dfc0240f82a7c2f0f076126c4f54c8adbcfc7cccf6cd2392f21ee",
+      "public_line_sha256": "262c666f3b23be409233ea0319dc0e03213239b75b59ceb3dd057e958e683333",
+      "reasons": [
+        "private workflow and administrative boilerplate"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/avery-icis-hidden-domains-qualification-attempt5-2026-10-19.md",
+      "source_file_sha256": "9ddcc208a2a62d447acf8ad34ed8e5f28a77a5fb70a95eae64330f5d0a7ad0df",
+      "source_line": 7,
+      "source_line_sha256": "ff7c4908bc6419718767d39ab111ac8e553a1d50e8001ff4433e62dd5eef9b52",
+      "public_line_sha256": "b3fe6ba3817563f55e8bd371a24038d434f8586813560fda79bfcc50bcb8ca7f",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/avery-icis-hidden-domains-qualification-attempt5-2026-10-19.md",
+      "source_file_sha256": "9ddcc208a2a62d447acf8ad34ed8e5f28a77a5fb70a95eae64330f5d0a7ad0df",
+      "source_line": 9,
+      "source_line_sha256": "ab2466a355d890774716fd37d927bdb40f5a4b5189a1db87dece7e20d14ebab0",
+      "public_line_sha256": "36cc41b74b8ef3e0c56f3df221d53b72882acbe4367ee30af16f4f4a61607567",
+      "reasons": [
+        "private workflow context"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/avery-icis-hidden-domains-study-build-2026-10-19.md",
+      "source_file_sha256": "5a519faf82c274304b4fd7041a1c3549a44daf9ecf479a38a2482eeddae2b114",
+      "source_line": 11,
+      "source_line_sha256": "cfaaeffb6465aac4e4f6d311a8d5aaed65c58671509243d94b3efd3433371f5e",
+      "public_line_sha256": "8ecd2de936a6f499641b6584acd81c78f3c7c2087f8aa4be704b3c3eb560005d",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/avery-icis-hidden-domains-study-build-2026-10-19.md",
+      "source_file_sha256": "5a519faf82c274304b4fd7041a1c3549a44daf9ecf479a38a2482eeddae2b114",
+      "source_line": 12,
+      "source_line_sha256": "85f226e1dac2034361a4198e652e9974cda268546834c1141a03f76c6cd4dc7d",
+      "public_line_sha256": "0e67d5431a7fefb6c80058998e46fe0004599022730b4bc0982bb92d411edb27",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/avery-icis-hidden-domains-study-build-2026-10-19.md",
+      "source_file_sha256": "5a519faf82c274304b4fd7041a1c3549a44daf9ecf479a38a2482eeddae2b114",
+      "source_line": 115,
+      "source_line_sha256": "85db8b43de08cc86ecb7274fed48cc3ae631bfe3da9b01e3cc6d04e154837693",
+      "public_line_sha256": "262c666f3b23be409233ea0319dc0e03213239b75b59ceb3dd057e958e683333",
+      "reasons": [
+        "private workflow and administrative boilerplate"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/esther-icis-hidden-domains-dose-check-2026-10-19.md",
+      "source_file_sha256": "55c0a7fa1bad7db5350f23acec473eb6cb1a09650352d20c216500f9748d30f8",
+      "source_line": 18,
+      "source_line_sha256": "931f3c532dece23c14f9836dc1620abfb87c0c6c2ade7a23fe66c51f5b53bc3b",
+      "public_line_sha256": "bd07b185f25a57ed3093829db15057567ee2659e9610723d776975cf06408cc8",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/esther-icis-hidden-domains-dose-check-2026-10-19.md",
+      "source_file_sha256": "55c0a7fa1bad7db5350f23acec473eb6cb1a09650352d20c216500f9748d30f8",
+      "source_line": 46,
+      "source_line_sha256": "ed975b4d1392c027d10b7fe6b8eb6d2aef64e829bea21f84e899ea32111f3ab4",
+      "public_line_sha256": "beb4349236811ec2dc389c4e247f0954e7999f04b6500308f333daf5b3c8ba2b",
+      "reasons": [
+        "private skill/orientation clause; scientific scope retained"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/esther-icis-hidden-domains-dose-check-2026-10-19.md",
+      "source_file_sha256": "55c0a7fa1bad7db5350f23acec473eb6cb1a09650352d20c216500f9748d30f8",
+      "source_line": 48,
+      "source_line_sha256": "76317dce9b76f8ab1a7a9e4f1a3c33c98bdff8360809da73988eda7c2581d42f",
+      "public_line_sha256": "4223d75881667a85e9d31ebe49c93250f22025ffc0e103944e2cf00437ebcc56",
+      "reasons": [
+        "temporary local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/esther-icis-hidden-domains-economy-check-2026-10-19.md",
+      "source_file_sha256": "b07034ac16eeb77ebf9bd57eecef60d4b527b63e7bce1d17820a964c37835755",
+      "source_line": 27,
+      "source_line_sha256": "575de6e1d27d6465a3f8504bf1d7b096cb0602cf4a54cfc7b6a624317e3447ff",
+      "public_line_sha256": "4ad3844ac94f1a0a83c5292aa75d2b7426796a4e049533f1fbe2c3f10a22db52",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/esther-icis-hidden-domains-economy-check-2026-10-19.md",
+      "source_file_sha256": "b07034ac16eeb77ebf9bd57eecef60d4b527b63e7bce1d17820a964c37835755",
+      "source_line": 45,
+      "source_line_sha256": "84e13b9d346992aabd8b3a937eb2b3754aced56cff1a3b18f808e5b9fdd09278",
+      "public_line_sha256": "80dec254807fc0fe6f1930dfde69f6b31f584bd25330465abd81231cae034d49",
+      "reasons": [
+        "private skill/orientation clause; scientific scope retained"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/esther-icis-hidden-domains-economy-check-2026-10-19.md",
+      "source_file_sha256": "b07034ac16eeb77ebf9bd57eecef60d4b527b63e7bce1d17820a964c37835755",
+      "source_line": 47,
+      "source_line_sha256": "2518d14fa356221e8b688713632be038709be9ee3a28ebd0033247f9041087f6",
+      "public_line_sha256": "dc181982df08f9c682e7cb8ce23ef176606f0e172e689cd8353e4a30738ef746",
+      "reasons": [
+        "temporary local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/esther-icis-hidden-domains-hard-check-2026-10-19.md",
+      "source_file_sha256": "a730314d540ba19762ddc968309e7ee77ad40dca6add15c6b47946ce055c93cc",
+      "source_line": 25,
+      "source_line_sha256": "6f76803d7ea9ebbdac3199ab787ed7f62fde158e36d882420ddaf78f50327602",
+      "public_line_sha256": "1ba943c5531ff8034051bcf7b13156c94c0b3d5264bd8d9bd4d1221ca8edde4d",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/esther-icis-hidden-domains-hard-check-2026-10-19.md",
+      "source_file_sha256": "a730314d540ba19762ddc968309e7ee77ad40dca6add15c6b47946ce055c93cc",
+      "source_line": 49,
+      "source_line_sha256": "86f1d811781daede421404da8eb59ee7a46b40a931f9a80aabadf60f217815c0",
+      "public_line_sha256": "dae946d1da028e2644a4b5fa812bd7e4824e3a2ded887ce723484b3fc236fef9",
+      "reasons": [
+        "private skill/orientation clause; scientific scope retained"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/esther-icis-hidden-domains-hard-check-2026-10-19.md",
+      "source_file_sha256": "a730314d540ba19762ddc968309e7ee77ad40dca6add15c6b47946ce055c93cc",
+      "source_line": 51,
+      "source_line_sha256": "26f2999c989f9377b4e4527a4c947109fa2e087b8dacb19c90655d68a9660134",
+      "public_line_sha256": "77b4ab056cfbe74575a31d80d288fff4b1020c24831b0255728ce5ffb47c07c6",
+      "reasons": [
+        "temporary local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/scully-icis-hidden-domains-hard-recheck-2026-10-19.md",
+      "source_file_sha256": "7cece5c13fb04954aa57b1e9ea642e066ae4f58932c20d5f22a8ae8aeafba4a1",
+      "source_line": 18,
+      "source_line_sha256": "e09c60f22b380fd9cb26803852d3c88c169517f6c0f010250b708b2ba0bafe3a",
+      "public_line_sha256": "454669b9c922e9b3dfb6a9ecf0b039e9602bdd652d4d9668b77d15dc47e5ab51",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/scully-icis-hidden-domains-hard-recheck-2026-10-19.md",
+      "source_file_sha256": "7cece5c13fb04954aa57b1e9ea642e066ae4f58932c20d5f22a8ae8aeafba4a1",
+      "source_line": 19,
+      "source_line_sha256": "ca06bf7e0c9f36e95b1b450bb6687710c16aee98cc44752747009a6320215992",
+      "public_line_sha256": "73ec3556f80880c9c07c1108a54be44866b34dd2d40854738b056284208cc4d5",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/scully-icis-hidden-domains-hard-recheck-2026-10-19.md",
+      "source_file_sha256": "7cece5c13fb04954aa57b1e9ea642e066ae4f58932c20d5f22a8ae8aeafba4a1",
+      "source_line": 21,
+      "source_line_sha256": "5b38c3ad19ca25b1174c9d4fd49bd9ba5b114be0a818a8394c350b087fd1592b",
+      "public_line_sha256": "f60c6e8b7b5cb635dc37e9b2b982041c45bbf48ee76347b68cd4c6ea2476565e",
+      "reasons": [
+        "temporary local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/scully-icis-hidden-domains-hard-recheck-2026-10-19.md",
+      "source_file_sha256": "7cece5c13fb04954aa57b1e9ea642e066ae4f58932c20d5f22a8ae8aeafba4a1",
+      "source_line": 34,
+      "source_line_sha256": "911c1e18f7ba59adcb89c2e59eb8d3ef0f3b9269474012b03c5002247ee80722",
+      "public_line_sha256": "f7cd16dee776e6fe4a71ed060346d0cfbf03fbd72e094d51eeb49e6f0399f9cd",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/scully-icis-hidden-domains-hard-recheck-2026-10-19.md",
+      "source_file_sha256": "7cece5c13fb04954aa57b1e9ea642e066ae4f58932c20d5f22a8ae8aeafba4a1",
+      "source_line": 46,
+      "source_line_sha256": "baea19e8b3d59a17241743afc28d70aa2ccd4430297787dd95845bee384a19e3",
+      "public_line_sha256": "91b2401ffb9903f440b00647fac07ceda2e74dd80d27295747ed967626e35e72",
+      "reasons": [
+        "private personal/editorial/email workflow checklist"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/scully-icis-hidden-domains-hard-recheck-2026-10-19.md",
+      "source_file_sha256": "7cece5c13fb04954aa57b1e9ea642e066ae4f58932c20d5f22a8ae8aeafba4a1",
+      "source_line": 47,
+      "source_line_sha256": "f64c450d79cc4f384a0452072db66a1eef227ac3ed99baaa78eed83fdf4cecb2",
+      "public_line_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "reasons": [
+        "private personal/editorial/email workflow checklist"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/scully-icis-hidden-domains-hard-recheck-2026-10-19.md",
+      "source_file_sha256": "7cece5c13fb04954aa57b1e9ea642e066ae4f58932c20d5f22a8ae8aeafba4a1",
+      "source_line": 48,
+      "source_line_sha256": "a41c8cf503813986eceb9e6a331e88eabd0c0edde4a1ca621d95b1a1751b0223",
+      "public_line_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "reasons": [
+        "private personal/editorial/email workflow checklist"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/scully-icis-hidden-domains-hard-recheck-2026-10-19.md",
+      "source_file_sha256": "7cece5c13fb04954aa57b1e9ea642e066ae4f58932c20d5f22a8ae8aeafba4a1",
+      "source_line": 49,
+      "source_line_sha256": "07826ab50b4ea80655db99b9f45672ce58b36935d4d8875764e2071fa2bbdf50",
+      "public_line_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "reasons": [
+        "private personal/editorial/email workflow checklist"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-dose-test-2026-10-19.md",
+      "source_file_sha256": "38805531a48e3b0f0c2851aa989f1ca24ce832fb0cb1288e3b8d490f875b1b64",
+      "source_line": 13,
+      "source_line_sha256": "931f3c532dece23c14f9836dc1620abfb87c0c6c2ade7a23fe66c51f5b53bc3b",
+      "public_line_sha256": "bd07b185f25a57ed3093829db15057567ee2659e9610723d776975cf06408cc8",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-dose-test-2026-10-19.md",
+      "source_file_sha256": "38805531a48e3b0f0c2851aa989f1ca24ce832fb0cb1288e3b8d490f875b1b64",
+      "source_line": 14,
+      "source_line_sha256": "5995820b3951473d2c0b565e73df28c6cdfe0896c41f2d38caa8cb0521e05a7c",
+      "public_line_sha256": "131fc1a2435a7272b44eae040454426174e86894d063a82e0a0663e0c5d1e678",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-dose-test-2026-10-19.md",
+      "source_file_sha256": "38805531a48e3b0f0c2851aa989f1ca24ce832fb0cb1288e3b8d490f875b1b64",
+      "source_line": 32,
+      "source_line_sha256": "a5a9565cd5dc280be5c90407b597b98139a65b528ce2f841a60488d762cae284",
+      "public_line_sha256": "c697f144e3662fc9a986dc87edea20ad1341f675ac1ce596d585a8558c74ddc3",
+      "reasons": [
+        "temporary local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-economy-test-2026-10-19.md",
+      "source_file_sha256": "124eab411fb4207cba31959c9b63366aa47f13d5ede00af0ea3c830b6e6cadf6",
+      "source_line": 20,
+      "source_line_sha256": "2e1bf72be293f03d4505a91575efee2fc4d2d30b8bf7b7a75ea73d6999c9ce22",
+      "public_line_sha256": "1126bccb9f26fe0fc3806133b825c283af75e142de80cb80a6f53de1ce8bb0c9",
+      "reasons": [
+        "private workflow context"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-hard-test-2026-10-19.md",
+      "source_file_sha256": "2aa59718650b8268cbfcc530857a3b6a37fc6344d559375206f25af2ec089f8d",
+      "source_line": 11,
+      "source_line_sha256": "214d5ce1e248484fca28d64b2f4be9edd59a52c59988b6aaab008f8fbcd68b6d",
+      "public_line_sha256": "b1108a0e0c7b702c76df639061b7365cb534768c66ddb4d4bcb59cf2e6c3fffc",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-hard-test-2026-10-19.md",
+      "source_file_sha256": "2aa59718650b8268cbfcc530857a3b6a37fc6344d559375206f25af2ec089f8d",
+      "source_line": 23,
+      "source_line_sha256": "fa0138de9e372a5becb0ace1de5518732ef69c8eaa10d237d1731681603c2eb8",
+      "public_line_sha256": "6fd7bb08df84a7fdf940e79e93a9417f732d661e8afda742f47c579b49e2aaf7",
+      "reasons": [
+        "temporary local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-route1-check-2026-10-19.md",
+      "source_file_sha256": "bae805acc7d94de26e887306b93de5bbb481e5c58b98f18f2491e5ba6a3eb1a1",
+      "source_line": 12,
+      "source_line_sha256": "ee0bdeddcd878e8839b6bf08591a1a6df78a7a8a0ccff195b66b009217f99e11",
+      "public_line_sha256": "33cd485155fb71deb318922e76c31c21f34127b4bdb6630504a6fd76be938510",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-route1b-check-2026-10-19.md",
+      "source_file_sha256": "bce970fbd9d0e3c62939903bf4a9c9627736d48fba0115ac301b9fd19d1ca31f",
+      "source_line": 13,
+      "source_line_sha256": "ee0bdeddcd878e8839b6bf08591a1a6df78a7a8a0ccff195b66b009217f99e11",
+      "public_line_sha256": "33cd485155fb71deb318922e76c31c21f34127b4bdb6630504a6fd76be938510",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-route1c-check-2026-10-19.md",
+      "source_file_sha256": "9b4ab4e1c0d8d507920042aad42ec3c86c14b0ca74b691f5497211a204f0dca7",
+      "source_line": 11,
+      "source_line_sha256": "b8a5a46dfffb11e0b0616572f21f0046326fb2b51b411d22346fda8f916daef1",
+      "public_line_sha256": "4ad5f913ea423821e840b48b4bfc4d983a1631ea8db0bd1c552064d6cbacd1d1",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "scientific-handoffs/toby-icis-hidden-domains-study-check-2026-10-19.md",
+      "source_file_sha256": "be79104f4613420fe9ef752b6486602e6e1cc3018478825e39039f96e03a9965",
+      "source_line": 7,
+      "source_line_sha256": "d960a11d3fdedbe22ace674a4ac5e05698ed9f62b4b09e2ba3a6a08484510660",
+      "public_line_sha256": "acd2d407c526f7c47d3b3d5c6d634469003f7dc0d447a99a16efe1a7c135147e",
+      "reasons": [
+        "private local path normalized"
+      ]
+    },
+    {
+      "file": "study-record/commission.md",
+      "source_file_sha256": "b3336cbd0b9bf51f6776d7a66a47fed6cadbea9ceefc4c335023c4e1a3359025",
+      "source_line": 5,
+      "source_line_sha256": "e1eff3fd11eedca5ef8fa9c41240d2b78543867d84f7db0c9bf229727c5472be",
+      "public_line_sha256": "6feb4f1e7110c3486e12235e6d2325635d0270172d09bf957da5dc90c1ebc1e9",
+      "reasons": [
+        "private local path normalized"
+      ]
+    }
+  ],
+  "remaining_review_indicators": [
+    {
+      "file": "decisions/DEC-20261018-ICIS-HIDDEN-DOMAINS.md",
+      "line": 7,
+      "line_sha256": "61377bd6e311228a4070e0f75909cf6846b3b42a1f1f4857ea26e549c876be2c",
+      "indicator": [
+        "Astra"
+      ]
+    },
+    {
+      "file": "decisions/DEC-20261018-ICIS-HIDDEN-DOMAINS.md",
+      "line": 11,
+      "line_sha256": "f7e5ca26c968c5ea10a4c9dc8b167dcdad935179da66ff388ec0ee158fb5c8e2",
+      "indicator": [
+        "Astra"
+      ]
+    },
+    {
+      "file": "decisions/DEC-20261018-ICIS-HIDDEN-DOMAINS.md",
+      "line": 24,
+      "line_sha256": "20c42ed159a8656b7822345f7b83b6717d67ca76a0dc282d8be67003ff31ae7c",
+      "indicator": [
+        "Astra"
+      ]
+    },
+    {
+      "file": "decisions/DEC-20261018-ICIS-HIDDEN-DOMAINS.md",
+      "line": 25,
+      "line_sha256": "ddb89706160b025d30cff9f9f79dce2b4c82777f98297236f1e2239d054bfeb4",
+      "indicator": [
+        "Astra"
+      ]
+    },
+    {
+      "file": "decisions/DEC-20261018-ICIS-HIDDEN-DOMAINS.md",
+      "line": 33,
+      "line_sha256": "c39fe690cd47b566ca785a100b8906cb610327c6eea0a8146a87cda0eba6d971",
+      "indicator": [
+        "Astra"
+      ]
+    },
+    {
+      "file": "decisions/DEC-20261019-ICIS-Q4-IDENTIFICATION.md",
+      "line": 14,
+      "line_sha256": "314a779f838d9bf9de09afcf8a0f595498a167e48dda289f50e5d948025b23c2",
+      "indicator": [
+        "Astra"
+      ]
+    }
+  ],
+  "reader_coverage": {
+    "source_reader_accepted": 36,
+    "source_reader_total": 41,
+    "source_reader_failure_class": "parse_or_binding",
+    "remaining_five_source_documents": "two complete direct preparer reads and three complete independent reviewer reads",
+    "additional_provenance_documents": 18,
+    "review_scope": "All 59 documents received privacy/category and exact omission review. This is not a claim of fresh mathematical validation of every scientific statement or that cited outside literature was fully read."
+  }
+}

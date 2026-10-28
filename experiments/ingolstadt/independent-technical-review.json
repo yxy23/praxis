@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "status": "passed_with_limits",
+  "reviewed_at_utc": "2026-10-28T22:11:14.177261+00:00",
+  "scope": "Finite scientific-journal projection, canonical/hash-chain algorithms, field commitments, split-zstd reconstruction and path safety. No scientific correctness review.",
+  "identity": {
+    "records": 1532391,
+    "original": {
+      "bytes": 75088281448,
+      "head": "1828d84d901471067a5058758954e64ce71dcdf14d37a687777d427e6cd8b402",
+      "original_unmodified": true,
+      "sha256": "7777ae1a4c10abcfa7ad354d216d7509530f8a1ef3b22486bb0122a685b64e02"
+    },
+    "public": {
+      "bytes": 75352240251,
+      "file": "journal.public.jsonl",
+      "head": "f8516e7dc7c793c4ce86f01f5094e79e751800a082c8aba6cbf897ce1b44d31e",
+      "sha256": "8d8f657d188645198eecf63e294b0a549228bfd70ae29eb5ba48daca277e3554"
+    },
+    "redactions": {
+      "file": "redactions.jsonl",
+      "local_path_fields_projected": 215,
+      "records_changed": 132,
+      "scientific_attribution_values_retained": 2,
+      "sha256": "4ecea9c9e81aa5e65445a38ecbd9483dcce89b7dccf5cc272513c6f141330949"
+    },
+    "compressed_stream_sha256": "c7e45db50e6e761d2a53d4477bbc67f64f7cf83700ef0aa116606a6ad4ab1c4a",
+    "compressed_bytes": 2481269121,
+    "parts": [
+      {
+        "file": "ingolstadt-journal.public.jsonl.zst.part-000",
+        "bytes": 1000000000,
+        "sha256": "27e24f74e45efec2de24d2656eebb58cb9829b6418cf747546f873f4484f6fd9",
+        "order": 0
+      },
+      {
+        "file": "ingolstadt-journal.public.jsonl.zst.part-001",
+        "bytes": 1000000000,
+        "sha256": "c47ddf176a2fc3510e58c794f0a6732b4b04da7fd7f6a0ec7edb354c8d2cf080",
+        "order": 1
+      },
+      {
+        "file": "ingolstadt-journal.public.jsonl.zst.part-002",
+        "bytes": 481269121,
+        "sha256": "b926de117f0cccdbffe1a39dc8ad5d078ec95457a5232ef09d4455473cfec819",
+        "order": 2
+      }
+    ]
+  },
+  "findings_resolved": [
+    {
+      "id": "J1",
+      "finding": "Verifier accepted declared map counts inconsistent with entries, duplicate pointers and out-of-range unused entries.",
+      "resolution": "Explicit range/count/uniqueness, pointer/value/hash metadata preflight added by owner; synthetic rejection checks pass."
+    },
+    {
+      "id": "J2",
+      "finding": "Part paths could escape release-assets or use symlinks, and uncompressed identity could contradict projection metadata.",
+      "resolution": "Owner added exact numbered basenames/order, unique names, size/hash shape, ordinary-file/parent checks and exact uncompressed identity match before child processes; synthetic rejection checks pass."
+    },
+    {
+      "id": "J3",
+      "finding": "Array JSON pointers used permissive integer conversion and source commitment sequence/schema types were implicit.",
+      "resolution": "Owner requires canonical array indices and exact source fields, true integer sequence, lowercase64-digit SHA256 fields. Negative/leading-zero aliases and boolean sequences refuse."
+    }
+  ],
+  "algorithm_review": {
+    "canonical_original": "audit_journal reserializes ordered seq,prev,event using compact ensure_ascii JSON with allow_nan=False, recomputes row SHA256 and compares the exact original line including appended hash/newline. Eight contiguous shard boundaries are reconciled to zero genesis, fixed expected size/count/head and separately computed whole-file SHA256.",
+    "projection": "Input source is read-only and globally identity-pinned. Unflagged event bytes copy exactly; flagged rows are recursively projected only by declared prefix transformations, retaining hash-pinned scientific attribution exceptions. A separate public chain includes each original seq/prev/hash commitment.",
+    "public_verification": "Checks public raw identity, sequence/previous hash, every public row digest, original commitment continuity and every unchanged original row hash; changed fields must equal exact map replacements. Changed original whole-row hashes cannot be recomputed from public fields alone.",
+    "compression": "One zstd stream is emitted into contiguous ordered parts below1GiB; each part and joined stream are hashed. Verification streams decoded bytes into public chain verification rather than extracting filesystem entries.",
+    "path_safety": "Actual three part paths are unique ordinary files with exact numbered basenames. Hardened public verifier refuses traversal, symlinks and identity mismatch.215 logical archive locators use only run,study-record,decisions and have no parent traversal component; README identifies them as non-executable locators."
+  },
+  "limits": [
+    "Full75GB original scanning and public decompression were not unnecessarily repeated. Their existing complete receipts were inspected and identity-bound; this reviewer freshly hashed the2.48GB compressed stream and read every changed original/public row by indexed seek.",
+    "Full-stream receipts predate metadata/schema/path preflight hardening. The archive bytes remain unchanged; current tool revisions were read and exercised through24 focused synthetic cases, and every actual changed-row field commitment was independently checked.",
+    "Original field values remain private. The public field map provides value commitments and exact replacements; it does not permit reconstruction or complete public recomputation of changed original rows.",
+    "Hashes provide integrity relative to trusted reference metadata, not signatures, external anchoring, factual truth, scientific validity or independent substantive review.",
+    "Privacy coverage depends on the original complete scan and owner category review; this technical review did not independently reread every scientific provider response or audit unrelated private-room conversation ledgers.",
+    "The private compression/projection recipes use operator-supplied bounded local inputs; only the two hardened verification scripts are distributed with public metadata. No archive bytes or live experiment state were edited, no native workers launched, and no upload performed by this reviewer."
+  ],
+  "private_review_receipt_sha256": "7f7926188e1d17d236aa5330c3491cb75b76547b9ce06b99f99992155491a282",
+  "verification_tools": [
+    {
+      "file": "verify_public_journal.py",
+      "sha256": "5c153dc42d8e7ad651b00f133f1745392411de89c3371267f2de6e0a01005f44",
+      "bytes": 5231
+    },
+    {
+      "file": "verify_parts.py",
+      "sha256": "0714045259c38b3ab3a8a70c8ca07b9b2858b1d8e4add5a445c0fe10f76884bf",
+      "bytes": 3652
+    }
+  ],
+  "focused_synthetic_results": {
+    "cases": 24,
+    "valid_accepted": 5,
+    "invalid_rejected": 19
+  },
+  "publication_status": "prepared and independently reviewed; not uploaded"
+}

@@ -1,0 +1,20 @@
+{
+  "verified": true,
+  "parts": 3,
+  "compressed_bytes": 2481269121,
+  "compressed_stream_sha256": "c7e45db50e6e761d2a53d4477bbc67f64f7cf83700ef0aa116606a6ad4ab1c4a",
+  "decompressed_chain": {
+    "verified": true,
+    "records": 1532391,
+    "public_bytes": 75352240251,
+    "public_sha256": "8d8f657d188645198eecf63e294b0a549228bfd70ae29eb5ba48daca277e3554",
+    "public_head": "f8516e7dc7c793c4ce86f01f5094e79e751800a082c8aba6cbf897ce1b44d31e",
+    "original_commitment_head": "1828d84d901471067a5058758954e64ce71dcdf14d37a687777d427e6cd8b402",
+    "unchanged_original_rows_recomputed": 1532259,
+    "changed_rows_verified_against_redaction_map": 132,
+    "elapsed_seconds": 100.6825578212738,
+    "limits": "Changed original row contents remain withheld; verification is integrity and identity, not scientific validity."
+  },
+  "elapsed_seconds": 100.72142386436462,
+  "publication_status": "locally prepared and verified; not uploaded"
+}

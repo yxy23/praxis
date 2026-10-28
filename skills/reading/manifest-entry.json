@@ -1,20 +1,17 @@
 {
   "name": "reading",
-  "version": "2026-04-29",
+  "version": "4.5-public",
+  "tier": 1,
   "triggers": [
     "/reading",
-    "process paper",
-    "process collection",
-    "paper note",
-    "annotation",
-    "zotero import",
-    "read this paper"
+    "$reading"
   ],
   "tools": [
-    "zotero",
-    "filesystem"
+    "Read",
+    "Bash"
   ],
-  "category": "research",
-  "cluster": "research-toolkit",
-  "skill_path": "~/.claude/skills/reading/SKILL.md"
+  "category": "source-method",
+  "cluster": "_solo",
+  "skill_path": "~/.claude/skills/reading/SKILL.md",
+  "knowledge_path": "system/memory/agents/reading/KNOWLEDGE.md"
 }

@@ -1,11 +1,4 @@
-#!/usr/bin/env python3
-"""Read provider usage from a uniquely dispatch-bound session.
-
-Matches the dispatch identifier and launch signature in user-role input.
-Zero matches remain unavailable; multiple matches remain ambiguous.
-Claude usage is summed by message identity; Codex uses its final cumulative
-token-count event. Python standard library only; read-only implementation.
-"""
+                      
 
 from __future__ import annotations
 
@@ -17,38 +10,23 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional
 
-
-#: Text that only an Orca dispatch preamble carries. The Dispatch id alone is
-#: not enough: it appears in any transcript that reads a bundle or quotes a
-#: worker. The id plus one of these, inside a user-role input turn, is the
-#: worker's own launch instruction and nothing else.
 PREAMBLE_SIGNATURES = (
     "--dispatch-capability",
     "orca orchestration send --from term_",
 )
 
-#: A Dispatch id is opaque, but it is not free text. Refusing anything that is
-#: not shaped like one keeps a caller from turning this into a substring search.
 DISPATCH_ID_RE = re.compile(r"^ctx_[0-9a-zA-Z_-]{4,64}$")
 
 CODEX_FILENAME_RE = re.compile(r"-([0-9a-fA-F]{8}-[0-9a-fA-F-]{20,40})\.jsonl$")
 
-#: Only user-role input turns can carry a launch instruction. Everything the
-#: model or a tool produced is evidence about some other session's work.
 _CODEX_USER_PAYLOAD_TYPES = {"message", "user_message"}
 
 SUPPORTED_AGENTS = ("claude", "codex")
 
-#: How far before a recorded start time a transcript may have been touched and
-#: still be a candidate. Purely an optimisation over the file list -- a session
-#: opened by a Dispatch cannot predate it. It can only narrow the candidate set,
-#: so at worst it turns a match into `session_not_found`, never into a wrong id.
 MTIME_SKEW_SECONDS = 900
-
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
-
 
 def claude_root(root: Optional[Path] = None) -> Path:
     if root is not None:
@@ -56,13 +34,11 @@ def claude_root(root: Optional[Path] = None) -> Path:
     env = os.environ.get("PRAXIS_CLAUDE_PROJECTS")
     return Path(env).expanduser() if env else Path("~/.claude/projects").expanduser()
 
-
 def codex_root(root: Optional[Path] = None) -> Path:
     if root is not None:
         return Path(root)
     env = os.environ.get("PRAXIS_CODEX_SESSIONS")
     return Path(env).expanduser() if env else Path("~/.codex/sessions").expanduser()
-
 
 def _iter_transcripts(root: Path, since: Optional[float]) -> Iterable[Path]:
     if not root.is_dir():
@@ -78,7 +54,6 @@ def _iter_transcripts(root: Path, since: Optional[float]) -> Iterable[Path]:
             except OSError:
                 continue
         yield path
-
 
 def _iter_json_lines(path: Path) -> Iterable[Dict[str, Any]]:
     try:
@@ -97,15 +72,10 @@ def _iter_json_lines(path: Path) -> Iterable[Dict[str, Any]]:
             if isinstance(record, dict):
                 yield record
 
-
-#: Transcripts run to hundreds of megabytes. The pre-filter streams them in
-#: fixed chunks with an overlap wide enough that a needle straddling a boundary
-#: is still found, so scanning cost is bounded by the chunk, not the file.
 _SCAN_CHUNK = 1 << 20
 
-
 def _contains(path: Path, needle: str) -> bool:
-    """Cheap pre-filter. A file that never mentions the id cannot match."""
+
     probe = needle.encode("utf-8")
     overlap = len(probe) - 1
     try:
@@ -120,7 +90,6 @@ def _contains(path: Path, needle: str) -> bool:
                 tail = chunk[-overlap:] if overlap else b""
     except OSError:
         return False
-
 
 def _text_of(content: Any) -> str:
     if isinstance(content, str):
@@ -140,13 +109,11 @@ def _text_of(content: Any) -> str:
         return value if isinstance(value, str) else ""
     return ""
 
-
 def _is_launch_instruction(text: str, dispatch_id: str) -> bool:
     return dispatch_id in text and any(sig in text for sig in PREAMBLE_SIGNATURES)
 
-
 def _claude_match(path: Path, dispatch_id: str) -> Optional[str]:
-    """Session id when this Claude transcript was opened by this Dispatch."""
+
     session_id = None
     matched = False
     for record in _iter_json_lines(path):
@@ -163,14 +130,8 @@ def _claude_match(path: Path, dispatch_id: str) -> Optional[str]:
         return None
     return str(session_id or path.stem)
 
-
 def _codex_match(path: Path, dispatch_id: str) -> Optional[str]:
-    """Session id when this Codex rollout was opened by this Dispatch.
 
-    Codex prepends the project AGENTS.md as its own first user turn, so the
-    dispatch preamble is not always turn one. The signature test, not the
-    position, is what proves it.
-    """
     session_id = None
     matched = False
     for record in _iter_json_lines(path):
@@ -192,7 +153,6 @@ def _codex_match(path: Path, dispatch_id: str) -> Optional[str]:
         session_id = found.group(1) if found else path.stem
     return str(session_id)
 
-
 def resolve_session(
     dispatch_id: str,
     agent: str,
@@ -200,16 +160,11 @@ def resolve_session(
     started_at: Optional[str] = None,
     root: Optional[Path] = None,
 ) -> Dict[str, Any]:
-    """Name the one provider session this Dispatch opened, or refuse.
 
-    Never returns a session id it is not certain of. `candidates` is reported
-    on an ambiguous result so the refusal is auditable rather than opaque.
-    """
     result: Dict[str, Any] = {
         "agent": agent,
         "dispatch_id": dispatch_id,
-        # Recorded so a reader can tell at a glance that this is not the
-        # wall-clock attribution that produced `ambiguous_session`.
+
         "binding": "dispatch_preamble",
         "status": "unavailable",
         "session_id": None,
@@ -245,8 +200,7 @@ def resolve_session(
         result["reason"] = "session_not_found"
         return result
     if len(distinct) > 1:
-        # The original refusal, kept deliberately. Two sessions opened with the
-        # same Dispatch id is not something to resolve by preference.
+
         result["reason"] = "ambiguous_session"
         result["candidates"] = sorted(distinct)
         return result
@@ -258,7 +212,6 @@ def resolve_session(
     result["candidates"] = [only["session_id"]]
     return result
 
-
 def _epoch(started_at: Optional[str]) -> Optional[float]:
     if not started_at:
         return None
@@ -267,7 +220,6 @@ def _epoch(started_at: Optional[str]) -> Optional[float]:
         return datetime.fromisoformat(text).timestamp()
     except ValueError:
         return None
-
 
 def _empty_usage(agent: str, session_id: Optional[str], reason: Optional[str]) -> Dict[str, Any]:
     return {
@@ -288,14 +240,8 @@ def _empty_usage(agent: str, session_id: Optional[str], reason: Optional[str]) -
         "collected_at": now_iso(),
     }
 
-
 def _claude_usage(path: Path, session_id: str) -> Dict[str, Any]:
-    """Sum the assistant turns, deduplicated by message id.
 
-    A single assistant message can be written to the transcript more than once
-    as its content blocks stream, and each copy carries the same usage. Summing
-    lines rather than messages double-counts.
-    """
     by_message: Dict[str, Dict[str, int]] = {}
     models: Dict[str, int] = {}
     order: List[str] = []
@@ -338,9 +284,8 @@ def _claude_usage(path: Path, session_id: str) -> Dict[str, Any]:
     out["model"] = max(models, key=lambda name: models[name]) if models else None
     return out
 
-
 def _codex_usage(path: Path, session_id: str) -> Dict[str, Any]:
-    """Read the last cumulative `token_count`. Codex reports totals, not deltas."""
+
     total: Optional[Dict[str, Any]] = None
     models: List[str] = []
     turns = 0
@@ -382,9 +327,8 @@ def _codex_usage(path: Path, session_id: str) -> Dict[str, Any]:
     out["model"] = models[0] if models else None
     return out
 
-
 def collect_usage(binding: Dict[str, Any]) -> Dict[str, Any]:
-    """Usage for an already-bound session. Refuses rather than estimates."""
+
     agent = str(binding.get("agent") or "")
     session_id = binding.get("session_id")
     if binding.get("status") != "bound" or not session_id:
@@ -399,7 +343,6 @@ def collect_usage(binding: Dict[str, Any]) -> Dict[str, Any]:
         return _codex_usage(path, str(session_id))
     return _empty_usage(agent, session_id, "unsupported_agent")
 
-
 def bind_and_collect(
     dispatch_id: str,
     agent: str,
@@ -409,7 +352,6 @@ def bind_and_collect(
 ) -> Dict[str, Any]:
     binding = resolve_session(dispatch_id, agent, started_at=started_at, root=root)
     return {"session": binding, "usage": collect_usage(binding)}
-
 
 def main() -> int:
     parser = argparse.ArgumentParser(
@@ -433,7 +375,6 @@ def main() -> int:
         print(f"session   {session['status']}  {session['session_id'] or session['reason']}")
         print(f"usage     {usage['status']}  total={usage['total_tokens']} model={usage['model']}")
     return 0 if result["session"]["status"] == "bound" else 1
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

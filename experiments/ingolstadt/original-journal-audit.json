@@ -1,0 +1,60 @@
+{
+  "chain_errors": [],
+  "complete": true,
+  "elapsed_seconds": 341.96416091918945,
+  "event_types": {
+    "analysed_unstarted_report": 15,
+    "block_release": 14273,
+    "branch_reopen": 3,
+    "branch_termination": 8,
+    "control_consumed": 9,
+    "failure": 35,
+    "interface_defect": 3,
+    "memory_validation": 13614,
+    "native_overrun": 53,
+    "paused_block": 28,
+    "provider_response": 250600,
+    "research_observation": 250570,
+    "reservation": 250575,
+    "retry_reservation": 25,
+    "run_started": 1,
+    "runner_successor": 9,
+    "send_intent": 250600,
+    "settlement": 250570,
+    "study_K_frozen": 1,
+    "study_cut_lifted": 3,
+    "study_halt_report": 27,
+    "study_pause": 9,
+    "study_resume": 9,
+    "throttle_wait": 250635,
+    "world_dispatch": 108,
+    "world_finished": 126,
+    "world_misclassification_recovery": 18,
+    "world_resume": 464
+  },
+  "expected_identity_matches": {
+    "bytes": true,
+    "head": true,
+    "rows": true,
+    "source_sha256": true
+  },
+  "field_paths": 425,
+  "head": "1828d84d901471067a5058758954e64ce71dcdf14d37a687777d427e6cd8b402",
+  "method": "fresh contiguous stream shards with cross-boundary reconciliation plus fresh full-file raw SHA-256",
+  "parts": 8,
+  "privacy_counts": {
+    "machine_path": 215,
+    "personal_identity_marker": 217
+  },
+  "publication_status": "requires privacy/category projection and independent archive verification",
+  "rows": 1532391,
+  "source_bytes": 75088281448,
+  "source_sha256": "7777ae1a4c10abcfa7ad354d216d7509530f8a1ef3b22486bb0122a685b64e02",
+  "source_stat_unchanged": true,
+  "privacy_review": {
+    "machine_path_values_projected": 215,
+    "scientific_author_attribution_values_retained": 2,
+    "private_workflow_credentials_email_correspondence_marker_hits": 0,
+    "scope": "Complete recursive string-field scan and field inventory; 132 records have local-path substitutions, with exact field map."
+  }
+}

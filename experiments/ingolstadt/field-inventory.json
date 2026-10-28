@@ -1,0 +1,3415 @@
+{
+  "analysed_unstarted_report:event": {
+    "first_seq": 10966,
+    "max_string_chars": 0,
+    "occurrences": 15,
+    "types": {
+      "dict": 15
+    }
+  },
+  "analysed_unstarted_report:event.K_pending": {
+    "first_seq": 10966,
+    "max_string_chars": 0,
+    "occurrences": 15,
+    "types": {
+      "bool": 15
+    }
+  },
+  "analysed_unstarted_report:event.action": {
+    "first_seq": 10966,
+    "max_string_chars": 51,
+    "occurrences": 15,
+    "types": {
+      "str": 15
+    }
+  },
+  "analysed_unstarted_report:event.analysis_status": {
+    "first_seq": 10966,
+    "max_string_chars": 22,
+    "occurrences": 15,
+    "types": {
+      "str": 15
+    }
+  },
+  "analysed_unstarted_report:event.candidate_unstarted_positions": {
+    "first_seq": 10966,
+    "max_string_chars": 0,
+    "occurrences": 15,
+    "types": {
+      "list": 15
+    }
+  },
+  "analysed_unstarted_report:event.candidate_unstarted_positions[]": {
+    "first_seq": 10966,
+    "max_string_chars": 0,
+    "occurrences": 570,
+    "types": {
+      "int": 570
+    }
+  },
+  "analysed_unstarted_report:event.cause": {
+    "first_seq": 10966,
+    "max_string_chars": 16,
+    "occurrences": 15,
+    "types": {
+      "str": 15
+    }
+  },
+  "analysed_unstarted_report:event.cursor": {
+    "first_seq": 10966,
+    "max_string_chars": 0,
+    "occurrences": 15,
+    "types": {
+      "int": 15
+    }
+  },
+  "analysed_unstarted_report:event.missingness": {
+    "first_seq": 10966,
+    "max_string_chars": 0,
+    "occurrences": 15,
+    "types": {
+      "list": 15
+    }
+  },
+  "analysed_unstarted_report:event.missingness[]": {
+    "first_seq": 38425,
+    "max_string_chars": 0,
+    "occurrences": 424,
+    "types": {
+      "dict": 424
+    }
+  },
+  "analysed_unstarted_report:event.missingness[].cause": {
+    "first_seq": 38425,
+    "max_string_chars": 16,
+    "occurrences": 424,
+    "types": {
+      "str": 424
+    }
+  },
+  "analysed_unstarted_report:event.missingness[].designs": {
+    "first_seq": 38425,
+    "max_string_chars": 0,
+    "occurrences": 424,
+    "types": {
+      "list": 424
+    }
+  },
+  "analysed_unstarted_report:event.missingness[].designs[]": {
+    "first_seq": 38425,
+    "max_string_chars": 1,
+    "occurrences": 848,
+    "types": {
+      "str": 848
+    }
+  },
+  "analysed_unstarted_report:event.missingness[].initial_case": {
+    "first_seq": 38425,
+    "max_string_chars": 0,
+    "occurrences": 424,
+    "types": {
+      "list": 424
+    }
+  },
+  "analysed_unstarted_report:event.missingness[].initial_case[]": {
+    "first_seq": 38425,
+    "max_string_chars": 0,
+    "occurrences": 848,
+    "types": {
+      "int": 848
+    }
+  },
+  "analysed_unstarted_report:event.missingness[].position": {
+    "first_seq": 38425,
+    "max_string_chars": 0,
+    "occurrences": 424,
+    "types": {
+      "int": 424
+    }
+  },
+  "analysed_unstarted_report:event.missingness[].prices": {
+    "first_seq": 38425,
+    "max_string_chars": 0,
+    "occurrences": 424,
+    "types": {
+      "list": 424
+    }
+  },
+  "analysed_unstarted_report:event.missingness[].prices[]": {
+    "first_seq": 38425,
+    "max_string_chars": 4,
+    "occurrences": 848,
+    "types": {
+      "str": 848
+    }
+  },
+  "analysed_unstarted_report:event.positions": {
+    "first_seq": 10966,
+    "max_string_chars": 0,
+    "occurrences": 15,
+    "types": {
+      "list": 15
+    }
+  },
+  "analysed_unstarted_report:event.positions[]": {
+    "first_seq": 38425,
+    "max_string_chars": 0,
+    "occurrences": 424,
+    "types": {
+      "int": 424
+    }
+  },
+  "analysed_unstarted_report:event.timestamp_ns": {
+    "first_seq": 10966,
+    "max_string_chars": 0,
+    "occurrences": 15,
+    "types": {
+      "int": 15
+    }
+  },
+  "analysed_unstarted_report:event.type": {
+    "first_seq": 10966,
+    "max_string_chars": 25,
+    "occurrences": 15,
+    "types": {
+      "str": 15
+    }
+  },
+  "block_release:event": {
+    "first_seq": 29222,
+    "max_string_chars": 0,
+    "occurrences": 14273,
+    "types": {
+      "dict": 14273
+    }
+  },
+  "block_release:event.id": {
+    "first_seq": 29222,
+    "max_string_chars": 29,
+    "occurrences": 14273,
+    "types": {
+      "str": 14273
+    }
+  },
+  "block_release:event.remaining_work_nano_usd": {
+    "first_seq": 29222,
+    "max_string_chars": 0,
+    "occurrences": 14273,
+    "types": {
+      "int": 14273
+    }
+  },
+  "block_release:event.type": {
+    "first_seq": 29222,
+    "max_string_chars": 13,
+    "occurrences": 14273,
+    "types": {
+      "str": 14273
+    }
+  },
+  "block_release:event.unused_reservation_nano_usd": {
+    "first_seq": 29222,
+    "max_string_chars": 0,
+    "occurrences": 14273,
+    "types": {
+      "int": 14273
+    }
+  },
+  "branch_reopen:event": {
+    "first_seq": 857959,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "dict": 3
+    }
+  },
+  "branch_reopen:event.affected_branches": {
+    "first_seq": 857959,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "list": 3
+    }
+  },
+  "branch_reopen:event.affected_branches[]": {
+    "first_seq": 857959,
+    "max_string_chars": 6,
+    "occurrences": 4,
+    "types": {
+      "str": 4
+    }
+  },
+  "branch_reopen:event.call_id": {
+    "first_seq": 857959,
+    "max_string_chars": 26,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "branch_reopen:event.cause": {
+    "first_seq": 857959,
+    "max_string_chars": 54,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "branch_reopen:event.id": {
+    "first_seq": 857959,
+    "max_string_chars": 48,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "branch_reopen:event.physical_calls_repeated": {
+    "first_seq": 857959,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "bool": 3
+    }
+  },
+  "branch_reopen:event.position": {
+    "first_seq": 857959,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "branch_reopen:event.scope": {
+    "first_seq": 857959,
+    "max_string_chars": 12,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "branch_reopen:event.supersedes_branch_termination_id": {
+    "first_seq": 857959,
+    "max_string_chars": 31,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "branch_reopen:event.timestamp_ns": {
+    "first_seq": 857959,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "branch_reopen:event.type": {
+    "first_seq": 857959,
+    "max_string_chars": 13,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "branch_termination:event": {
+    "first_seq": 573934,
+    "max_string_chars": 0,
+    "occurrences": 8,
+    "types": {
+      "dict": 8
+    }
+  },
+  "branch_termination:event.affected_branches": {
+    "first_seq": 573934,
+    "max_string_chars": 0,
+    "occurrences": 8,
+    "types": {
+      "list": 8
+    }
+  },
+  "branch_termination:event.affected_branches[]": {
+    "first_seq": 573934,
+    "max_string_chars": 6,
+    "occurrences": 10,
+    "types": {
+      "str": 10
+    }
+  },
+  "branch_termination:event.call_id": {
+    "first_seq": 573934,
+    "max_string_chars": 28,
+    "occurrences": 8,
+    "types": {
+      "str": 8
+    }
+  },
+  "branch_termination:event.failure_event_id": {
+    "first_seq": 573934,
+    "max_string_chars": 36,
+    "occurrences": 8,
+    "types": {
+      "str": 8
+    }
+  },
+  "branch_termination:event.id": {
+    "first_seq": 573934,
+    "max_string_chars": 31,
+    "occurrences": 8,
+    "types": {
+      "str": 8
+    }
+  },
+  "branch_termination:event.missingness_cause": {
+    "first_seq": 573934,
+    "max_string_chars": 19,
+    "occurrences": 8,
+    "types": {
+      "str": 8
+    }
+  },
+  "branch_termination:event.scientific_failure_cause_unchanged": {
+    "first_seq": 573934,
+    "max_string_chars": 0,
+    "occurrences": 8,
+    "types": {
+      "bool": 8
+    }
+  },
+  "branch_termination:event.scope": {
+    "first_seq": 573934,
+    "max_string_chars": 12,
+    "occurrences": 8,
+    "types": {
+      "str": 8
+    }
+  },
+  "branch_termination:event.type": {
+    "first_seq": 573934,
+    "max_string_chars": 18,
+    "occurrences": 8,
+    "types": {
+      "str": 8
+    }
+  },
+  "control_consumed:event": {
+    "first_seq": 48125,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "dict": 9
+    }
+  },
+  "control_consumed:event.action": {
+    "first_seq": 48125,
+    "max_string_chars": 5,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "control_consumed:event.control_request": {
+    "first_seq": 48125,
+    "max_string_chars": 49,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "control_consumed:event.type": {
+    "first_seq": 48125,
+    "max_string_chars": 16,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "failure:event": {
+    "first_seq": 10961,
+    "max_string_chars": 0,
+    "occurrences": 35,
+    "types": {
+      "dict": 35
+    }
+  },
+  "failure:event.attempt": {
+    "first_seq": 10961,
+    "max_string_chars": 0,
+    "occurrences": 35,
+    "types": {
+      "int": 35
+    }
+  },
+  "failure:event.call_id": {
+    "first_seq": 10961,
+    "max_string_chars": 28,
+    "occurrences": 35,
+    "types": {
+      "str": 35
+    }
+  },
+  "failure:event.classification": {
+    "first_seq": 10961,
+    "max_string_chars": 0,
+    "occurrences": 35,
+    "types": {
+      "dict": 35
+    }
+  },
+  "failure:event.classification.classification": {
+    "first_seq": 10961,
+    "max_string_chars": 26,
+    "occurrences": 35,
+    "types": {
+      "str": 35
+    }
+  },
+  "failure:event.classification.code": {
+    "first_seq": 10961,
+    "max_string_chars": 22,
+    "occurrences": 35,
+    "types": {
+      "NoneType": 23,
+      "str": 12
+    }
+  },
+  "failure:event.classification.error_type": {
+    "first_seq": 10961,
+    "max_string_chars": 22,
+    "occurrences": 35,
+    "types": {
+      "NoneType": 23,
+      "str": 12
+    }
+  },
+  "failure:event.classification.gateway_noncompletion": {
+    "first_seq": 1413768,
+    "max_string_chars": 0,
+    "occurrences": 1,
+    "types": {
+      "bool": 1
+    }
+  },
+  "failure:event.classification.http_status": {
+    "first_seq": 10961,
+    "max_string_chars": 0,
+    "occurrences": 35,
+    "types": {
+      "NoneType": 9,
+      "int": 26
+    }
+  },
+  "failure:event.classification.in_stream_transport_abort": {
+    "first_seq": 1019596,
+    "max_string_chars": 0,
+    "occurrences": 2,
+    "types": {
+      "bool": 2
+    }
+  },
+  "failure:event.classification.message": {
+    "first_seq": 10961,
+    "max_string_chars": 93,
+    "occurrences": 35,
+    "types": {
+      "str": 35
+    }
+  },
+  "failure:event.classification.provider": {
+    "first_seq": 10961,
+    "max_string_chars": 4,
+    "occurrences": 35,
+    "types": {
+      "str": 35
+    }
+  },
+  "failure:event.classification.provider_error": {
+    "first_seq": 10961,
+    "max_string_chars": 0,
+    "occurrences": 35,
+    "types": {
+      "NoneType": 23,
+      "dict": 12
+    }
+  },
+  "failure:event.classification.provider_error.code": {
+    "first_seq": 56842,
+    "max_string_chars": 22,
+    "occurrences": 12,
+    "types": {
+      "str": 12
+    }
+  },
+  "failure:event.classification.provider_error.message": {
+    "first_seq": 56842,
+    "max_string_chars": 93,
+    "occurrences": 12,
+    "types": {
+      "str": 12
+    }
+  },
+  "failure:event.classification.provider_error.param": {
+    "first_seq": 56842,
+    "max_string_chars": 0,
+    "occurrences": 12,
+    "types": {
+      "NoneType": 12
+    }
+  },
+  "failure:event.classification.provider_error.type": {
+    "first_seq": 56842,
+    "max_string_chars": 22,
+    "occurrences": 12,
+    "types": {
+      "str": 12
+    }
+  },
+  "failure:event.classification.pure_transport_no_bytes": {
+    "first_seq": 545323,
+    "max_string_chars": 0,
+    "occurrences": 5,
+    "types": {
+      "bool": 5
+    }
+  },
+  "failure:event.classification.subtype": {
+    "first_seq": 10961,
+    "max_string_chars": 0,
+    "occurrences": 35,
+    "types": {
+      "NoneType": 35
+    }
+  },
+  "failure:event.id": {
+    "first_seq": 10961,
+    "max_string_chars": 36,
+    "occurrences": 35,
+    "types": {
+      "str": 35
+    }
+  },
+  "failure:event.missingness_cause": {
+    "first_seq": 56842,
+    "max_string_chars": 19,
+    "occurrences": 30,
+    "types": {
+      "str": 30
+    }
+  },
+  "failure:event.no_retry": {
+    "first_seq": 10961,
+    "max_string_chars": 0,
+    "occurrences": 35,
+    "types": {
+      "bool": 35
+    }
+  },
+  "failure:event.reason": {
+    "first_seq": 10961,
+    "max_string_chars": 217,
+    "occurrences": 35,
+    "types": {
+      "str": 35
+    }
+  },
+  "failure:event.retained_exposure_nano_usd": {
+    "first_seq": 10961,
+    "max_string_chars": 0,
+    "occurrences": 35,
+    "types": {
+      "int": 35
+    }
+  },
+  "failure:event.type": {
+    "first_seq": 10961,
+    "max_string_chars": 7,
+    "occurrences": 35,
+    "types": {
+      "str": 35
+    }
+  },
+  "interface_defect:event": {
+    "first_seq": 158770,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "dict": 3
+    }
+  },
+  "interface_defect:event.attempt": {
+    "first_seq": 158770,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "interface_defect:event.call_id": {
+    "first_seq": 158770,
+    "max_string_chars": 27,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "interface_defect:event.classification": {
+    "first_seq": 158770,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "dict": 3
+    }
+  },
+  "interface_defect:event.classification.classification": {
+    "first_seq": 158770,
+    "max_string_chars": 20,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "interface_defect:event.classification.code": {
+    "first_seq": 158770,
+    "max_string_chars": 21,
+    "occurrences": 3,
+    "types": {
+      "NoneType": 2,
+      "str": 1
+    }
+  },
+  "interface_defect:event.classification.error_type": {
+    "first_seq": 158770,
+    "max_string_chars": 21,
+    "occurrences": 3,
+    "types": {
+      "NoneType": 2,
+      "str": 1
+    }
+  },
+  "interface_defect:event.classification.http_status": {
+    "first_seq": 158770,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "NoneType": 1,
+      "int": 2
+    }
+  },
+  "interface_defect:event.classification.message": {
+    "first_seq": 158770,
+    "max_string_chars": 43,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "interface_defect:event.classification.provider": {
+    "first_seq": 158770,
+    "max_string_chars": 4,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "interface_defect:event.classification.provider_error": {
+    "first_seq": 158770,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "NoneType": 2,
+      "dict": 1
+    }
+  },
+  "interface_defect:event.classification.provider_error.code": {
+    "first_seq": 1032967,
+    "max_string_chars": 21,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "interface_defect:event.classification.provider_error.message": {
+    "first_seq": 1032967,
+    "max_string_chars": 43,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "interface_defect:event.classification.provider_error.param": {
+    "first_seq": 1032967,
+    "max_string_chars": 0,
+    "occurrences": 1,
+    "types": {
+      "NoneType": 1
+    }
+  },
+  "interface_defect:event.classification.provider_error.type": {
+    "first_seq": 1032967,
+    "max_string_chars": 21,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "interface_defect:event.classification.subtype": {
+    "first_seq": 158770,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "NoneType": 3
+    }
+  },
+  "interface_defect:event.id": {
+    "first_seq": 158770,
+    "max_string_chars": 35,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "interface_defect:event.missingness_cause": {
+    "first_seq": 158770,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "NoneType": 3
+    }
+  },
+  "interface_defect:event.no_retry": {
+    "first_seq": 158770,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "bool": 3
+    }
+  },
+  "interface_defect:event.reason": {
+    "first_seq": 158770,
+    "max_string_chars": 18,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "interface_defect:event.retained_exposure_nano_usd": {
+    "first_seq": 158770,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "interface_defect:event.type": {
+    "first_seq": 158770,
+    "max_string_chars": 16,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "memory_validation:event": {
+    "first_seq": 30217,
+    "max_string_chars": 0,
+    "occurrences": 13614,
+    "types": {
+      "dict": 13614
+    }
+  },
+  "memory_validation:event.call_id": {
+    "first_seq": 30217,
+    "max_string_chars": 39,
+    "occurrences": 13614,
+    "types": {
+      "str": 13614
+    }
+  },
+  "memory_validation:event.effective_raw": {
+    "first_seq": 30217,
+    "max_string_chars": 1911,
+    "occurrences": 13614,
+    "types": {
+      "str": 13614
+    }
+  },
+  "memory_validation:event.id": {
+    "first_seq": 30217,
+    "max_string_chars": 46,
+    "occurrences": 13614,
+    "types": {
+      "str": 13614
+    }
+  },
+  "memory_validation:event.old_raw": {
+    "first_seq": 30217,
+    "max_string_chars": 1911,
+    "occurrences": 13614,
+    "types": {
+      "str": 13614
+    }
+  },
+  "memory_validation:event.proposed_raw": {
+    "first_seq": 30217,
+    "max_string_chars": 2650,
+    "occurrences": 13614,
+    "types": {
+      "str": 13614
+    }
+  },
+  "memory_validation:event.receipt": {
+    "first_seq": 30217,
+    "max_string_chars": 0,
+    "occurrences": 13614,
+    "types": {
+      "dict": 13614
+    }
+  },
+  "memory_validation:event.receipt.changed": {
+    "first_seq": 30217,
+    "max_string_chars": 0,
+    "occurrences": 13614,
+    "types": {
+      "bool": 13614
+    }
+  },
+  "memory_validation:event.receipt.reason_codes": {
+    "first_seq": 30217,
+    "max_string_chars": 0,
+    "occurrences": 13614,
+    "types": {
+      "list": 13614
+    }
+  },
+  "memory_validation:event.receipt.reason_codes[]": {
+    "first_seq": 148672,
+    "max_string_chars": 24,
+    "occurrences": 21,
+    "types": {
+      "str": 21
+    }
+  },
+  "memory_validation:event.receipt.valid": {
+    "first_seq": 30217,
+    "max_string_chars": 0,
+    "occurrences": 13614,
+    "types": {
+      "bool": 13614
+    }
+  },
+  "memory_validation:event.type": {
+    "first_seq": 30217,
+    "max_string_chars": 17,
+    "occurrences": 13614,
+    "types": {
+      "str": 13614
+    }
+  },
+  "native_overrun:event": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "dict": 53
+    }
+  },
+  "native_overrun:event.answer_invalid": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "bool": 53
+    }
+  },
+  "native_overrun:event.call_id": {
+    "first_seq": 48291,
+    "max_string_chars": 27,
+    "occurrences": 53,
+    "types": {
+      "str": 53
+    }
+  },
+  "native_overrun:event.charge_excess_nano_usd": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.charge_nano_usd": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.cumulative_charge_excess_nano_usd": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.cumulative_native_overrun_calls": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.id": {
+    "first_seq": 48291,
+    "max_string_chars": 42,
+    "occurrences": 53,
+    "types": {
+      "str": 53
+    }
+  },
+  "native_overrun:event.native_usage": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "dict": 53
+    }
+  },
+  "native_overrun:event.native_usage.completion_tokens": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.native_usage.completion_tokens_details": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "dict": 53
+    }
+  },
+  "native_overrun:event.native_usage.completion_tokens_details.reasoning_tokens": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.native_usage.completion_tokens_details.text_tokens": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.native_usage.prompt_tokens": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.native_usage.prompt_tokens_details": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "dict": 53
+    }
+  },
+  "native_overrun:event.native_usage.prompt_tokens_details.cached_tokens": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.native_usage.prompt_tokens_details.text_tokens": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.native_usage.total_tokens": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.provider": {
+    "first_seq": 48291,
+    "max_string_chars": 4,
+    "occurrences": 53,
+    "types": {
+      "str": 53
+    }
+  },
+  "native_overrun:event.reporting_context": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "dict": 53
+    }
+  },
+  "native_overrun:event.reporting_context.arm": {
+    "first_seq": 48291,
+    "max_string_chars": 6,
+    "occurrences": 53,
+    "types": {
+      "str": 53
+    }
+  },
+  "native_overrun:event.reporting_context.branch": {
+    "first_seq": 48291,
+    "max_string_chars": 8,
+    "occurrences": 53,
+    "types": {
+      "str": 53
+    }
+  },
+  "native_overrun:event.reporting_context.phase": {
+    "first_seq": 48291,
+    "max_string_chars": 10,
+    "occurrences": 53,
+    "types": {
+      "str": 53
+    }
+  },
+  "native_overrun:event.reporting_context.world_ordinal": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.reservation_nano_usd": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.role": {
+    "first_seq": 48291,
+    "max_string_chars": 19,
+    "occurrences": 53,
+    "types": {
+      "str": 53
+    }
+  },
+  "native_overrun:event.token_overrun": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "dict": 53
+    }
+  },
+  "native_overrun:event.token_overrun.output_tokens": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.token_overrun.reasoning_tokens": {
+    "first_seq": 48291,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "native_overrun:event.type": {
+    "first_seq": 48291,
+    "max_string_chars": 14,
+    "occurrences": 53,
+    "types": {
+      "str": 53
+    }
+  },
+  "paused_block:event": {
+    "first_seq": 10963,
+    "max_string_chars": 0,
+    "occurrences": 28,
+    "types": {
+      "dict": 28
+    }
+  },
+  "paused_block:event.block_id": {
+    "first_seq": 10963,
+    "max_string_chars": 20,
+    "occurrences": 28,
+    "types": {
+      "str": 28
+    }
+  },
+  "paused_block:event.released_nano_usd": {
+    "first_seq": 10963,
+    "max_string_chars": 0,
+    "occurrences": 28,
+    "types": {
+      "int": 28
+    }
+  },
+  "paused_block:event.retained_unused_reservation_nano_usd": {
+    "first_seq": 10963,
+    "max_string_chars": 0,
+    "occurrences": 28,
+    "types": {
+      "int": 28
+    }
+  },
+  "paused_block:event.type": {
+    "first_seq": 10963,
+    "max_string_chars": 12,
+    "occurrences": 28,
+    "types": {
+      "str": 28
+    }
+  },
+  "provider_response:event": {
+    "first_seq": 193,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "dict": 250600
+    }
+  },
+  "provider_response:event.attempt": {
+    "first_seq": 193,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "int": 250600
+    }
+  },
+  "provider_response:event.call_id": {
+    "first_seq": 193,
+    "max_string_chars": 39,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "provider_response:event.client_transport_elapsed_ns": {
+    "first_seq": 193,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "int": 250600
+    }
+  },
+  "provider_response:event.client_transport_start_utc": {
+    "first_seq": 193,
+    "max_string_chars": 32,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "provider_response:event.envelope": {
+    "first_seq": 193,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "dict": 250600
+    }
+  },
+  "provider_response:event.envelope.ambiguous_liability": {
+    "first_seq": 193,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "bool": 250600
+    }
+  },
+  "provider_response:event.envelope.body_text": {
+    "first_seq": 193,
+    "max_string_chars": 577131,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "provider_response:event.envelope.http_status": {
+    "first_seq": 193,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "NoneType": 9,
+      "int": 250591
+    }
+  },
+  "provider_response:event.envelope.transport_error": {
+    "first_seq": 193,
+    "max_string_chars": 14,
+    "occurrences": 250600,
+    "types": {
+      "NoneType": 250576,
+      "str": 24
+    }
+  },
+  "provider_response:event.id": {
+    "first_seq": 193,
+    "max_string_chars": 48,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "provider_response:event.type": {
+    "first_seq": 193,
+    "max_string_chars": 17,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "research_observation:event": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "dict": 250570
+    }
+  },
+  "research_observation:event.call_id": {
+    "first_seq": 195,
+    "max_string_chars": 39,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "research_observation:event.id": {
+    "first_seq": 195,
+    "max_string_chars": 48,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "research_observation:event.projection": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "dict": 250570
+    }
+  },
+  "research_observation:event.projection.choice_text": {
+    "first_seq": 195,
+    "max_string_chars": 1917,
+    "occurrences": 250570,
+    "types": {
+      "NoneType": 29353,
+      "str": 221217
+    }
+  },
+  "research_observation:event.projection.choice_valid": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "bool": 250570
+    }
+  },
+  "research_observation:event.projection.reason_valid": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "bool": 250570
+    }
+  },
+  "research_observation:event.projection.stated_reason": {
+    "first_seq": 195,
+    "max_string_chars": 8413,
+    "occurrences": 250570,
+    "types": {
+      "NoneType": 54165,
+      "str": 196405
+    }
+  },
+  "research_observation:event.reasoning_and_explanations_researcher_only": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "bool": 250570
+    }
+  },
+  "research_observation:event.response": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "dict": 250570
+    }
+  },
+  "research_observation:event.response.fingerprints": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "list": 250570
+    }
+  },
+  "research_observation:event.response.finish": {
+    "first_seq": 195,
+    "max_string_chars": 6,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "research_observation:event.response.model": {
+    "first_seq": 195,
+    "max_string_chars": 24,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "research_observation:event.response.native_contract_overrun": {
+    "first_seq": 48292,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "dict": 53
+    }
+  },
+  "research_observation:event.response.native_contract_overrun.output_tokens": {
+    "first_seq": 48292,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "research_observation:event.response.native_contract_overrun.reasoning_tokens": {
+    "first_seq": 48292,
+    "max_string_chars": 0,
+    "occurrences": 53,
+    "types": {
+      "int": 53
+    }
+  },
+  "research_observation:event.response.native_output_overshoot": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "research_observation:event.response.reasoning_channel": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "dict": 250570
+    }
+  },
+  "research_observation:event.response.reasoning_channel.api": {
+    "first_seq": 195,
+    "max_string_chars": 16,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "research_observation:event.response.reasoning_channel.channel_type": {
+    "first_seq": 195,
+    "max_string_chars": 31,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "research_observation:event.response.reasoning_channel.complete": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "NoneType": 250570
+    }
+  },
+  "research_observation:event.response.reasoning_channel.missing": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "bool": 250570
+    }
+  },
+  "research_observation:event.response.reasoning_channel.mode": {
+    "first_seq": 195,
+    "max_string_chars": 17,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "research_observation:event.response.reasoning_channel.provider": {
+    "first_seq": 195,
+    "max_string_chars": 17,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "research_observation:event.response.reasoning_channel.raw_internal_reasoning_claim": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "bool": 250570
+    }
+  },
+  "research_observation:event.response.reasoning_channel.text": {
+    "first_seq": 195,
+    "max_string_chars": 17349,
+    "occurrences": 250570,
+    "types": {
+      "NoneType": 13558,
+      "str": 237012
+    }
+  },
+  "research_observation:event.response.reasoning_tokens": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "research_observation:event.response.text": {
+    "first_seq": 195,
+    "max_string_chars": 10064,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "research_observation:event.response.usage": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "dict": 250570
+    }
+  },
+  "research_observation:event.response.usage.completion_tokens": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "research_observation:event.response.usage.completion_tokens_details": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "dict": 250570
+    }
+  },
+  "research_observation:event.response.usage.completion_tokens_details.accepted_prediction_tokens": {
+    "first_seq": 29413,
+    "max_string_chars": 0,
+    "occurrences": 13558,
+    "types": {
+      "int": 13558
+    }
+  },
+  "research_observation:event.response.usage.completion_tokens_details.audio_tokens": {
+    "first_seq": 29413,
+    "max_string_chars": 0,
+    "occurrences": 13558,
+    "types": {
+      "int": 13558
+    }
+  },
+  "research_observation:event.response.usage.completion_tokens_details.reasoning_tokens": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "research_observation:event.response.usage.completion_tokens_details.rejected_prediction_tokens": {
+    "first_seq": 29413,
+    "max_string_chars": 0,
+    "occurrences": 13558,
+    "types": {
+      "int": 13558
+    }
+  },
+  "research_observation:event.response.usage.completion_tokens_details.text_tokens": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 237012,
+    "types": {
+      "int": 237012
+    }
+  },
+  "research_observation:event.response.usage.prompt_tokens": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "research_observation:event.response.usage.prompt_tokens_details": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "dict": 250570
+    }
+  },
+  "research_observation:event.response.usage.prompt_tokens_details.audio_tokens": {
+    "first_seq": 29413,
+    "max_string_chars": 0,
+    "occurrences": 13558,
+    "types": {
+      "int": 13558
+    }
+  },
+  "research_observation:event.response.usage.prompt_tokens_details.cache_write_tokens": {
+    "first_seq": 29413,
+    "max_string_chars": 0,
+    "occurrences": 13558,
+    "types": {
+      "int": 13558
+    }
+  },
+  "research_observation:event.response.usage.prompt_tokens_details.cached_tokens": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "research_observation:event.response.usage.prompt_tokens_details.text_tokens": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 237012,
+    "types": {
+      "int": 237012
+    }
+  },
+  "research_observation:event.response.usage.total_tokens": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "research_observation:event.response.weighted_native": {
+    "first_seq": 195,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "research_observation:event.type": {
+    "first_seq": 195,
+    "max_string_chars": 20,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "reservation:event": {
+    "first_seq": 21,
+    "max_string_chars": 0,
+    "occurrences": 250575,
+    "types": {
+      "dict": 250575
+    }
+  },
+  "reservation:event.block_id": {
+    "first_seq": 21,
+    "max_string_chars": 21,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "reservation:event.call_id": {
+    "first_seq": 21,
+    "max_string_chars": 39,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "reservation:event.exposure_nano_usd": {
+    "first_seq": 21,
+    "max_string_chars": 0,
+    "occurrences": 250575,
+    "types": {
+      "int": 250575
+    }
+  },
+  "reservation:event.id": {
+    "first_seq": 21,
+    "max_string_chars": 51,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "reservation:event.nano_usd": {
+    "first_seq": 21,
+    "max_string_chars": 0,
+    "occurrences": 250575,
+    "types": {
+      "int": 250575
+    }
+  },
+  "reservation:event.provider": {
+    "first_seq": 21,
+    "max_string_chars": 4,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "reservation:event.remaining_work_nano_usd": {
+    "first_seq": 21,
+    "max_string_chars": 0,
+    "occurrences": 250575,
+    "types": {
+      "int": 250575
+    }
+  },
+  "reservation:event.reporting_context": {
+    "first_seq": 21,
+    "max_string_chars": 0,
+    "occurrences": 250575,
+    "types": {
+      "dict": 250575
+    }
+  },
+  "reservation:event.reporting_context.arm": {
+    "first_seq": 21,
+    "max_string_chars": 6,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "reservation:event.reporting_context.branch": {
+    "first_seq": 21,
+    "max_string_chars": 8,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "reservation:event.reporting_context.phase": {
+    "first_seq": 21,
+    "max_string_chars": 10,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "reservation:event.reporting_context.world_ordinal": {
+    "first_seq": 21,
+    "max_string_chars": 0,
+    "occurrences": 250575,
+    "types": {
+      "int": 250575
+    }
+  },
+  "reservation:event.request_body_sha256": {
+    "first_seq": 21,
+    "max_string_chars": 64,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "reservation:event.role": {
+    "first_seq": 21,
+    "max_string_chars": 19,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "reservation:event.type": {
+    "first_seq": 21,
+    "max_string_chars": 11,
+    "occurrences": 250575,
+    "types": {
+      "str": 250575
+    }
+  },
+  "retry_reservation:event": {
+    "first_seq": 90731,
+    "max_string_chars": 0,
+    "occurrences": 25,
+    "types": {
+      "dict": 25
+    }
+  },
+  "retry_reservation:event.attempt": {
+    "first_seq": 90731,
+    "max_string_chars": 0,
+    "occurrences": 25,
+    "types": {
+      "int": 25
+    }
+  },
+  "retry_reservation:event.call_id": {
+    "first_seq": 90731,
+    "max_string_chars": 26,
+    "occurrences": 25,
+    "types": {
+      "str": 25
+    }
+  },
+  "retry_reservation:event.exposure_nano_usd": {
+    "first_seq": 90731,
+    "max_string_chars": 0,
+    "occurrences": 25,
+    "types": {
+      "int": 25
+    }
+  },
+  "retry_reservation:event.id": {
+    "first_seq": 90731,
+    "max_string_chars": 46,
+    "occurrences": 25,
+    "types": {
+      "str": 25
+    }
+  },
+  "retry_reservation:event.nano_usd": {
+    "first_seq": 90731,
+    "max_string_chars": 0,
+    "occurrences": 25,
+    "types": {
+      "int": 25
+    }
+  },
+  "retry_reservation:event.remaining_baseline_reservation_nano_usd": {
+    "first_seq": 90731,
+    "max_string_chars": 0,
+    "occurrences": 25,
+    "types": {
+      "int": 25
+    }
+  },
+  "retry_reservation:event.type": {
+    "first_seq": 90731,
+    "max_string_chars": 17,
+    "occurrences": 25,
+    "types": {
+      "str": 25
+    }
+  },
+  "run_started:event": {
+    "first_seq": 0,
+    "max_string_chars": 0,
+    "occurrences": 1,
+    "types": {
+      "dict": 1
+    }
+  },
+  "run_started:event.admission_sha256": {
+    "first_seq": 0,
+    "max_string_chars": 64,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "run_started:event.calibration_repeated": {
+    "first_seq": 0,
+    "max_string_chars": 0,
+    "occurrences": 1,
+    "types": {
+      "bool": 1
+    }
+  },
+  "run_started:event.manifest_sha256": {
+    "first_seq": 0,
+    "max_string_chars": 64,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "run_started:event.qualification_repeated": {
+    "first_seq": 0,
+    "max_string_chars": 0,
+    "occurrences": 1,
+    "types": {
+      "bool": 1
+    }
+  },
+  "run_started:event.type": {
+    "first_seq": 0,
+    "max_string_chars": 11,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "run_started:event.workers": {
+    "first_seq": 0,
+    "max_string_chars": 0,
+    "occurrences": 1,
+    "types": {
+      "int": 1
+    }
+  },
+  "runner_successor:event": {
+    "first_seq": 48238,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "dict": 9
+    }
+  },
+  "runner_successor:event.admission_sha256": {
+    "first_seq": 48238,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "runner_successor:event.cut_lift": {
+    "first_seq": 624640,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "dict": 3
+    }
+  },
+  "runner_successor:event.cut_lift.K_sha256": {
+    "first_seq": 624640,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "runner_successor:event.cut_lift.analysed_positions_count": {
+    "first_seq": 624640,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "runner_successor:event.cut_lift.authorization_path": {
+    "first_seq": 624640,
+    "max_string_chars": 220,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "runner_successor:event.cut_lift.authorization_sha256": {
+    "first_seq": 624640,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "runner_successor:event.cut_lift.frozen_cut_time_ns": {
+    "first_seq": 624640,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "runner_successor:event.cut_lift.instruction_receipt_path": {
+    "first_seq": 624640,
+    "max_string_chars": 218,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "runner_successor:event.cut_lift.instruction_receipt_sha256": {
+    "first_seq": 624640,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "runner_successor:event.cut_lift.source_sha256": {
+    "first_seq": 624640,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "runner_successor:event.manifest_sha256": {
+    "first_seq": 48238,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "runner_successor:event.original_manifest_sha256": {
+    "first_seq": 48238,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "runner_successor:event.predecessor_trace_head": {
+    "first_seq": 48238,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "runner_successor:event.recovery_authorization_sha256": {
+    "first_seq": 48238,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "runner_successor:event.type": {
+    "first_seq": 48238,
+    "max_string_chars": 16,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "send_intent:event": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "dict": 250600
+    }
+  },
+  "send_intent:event.attempt": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "int": 250600
+    }
+  },
+  "send_intent:event.call_id": {
+    "first_seq": 22,
+    "max_string_chars": 39,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "send_intent:event.id": {
+    "first_seq": 22,
+    "max_string_chars": 44,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "send_intent:event.request_body": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "dict": 250600
+    }
+  },
+  "send_intent:event.request_body.enable_thinking": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 237040,
+    "types": {
+      "bool": 237040
+    }
+  },
+  "send_intent:event.request_body.max_completion_tokens": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "int": 250600
+    }
+  },
+  "send_intent:event.request_body.messages": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "list": 250600
+    }
+  },
+  "send_intent:event.request_body.messages[]": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 489048,
+    "types": {
+      "dict": 489048
+    }
+  },
+  "send_intent:event.request_body.messages[].content": {
+    "first_seq": 22,
+    "max_string_chars": 9191,
+    "occurrences": 489048,
+    "types": {
+      "str": 489048
+    }
+  },
+  "send_intent:event.request_body.messages[].role": {
+    "first_seq": 22,
+    "max_string_chars": 9,
+    "occurrences": 489048,
+    "types": {
+      "str": 489048
+    }
+  },
+  "send_intent:event.request_body.model": {
+    "first_seq": 22,
+    "max_string_chars": 24,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "send_intent:event.request_body.reasoning_effort": {
+    "first_seq": 29269,
+    "max_string_chars": 3,
+    "occurrences": 13560,
+    "types": {
+      "str": 13560
+    }
+  },
+  "send_intent:event.request_body.response_format": {
+    "first_seq": 29269,
+    "max_string_chars": 0,
+    "occurrences": 13560,
+    "types": {
+      "dict": 13560
+    }
+  },
+  "send_intent:event.request_body.response_format.type": {
+    "first_seq": 29269,
+    "max_string_chars": 11,
+    "occurrences": 13560,
+    "types": {
+      "str": 13560
+    }
+  },
+  "send_intent:event.request_body.seed": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 237040,
+    "types": {
+      "int": 237040
+    }
+  },
+  "send_intent:event.request_body.service_tier": {
+    "first_seq": 29269,
+    "max_string_chars": 7,
+    "occurrences": 13560,
+    "types": {
+      "str": 13560
+    }
+  },
+  "send_intent:event.request_body.store": {
+    "first_seq": 29269,
+    "max_string_chars": 0,
+    "occurrences": 13560,
+    "types": {
+      "bool": 13560
+    }
+  },
+  "send_intent:event.request_body.stream": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 250600,
+    "types": {
+      "bool": 250600
+    }
+  },
+  "send_intent:event.request_body.stream_options": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 237040,
+    "types": {
+      "dict": 237040
+    }
+  },
+  "send_intent:event.request_body.stream_options.include_usage": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 237040,
+    "types": {
+      "bool": 237040
+    }
+  },
+  "send_intent:event.request_body.temperature": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 237040,
+    "types": {
+      "int": 237040
+    }
+  },
+  "send_intent:event.request_body.thinking_budget": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 237040,
+    "types": {
+      "int": 237040
+    }
+  },
+  "send_intent:event.request_body.top_p": {
+    "first_seq": 22,
+    "max_string_chars": 0,
+    "occurrences": 237040,
+    "types": {
+      "int": 237040
+    }
+  },
+  "send_intent:event.request_body_sha256": {
+    "first_seq": 22,
+    "max_string_chars": 64,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "send_intent:event.type": {
+    "first_seq": 22,
+    "max_string_chars": 11,
+    "occurrences": 250600,
+    "types": {
+      "str": 250600
+    }
+  },
+  "settlement:event": {
+    "first_seq": 194,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "dict": 250570
+    }
+  },
+  "settlement:event.call_id": {
+    "first_seq": 194,
+    "max_string_chars": 39,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "settlement:event.estimated_charge_nano_usd": {
+    "first_seq": 194,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "settlement:event.id": {
+    "first_seq": 194,
+    "max_string_chars": 46,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "settlement:event.invoice_verified": {
+    "first_seq": 194,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "bool": 250570
+    }
+  },
+  "settlement:event.replaces_reservation_nano_usd": {
+    "first_seq": 194,
+    "max_string_chars": 0,
+    "occurrences": 250570,
+    "types": {
+      "int": 250570
+    }
+  },
+  "settlement:event.transport_exception_disclosure": {
+    "first_seq": 249893,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "dict": 9
+    }
+  },
+  "settlement:event.transport_exception_disclosure.arm": {
+    "first_seq": 249893,
+    "max_string_chars": 1,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "settlement:event.transport_exception_disclosure.exception": {
+    "first_seq": 249893,
+    "max_string_chars": 14,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "settlement:event.transport_exception_disclosure.liability_settled_by_usage": {
+    "first_seq": 249893,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "bool": 9
+    }
+  },
+  "settlement:event.transport_exception_disclosure.role": {
+    "first_seq": 249893,
+    "max_string_chars": 19,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "settlement:event.type": {
+    "first_seq": 194,
+    "max_string_chars": 10,
+    "occurrences": 250570,
+    "types": {
+      "str": 250570
+    }
+  },
+  "study_K_frozen:event": {
+    "first_seq": 24357,
+    "max_string_chars": 0,
+    "occurrences": 1,
+    "types": {
+      "dict": 1
+    }
+  },
+  "study_K_frozen:event.addendum_sha256": {
+    "first_seq": 24357,
+    "max_string_chars": 64,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "study_K_frozen:event.type": {
+    "first_seq": 24357,
+    "max_string_chars": 14,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "study_cut_lifted:event": {
+    "first_seq": 624639,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "dict": 3
+    }
+  },
+  "study_cut_lifted:event.K_sha256": {
+    "first_seq": 624639,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_cut_lifted:event.analysed_positions_count": {
+    "first_seq": 624639,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "study_cut_lifted:event.authorization_path": {
+    "first_seq": 624639,
+    "max_string_chars": 220,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_cut_lifted:event.authorization_sha256": {
+    "first_seq": 624639,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_cut_lifted:event.clock_ns": {
+    "first_seq": 624639,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "study_cut_lifted:event.frozen_cut_time_ns": {
+    "first_seq": 624639,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "study_cut_lifted:event.instruction_receipt_path": {
+    "first_seq": 624639,
+    "max_string_chars": 218,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_cut_lifted:event.instruction_receipt_sha256": {
+    "first_seq": 624639,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_cut_lifted:event.source_sha256": {
+    "first_seq": 624639,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_cut_lifted:event.type": {
+    "first_seq": 624639,
+    "max_string_chars": 16,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_halt_report:event": {
+    "first_seq": 10967,
+    "max_string_chars": 0,
+    "occurrences": 27,
+    "types": {
+      "dict": 27
+    }
+  },
+  "study_halt_report:event.K_pending": {
+    "first_seq": 10967,
+    "max_string_chars": 0,
+    "occurrences": 27,
+    "types": {
+      "bool": 27
+    }
+  },
+  "study_halt_report:event.cause": {
+    "first_seq": 10967,
+    "max_string_chars": 16,
+    "occurrences": 27,
+    "types": {
+      "str": 27
+    }
+  },
+  "study_halt_report:event.positions": {
+    "first_seq": 10967,
+    "max_string_chars": 0,
+    "occurrences": 27,
+    "types": {
+      "list": 27
+    }
+  },
+  "study_halt_report:event.positions[]": {
+    "first_seq": 38430,
+    "max_string_chars": 0,
+    "occurrences": 1072,
+    "types": {
+      "int": 1072
+    }
+  },
+  "study_halt_report:event.timestamp_ns": {
+    "first_seq": 10967,
+    "max_string_chars": 0,
+    "occurrences": 27,
+    "types": {
+      "int": 27
+    }
+  },
+  "study_halt_report:event.type": {
+    "first_seq": 10967,
+    "max_string_chars": 17,
+    "occurrences": 27,
+    "types": {
+      "str": 27
+    }
+  },
+  "study_pause:event": {
+    "first_seq": 48108,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "dict": 9
+    }
+  },
+  "study_pause:event.admission_sha256": {
+    "first_seq": 48108,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_pause:event.aggregate_ceiling_nano_usd": {
+    "first_seq": 48108,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "int": 9
+    }
+  },
+  "study_pause:event.bindings_sha256": {
+    "first_seq": 48108,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_pause:event.cause": {
+    "first_seq": 48108,
+    "max_string_chars": 16,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_pause:event.control_request": {
+    "first_seq": 48108,
+    "max_string_chars": 49,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_pause:event.created_at": {
+    "first_seq": 48108,
+    "max_string_chars": 32,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_pause:event.detail": {
+    "first_seq": 48108,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "dict": 9
+    }
+  },
+  "study_pause:event.detail.cause": {
+    "first_seq": 48108,
+    "max_string_chars": 172,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_pause:event.detail.commission_cause": {
+    "first_seq": 90562,
+    "max_string_chars": 47,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "study_pause:event.detail.interface_repair": {
+    "first_seq": 48108,
+    "max_string_chars": 55,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "study_pause:event.detail.successor_manifest_sha256": {
+    "first_seq": 48108,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_pause:event.funding_causes": {
+    "first_seq": 48108,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "list": 9
+    }
+  },
+  "study_pause:event.pause_id": {
+    "first_seq": 48108,
+    "max_string_chars": 11,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_pause:event.qualification_ceiling_nano_usd": {
+    "first_seq": 48108,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "int": 9
+    }
+  },
+  "study_pause:event.resume_command": {
+    "first_seq": 48108,
+    "max_string_chars": 306,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_pause:event.timestamp_ns": {
+    "first_seq": 48108,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "int": 9
+    }
+  },
+  "study_pause:event.type": {
+    "first_seq": 48108,
+    "max_string_chars": 11,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "dict": 9
+    }
+  },
+  "study_resume:event.admission_sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "dict": 9
+    }
+  },
+  "study_resume:event.authorization.K_addendum_sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.aggregate_ceiling_nano_usd": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "int": 9
+    }
+  },
+  "study_resume:event.authorization.attestation_source": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "dict": 9
+    }
+  },
+  "study_resume:event.authorization.attestation_source.path": {
+    "first_seq": 48237,
+    "max_string_chars": 233,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.attestation_source.sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.authority": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "list": 9
+    }
+  },
+  "study_resume:event.authorization.authority[]": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 71,
+    "types": {
+      "dict": 71
+    }
+  },
+  "study_resume:event.authorization.authority[].path": {
+    "first_seq": 48237,
+    "max_string_chars": 163,
+    "occurrences": 71,
+    "types": {
+      "str": 71
+    }
+  },
+  "study_resume:event.authorization.authority[].sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 71,
+    "types": {
+      "str": 71
+    }
+  },
+  "study_resume:event.authorization.base_admission_sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.base_manifest_sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.cut_lift": {
+    "first_seq": 624638,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "dict": 3
+    }
+  },
+  "study_resume:event.authorization.cut_lift.K_sha256": {
+    "first_seq": 624638,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_resume:event.authorization.cut_lift.analysed_positions_count": {
+    "first_seq": 624638,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "study_resume:event.authorization.cut_lift.authorization_path": {
+    "first_seq": 624638,
+    "max_string_chars": 220,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_resume:event.authorization.cut_lift.authorization_sha256": {
+    "first_seq": 624638,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_resume:event.authorization.cut_lift.frozen_cut_time_ns": {
+    "first_seq": 624638,
+    "max_string_chars": 0,
+    "occurrences": 3,
+    "types": {
+      "int": 3
+    }
+  },
+  "study_resume:event.authorization.cut_lift.instruction_receipt_path": {
+    "first_seq": 624638,
+    "max_string_chars": 218,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_resume:event.authorization.cut_lift.instruction_receipt_sha256": {
+    "first_seq": 624638,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_resume:event.authorization.cut_lift.source_sha256": {
+    "first_seq": 624638,
+    "max_string_chars": 64,
+    "occurrences": 3,
+    "types": {
+      "str": 3
+    }
+  },
+  "study_resume:event.authorization.halt_started_ns": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "int": 9
+    }
+  },
+  "study_resume:event.authorization.kind": {
+    "first_seq": 48237,
+    "max_string_chars": 18,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.pause_cause": {
+    "first_seq": 48237,
+    "max_string_chars": 16,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.pause_id": {
+    "first_seq": 48237,
+    "max_string_chars": 11,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.position_cursor": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "int": 9
+    }
+  },
+  "study_resume:event.authorization.successor_admission_sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.successor_manifest_sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.authorization.trace_head": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.bindings_sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.pause_id": {
+    "first_seq": 48237,
+    "max_string_chars": 11,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.pause_sha256": {
+    "first_seq": 48237,
+    "max_string_chars": 64,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "study_resume:event.recovery_ruling": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "bool": 9
+    }
+  },
+  "study_resume:event.timestamp_ns": {
+    "first_seq": 48237,
+    "max_string_chars": 0,
+    "occurrences": 9,
+    "types": {
+      "int": 9
+    }
+  },
+  "study_resume:event.type": {
+    "first_seq": 48237,
+    "max_string_chars": 12,
+    "occurrences": 9,
+    "types": {
+      "str": 9
+    }
+  },
+  "throttle_wait:event": {
+    "first_seq": 18,
+    "max_string_chars": 0,
+    "occurrences": 250635,
+    "types": {
+      "dict": 250635
+    }
+  },
+  "throttle_wait:event.call_id": {
+    "first_seq": 18,
+    "max_string_chars": 39,
+    "occurrences": 250635,
+    "types": {
+      "str": 250635
+    }
+  },
+  "throttle_wait:event.reporting_context": {
+    "first_seq": 18,
+    "max_string_chars": 0,
+    "occurrences": 250635,
+    "types": {
+      "dict": 250635
+    }
+  },
+  "throttle_wait:event.reporting_context.arm": {
+    "first_seq": 18,
+    "max_string_chars": 6,
+    "occurrences": 250635,
+    "types": {
+      "str": 250635
+    }
+  },
+  "throttle_wait:event.reporting_context.branch": {
+    "first_seq": 18,
+    "max_string_chars": 8,
+    "occurrences": 250635,
+    "types": {
+      "str": 250635
+    }
+  },
+  "throttle_wait:event.reporting_context.phase": {
+    "first_seq": 18,
+    "max_string_chars": 10,
+    "occurrences": 250635,
+    "types": {
+      "str": 250635
+    }
+  },
+  "throttle_wait:event.reporting_context.world_ordinal": {
+    "first_seq": 18,
+    "max_string_chars": 0,
+    "occurrences": 250635,
+    "types": {
+      "int": 250635
+    }
+  },
+  "throttle_wait:event.seconds": {
+    "first_seq": 18,
+    "max_string_chars": 0,
+    "occurrences": 250635,
+    "types": {
+      "float": 250635
+    }
+  },
+  "throttle_wait:event.type": {
+    "first_seq": 18,
+    "max_string_chars": 13,
+    "occurrences": 250635,
+    "types": {
+      "str": 250635
+    }
+  },
+  "world_dispatch:event": {
+    "first_seq": 1,
+    "max_string_chars": 0,
+    "occurrences": 108,
+    "types": {
+      "dict": 108
+    }
+  },
+  "world_dispatch:event.branches": {
+    "first_seq": 1,
+    "max_string_chars": 0,
+    "occurrences": 108,
+    "types": {
+      "list": 108
+    }
+  },
+  "world_dispatch:event.branches[]": {
+    "first_seq": 1,
+    "max_string_chars": 6,
+    "occurrences": 432,
+    "types": {
+      "str": 432
+    }
+  },
+  "world_dispatch:event.position": {
+    "first_seq": 1,
+    "max_string_chars": 0,
+    "occurrences": 108,
+    "types": {
+      "int": 108
+    }
+  },
+  "world_dispatch:event.timestamp_ns": {
+    "first_seq": 1,
+    "max_string_chars": 0,
+    "occurrences": 108,
+    "types": {
+      "int": 108
+    }
+  },
+  "world_dispatch:event.type": {
+    "first_seq": 1,
+    "max_string_chars": 14,
+    "occurrences": 108,
+    "types": {
+      "str": 108
+    }
+  },
+  "world_finished:event": {
+    "first_seq": 10968,
+    "max_string_chars": 0,
+    "occurrences": 126,
+    "types": {
+      "dict": 126
+    }
+  },
+  "world_finished:event.position": {
+    "first_seq": 10968,
+    "max_string_chars": 0,
+    "occurrences": 126,
+    "types": {
+      "int": 126
+    }
+  },
+  "world_finished:event.result": {
+    "first_seq": 10968,
+    "max_string_chars": 0,
+    "occurrences": 126,
+    "types": {
+      "dict": 126
+    }
+  },
+  "world_finished:event.result.branch_outcomes": {
+    "first_seq": 610449,
+    "max_string_chars": 0,
+    "occurrences": 108,
+    "types": {
+      "dict": 108
+    }
+  },
+  "world_finished:event.result.branch_outcomes.I_drop": {
+    "first_seq": 610449,
+    "max_string_chars": 0,
+    "occurrences": 2,
+    "types": {
+      "dict": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.I_drop.call_id": {
+    "first_seq": 610449,
+    "max_string_chars": 25,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "world_finished:event.result.branch_outcomes.I_drop.cause": {
+    "first_seq": 610449,
+    "max_string_chars": 16,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "world_finished:event.result.branch_outcomes.I_drop.status": {
+    "first_seq": 610449,
+    "max_string_chars": 9,
+    "occurrences": 2,
+    "types": {
+      "str": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.I_high": {
+    "first_seq": 610449,
+    "max_string_chars": 0,
+    "occurrences": 2,
+    "types": {
+      "dict": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.I_high.call_id": {
+    "first_seq": 610449,
+    "max_string_chars": 25,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "world_finished:event.result.branch_outcomes.I_high.cause": {
+    "first_seq": 610449,
+    "max_string_chars": 16,
+    "occurrences": 1,
+    "types": {
+      "str": 1
+    }
+  },
+  "world_finished:event.result.branch_outcomes.I_high.status": {
+    "first_seq": 610449,
+    "max_string_chars": 9,
+    "occurrences": 2,
+    "types": {
+      "str": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.S_drop": {
+    "first_seq": 610449,
+    "max_string_chars": 0,
+    "occurrences": 2,
+    "types": {
+      "dict": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.S_drop.call_id": {
+    "first_seq": 610449,
+    "max_string_chars": 28,
+    "occurrences": 2,
+    "types": {
+      "str": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.S_drop.cause": {
+    "first_seq": 610449,
+    "max_string_chars": 16,
+    "occurrences": 2,
+    "types": {
+      "str": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.S_drop.status": {
+    "first_seq": 610449,
+    "max_string_chars": 2,
+    "occurrences": 2,
+    "types": {
+      "str": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.S_high": {
+    "first_seq": 610449,
+    "max_string_chars": 0,
+    "occurrences": 2,
+    "types": {
+      "dict": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.S_high.call_id": {
+    "first_seq": 610449,
+    "max_string_chars": 28,
+    "occurrences": 2,
+    "types": {
+      "str": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.S_high.cause": {
+    "first_seq": 610449,
+    "max_string_chars": 16,
+    "occurrences": 2,
+    "types": {
+      "str": 2
+    }
+  },
+  "world_finished:event.result.branch_outcomes.S_high.status": {
+    "first_seq": 610449,
+    "max_string_chars": 2,
+    "occurrences": 2,
+    "types": {
+      "str": 2
+    }
+  },
+  "world_finished:event.result.cause": {
+    "first_seq": 10968,
+    "max_string_chars": 16,
+    "occurrences": 18,
+    "types": {
+      "str": 18
+    }
+  },
+  "world_finished:event.result.detail": {
+    "first_seq": 10968,
+    "max_string_chars": 217,
+    "occurrences": 18,
+    "types": {
+      "str": 18
+    }
+  },
+  "world_finished:event.result.initial_case": {
+    "first_seq": 10968,
+    "max_string_chars": 0,
+    "occurrences": 18,
+    "types": {
+      "list": 18
+    }
+  },
+  "world_finished:event.result.initial_case[]": {
+    "first_seq": 10968,
+    "max_string_chars": 0,
+    "occurrences": 36,
+    "types": {
+      "int": 36
+    }
+  },
+  "world_finished:event.result.result_path": {
+    "first_seq": 610449,
+    "max_string_chars": 245,
+    "occurrences": 108,
+    "types": {
+      "str": 108
+    }
+  },
+  "world_finished:event.result.result_sha256": {
+    "first_seq": 610449,
+    "max_string_chars": 64,
+    "occurrences": 108,
+    "types": {
+      "str": 108
+    }
+  },
+  "world_finished:event.result.status": {
+    "first_seq": 10968,
+    "max_string_chars": 10,
+    "occurrences": 126,
+    "types": {
+      "str": 126
+    }
+  },
+  "world_finished:event.result.unfinished": {
+    "first_seq": 10968,
+    "max_string_chars": 43,
+    "occurrences": 18,
+    "types": {
+      "str": 18
+    }
+  },
+  "world_finished:event.type": {
+    "first_seq": 10968,
+    "max_string_chars": 14,
+    "occurrences": 126,
+    "types": {
+      "str": 126
+    }
+  },
+  "world_misclassification_recovery:event": {
+    "first_seq": 48234,
+    "max_string_chars": 0,
+    "occurrences": 18,
+    "types": {
+      "dict": 18
+    }
+  },
+  "world_misclassification_recovery:event.cause": {
+    "first_seq": 48234,
+    "max_string_chars": 67,
+    "occurrences": 18,
+    "types": {
+      "str": 18
+    }
+  },
+  "world_misclassification_recovery:event.historical_result": {
+    "first_seq": 48234,
+    "max_string_chars": 0,
+    "occurrences": 18,
+    "types": {
+      "dict": 18
+    }
+  },
+  "world_misclassification_recovery:event.historical_result.cause": {
+    "first_seq": 48234,
+    "max_string_chars": 16,
+    "occurrences": 18,
+    "types": {
+      "str": 18
+    }
+  },
+  "world_misclassification_recovery:event.historical_result.detail": {
+    "first_seq": 48234,
+    "max_string_chars": 217,
+    "occurrences": 18,
+    "types": {
+      "str": 18
+    }
+  },
+  "world_misclassification_recovery:event.historical_result.initial_case": {
+    "first_seq": 48234,
+    "max_string_chars": 0,
+    "occurrences": 18,
+    "types": {
+      "list": 18
+    }
+  },
+  "world_misclassification_recovery:event.historical_result.initial_case[]": {
+    "first_seq": 48234,
+    "max_string_chars": 0,
+    "occurrences": 36,
+    "types": {
+      "int": 36
+    }
+  },
+  "world_misclassification_recovery:event.historical_result.status": {
+    "first_seq": 48234,
+    "max_string_chars": 10,
+    "occurrences": 18,
+    "types": {
+      "str": 18
+    }
+  },
+  "world_misclassification_recovery:event.historical_result.unfinished": {
+    "first_seq": 48234,
+    "max_string_chars": 43,
+    "occurrences": 18,
+    "types": {
+      "str": 18
+    }
+  },
+  "world_misclassification_recovery:event.physical_calls_repeated": {
+    "first_seq": 48234,
+    "max_string_chars": 0,
+    "occurrences": 18,
+    "types": {
+      "bool": 18
+    }
+  },
+  "world_misclassification_recovery:event.position": {
+    "first_seq": 48234,
+    "max_string_chars": 0,
+    "occurrences": 18,
+    "types": {
+      "int": 18
+    }
+  },
+  "world_misclassification_recovery:event.timestamp_ns": {
+    "first_seq": 48234,
+    "max_string_chars": 0,
+    "occurrences": 18,
+    "types": {
+      "int": 18
+    }
+  },
+  "world_misclassification_recovery:event.type": {
+    "first_seq": 48234,
+    "max_string_chars": 32,
+    "occurrences": 18,
+    "types": {
+      "str": 18
+    }
+  },
+  "world_resume:event": {
+    "first_seq": 48239,
+    "max_string_chars": 0,
+    "occurrences": 464,
+    "types": {
+      "dict": 464
+    }
+  },
+  "world_resume:event.position": {
+    "first_seq": 48239,
+    "max_string_chars": 0,
+    "occurrences": 464,
+    "types": {
+      "int": 464
+    }
+  },
+  "world_resume:event.type": {
+    "first_seq": 48239,
+    "max_string_chars": 12,
+    "occurrences": 464,
+    "types": {
+      "str": 464
+    }
+  }
+}

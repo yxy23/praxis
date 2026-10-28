@@ -1,26 +1,17 @@
 {
   "name": "paper-fetch",
-  "version": "2026-05-03",
+  "version": "4.5-public",
+  "tier": 1,
   "triggers": [
     "/paper-fetch",
-    "fetch pdf",
-    "find pdf",
-    "download pdf",
-    "attach pdf",
-    "get the pdf",
-    "find the paper",
-    "papers without pdfs",
-    "missing pdfs",
-    "add pdf to zotero"
+    "$paper-fetch"
   ],
   "tools": [
-    "zotero",
-    "web_fetch",
-    "web_search",
-    "bash",
-    "filesystem"
+    "Read",
+    "Bash"
   ],
   "category": "research",
-  "cluster": "research-toolkit",
-  "skill_path": "~/.claude/skills/paper-fetch/SKILL.md"
+  "cluster": "_solo",
+  "skill_path": "~/.claude/skills/paper-fetch/SKILL.md",
+  "knowledge_path": "system/memory/agents/paper-fetch/KNOWLEDGE.md"
 }

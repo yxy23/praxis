@@ -1,0 +1,17 @@
+{
+  "name": "pdf-annotations",
+  "version": "4.5-public",
+  "tier": 1,
+  "triggers": [
+    "/pdf-annotations",
+    "$pdf-annotations"
+  ],
+  "tools": [
+    "Read",
+    "Bash"
+  ],
+  "category": "research",
+  "cluster": "_solo",
+  "skill_path": "~/.claude/skills/pdf-annotations/SKILL.md",
+  "knowledge_path": "system/memory/agents/pdf-annotations/KNOWLEDGE.md"
+}

@@ -1,0 +1,33 @@
+{
+  "format": "ordered-split-zstd-stream",
+  "parts": [
+    {
+      "file": "ingolstadt-journal.public.jsonl.zst.part-000",
+      "bytes": 1000000000,
+      "sha256": "27e24f74e45efec2de24d2656eebb58cb9829b6418cf747546f873f4484f6fd9",
+      "order": 0
+    },
+    {
+      "file": "ingolstadt-journal.public.jsonl.zst.part-001",
+      "bytes": 1000000000,
+      "sha256": "c47ddf176a2fc3510e58c794f0a6732b4b04da7fd7f6a0ec7edb354c8d2cf080",
+      "order": 1
+    },
+    {
+      "file": "ingolstadt-journal.public.jsonl.zst.part-002",
+      "bytes": 481269121,
+      "sha256": "b926de117f0cccdbffe1a39dc8ad5d078ec95457a5232ef09d4455473cfec819",
+      "order": 2
+    }
+  ],
+  "compressed_stream_sha256": "c7e45db50e6e761d2a53d4477bbc67f64f7cf83700ef0aa116606a6ad4ab1c4a",
+  "compressed_bytes": 2481269121,
+  "uncompressed": {
+    "bytes": 75352240251,
+    "file": "journal.public.jsonl",
+    "head": "f8516e7dc7c793c4ce86f01f5094e79e751800a082c8aba6cbf897ce1b44d31e",
+    "sha256": "8d8f657d188645198eecf63e294b0a549228bfd70ae29eb5ba48daca277e3554"
+  },
+  "elapsed_seconds": 13.039855003356934,
+  "publication_status": "locally prepared; join/decompression/chain verification required before publication"
+}

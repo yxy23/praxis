@@ -1,0 +1,45 @@
+{
+  "status": "passed_with_explicit_coverage_limits",
+  "bindings": {
+    "scientific_asset_manifest_sha256": "86cfd01324f2ef9b9c861192ea2b89b1773e3b19bb3b0198bc817f25573ce849",
+    "package_manifest_sha256": "440bb2f4e647589471556286fbb5c12bd0d1a97fd88b072d4a3565506a7f3d1a",
+    "document_projection_sha256": "c6c91ba576d5bd573a3b617c9c99e8b8e6448b7b514bb8da1e728c900ef3d886",
+    "projection_changes_sha256": "898c72e6761d6c9b257fa6b9d34b5f62f7e8970be073b7c8da2fbc4934dca131",
+    "scientific_archive_sha256": "728bf266ab0e68d4987a3fddd80ede747a54ac675ceb935bcc803876856af316",
+    "scientific_archive_bytes": 277705316,
+    "scientific_archive_members": 45363,
+    "public_journal_sha256": "8d8f657d188645198eecf63e294b0a549228bfd70ae29eb5ba48daca277e3554",
+    "public_journal_bytes": 75352240251,
+    "public_journal_records": 1532391,
+    "public_journal_compressed_sha256": "c7e45db50e6e761d2a53d4477bbc67f64f7cf83700ef0aa116606a6ad4ab1c4a",
+    "redaction_map_sha256": "4ecea9c9e81aa5e65445a38ecbd9483dcce89b7dccf5cc272513c6f141330949"
+  },
+  "verified_scope": [
+    "All3 journal parts and joined compressed stream hashed; full75352240251-byte public stream independently hashed and scanned with51 private/category patterns while running the inspected row verifier.",
+    "All1532391 public row hashes/sequences and original commitment continuity verified.1532259 unchanged original rows recomputed;132 changed rows checked against215 declared field replacements. Peer original-value review independently binds all215 substitutions; no experimental event omitted.",
+    "All215 portable journal URI occurrences resolve in the scientific asset tree. Full journal retention refers to scientific journal records, not private room conversations.",
+    "All59 document original/public hashes and108 changed-line commitments recomputed; no undeclared line changes.28 documents changed. Three long source-reader-gap documents fully read; targeted private-context/omission/category and attribution review across remaining documents. Scientific author instructions and adopted scientific rules retained.",
+    "All45358 scientific file hashes verified, no symlinks.5317998346 decoded/text bytes scanned against72 patterns, including every gzip payload.42 hits are25 allowed principal-investigator authority abbreviations and17 withheld-workflow metadata key labels. Wider category/path scan empty.",
+    "All15 changed Python helpers retain computation AST after masking only string literals and explicit private-workflow metadata values; all formatted interpolation expressions unchanged. No helper was executed.",
+    "All87 accepted analysis output members plus their manifest retained.71 members byte-identical;16 projected by path/serialization changes plus2 source-hash-preserving private runtime binding tombstones. Scientific numeric and other non-path values unchanged in independent original/public comparison.",
+    "All2211 gzip headers normalized; six PNG and six SVG figures inspected structurally and six full PNG figures viewed. Nine embedded PNG occurrences/eight unique images decoded, CRC/metadata checked and viewed. No personal content observed; no custom entity declarations, external linked images, scripts or event handlers. Standard W3C SVG1.1 DTD identifiers retained.",
+    "Actual final compressed tar independently decompressed:45363 members all match package manifest, regular files and safe relative paths only, uid/gid/mtime0, empty ownership names,0644, only portable path PAX headers. No extra/missing members or unbound candidate files."
+  ],
+  "resolved_findings": [
+    "Removed private skill/loader/runtime orientation and opaque library locators from supporting documents while preserving scientific reading/exposure facts.",
+    "Restored scientific user_verbatim cut-lift authorization wrongly removed by initial generic key exclusion.",
+    "Projected absolute machine-local JSON keys with collision checks; removed private skill/charter/email boilerplate and personal-state remarks across JSON and ordinary/formatted Python strings.",
+    "Replaced private runtime registry/context source bodies with hash tombstones, retaining actual scientific model-identity/source-drift evidence.",
+    "Excluded local runtime/font caches with recorded source hashes; added missing accepted scientific output members and labelled import-closure support separately from frozen pins."
+  ],
+  "remaining_blocking_findings": [],
+  "limits": [
+    "Pattern scans, exact hashes and selected human/agent reading do not establish an absolute absence of all possible private information.",
+    "This lane did not fully semantically read every journal event or all45358 asset files, rerun scientific analyses, validate all mathematics/citations, or prove scientific conclusions.",
+    "Original changed-row hashes cannot be recomputed from public data alone because original private path values are withheld; original commitments and independent private-source checks are explicitly distinguished.",
+    "The archive is projected scientific evidence, not an unchanged private room export or turnkey executable experiment. Historical path/dependency adaptation remains necessary.",
+    "The separately submitted PDF is outside this review. No provider calls, native agents, uploads, GitHub changes, or modifications of archive contents were performed by this reviewer.",
+    "Reviewer scripts and private pattern/source maps must not be published wholesale."
+  ],
+  "scope_note": "Public summary of independent archive review. Preparation-status text was updated after review; journal and scientific archive byte identities remain those bound here."
+}

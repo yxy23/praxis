@@ -1,0 +1,3 @@
+# Dedicated room editor; not installed into system Python.
+prompt-toolkit==3.0.52
+wcwidth==0.2.13

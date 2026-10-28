@@ -1,0 +1,427 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "praxis_native_claim_check.schema.json",
+  "title": "praxis_native_claim_check",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "receipt_type",
+    "origin",
+    "upstream_execution",
+    "bounds_basis",
+    "coverage_boundary",
+    "missingness",
+    "queries",
+    "retrievals",
+    "retained_sources",
+    "claims",
+    "operation_accounting"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "receipt_type": {
+      "const": "praxis_native_claim_check"
+    },
+    "origin": {
+      "const": {
+        "provider": "praxis-native",
+        "implementation": "original implementation"
+      }
+    },
+    "upstream_execution": {
+      "const": "The upstream Amplifier Fact Check and Deep Research tools were not executed."
+    },
+    "bounds_basis": {
+      "const": "post hoc from the worker's own receipts"
+    },
+    "coverage_boundary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "missingness": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "queries": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "query",
+          "accessed_at"
+        ],
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accessed_at": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "retrievals": {
+      "type": "array",
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "retrieval_id",
+          "source",
+          "accessed_at",
+          "operational_status"
+        ],
+        "properties": {
+          "retrieval_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accessed_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "operational_status": {
+            "enum": [
+              "ok",
+              "retrieval_failed",
+              "tool_failed"
+            ]
+          },
+          "error": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retrieval_kind": {
+            "enum": [
+              "retrieval",
+              "retained_reread"
+            ]
+          },
+          "operation_nonce": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{32}$"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "operational_status": {
+                  "const": "ok"
+                }
+              }
+            },
+            "then": {
+              "$ref": "#/$defs/provenance"
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "operational_status": {
+                  "enum": [
+                    "retrieval_failed",
+                    "tool_failed"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "error",
+                "operation_nonce"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "retained_sources": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/provenance"
+          },
+          {
+            "required": [
+              "source_id"
+            ],
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    "claims": {
+      "type": "array",
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "claim",
+          "evidence",
+          "epistemic_label",
+          "operational_status",
+          "reason"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/provenance"
+            }
+          },
+          "epistemic_label": {
+            "enum": [
+              "supported",
+              "refuted",
+              "unverifiable",
+              "opinion",
+              null,
+              "contradicted",
+              "unresolved"
+            ]
+          },
+          "operational_status": {
+            "enum": [
+              "ok",
+              "retrieval_failed",
+              "tool_failed"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "error": {
+            "type": "string",
+            "minLength": 1
+          },
+          "missing_evidence": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "operational_status": {
+                  "const": "ok"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "epistemic_label": {
+                  "enum": [
+                    "supported",
+                    "refuted",
+                    "unverifiable",
+                    "opinion",
+                    "contradicted",
+                    "unresolved"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "epistemic_label": {
+                  "enum": [
+                    "unverifiable",
+                    "unresolved"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "missing_evidence"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "operational_status": {
+                  "enum": [
+                    "retrieval_failed",
+                    "tool_failed"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "error"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "operation_accounting": {
+      "type": "object",
+      "required": [
+        "stage",
+        "web_discovery_queries",
+        "complete_source_reads",
+        "retrieval_attempts",
+        "checker_source_reads"
+      ],
+      "properties": {
+        "web_discovery_queries": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "complete_source_reads": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 24
+        },
+        "retrieval_attempts": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 30
+        },
+        "stage": {
+          "const": "checker"
+        },
+        "checker_source_reads": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          }
+        },
+        "returned_characters": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "description": "Unique returned-character coverage per source, derived from the helper log; machine extraction is not full model inspection."
+        },
+        "control_reads": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "description": "Frozen non-research control attempts; separately logged, excluded from all research and retained-evidence budgets."
+        }
+      },
+      "description": "Read each source once in full within a producing task, cache that result, and use locators afterward; do not turn repeated complete downloads into free operations. Absolute ceiling remains 8 retained / 6 complete retrievals / 3 web discovery queries; six retrieval attempts including failures, three discovery queries, eight retained sources and six claims, or stricter frozen budgets. The helper is the only source interface. Every search/fetch/read/control/passage/find/hash call appends one hash-chained per-Dispatch log entry and prints one PRAXIS-OP nonce marker. fetch acquires and completely reads a public HTTPS original; read completely reads a local original/cache with PDF/HTML extraction. Both count as complete reads and attempts. search counts one discovery attempt, including failure. read/fetch cache the complete extracted text and print a head of at most 600 characters; passage/find use cached text, at most 4,000 characters per call and 60 successful calls per Dispatch; hash is metadata only; neither counts as a complete read. A complete read is full machine extraction into cache, not model inspection. operation_accounting.returned_characters reports per-source unique returned-character coverage derived from log offsets; repeat returns count once. Search parsed output counts as returned text and the raw response is an inspectable pseudo-source.  operation_accounting is DERIVED from the authoritative log and must equal it exactly, including the stage and per-source map; under-report and over-report both refuse. Producer stage=producer, source_reads each exactly one; checker stage=checker, checker_source_reads each at most three. complete_source_reads equals sum(source_reads.values()) for producers or sum(checker_source_reads.values()) for checkers; retrieval_attempts equals complete_source_reads plus the number of failed retrieval rows; web_discovery_queries equals len(queries). All counters are nonnegative integers, never booleans. Both report complete_source_reads, retrieval_attempts (including failures) and web_discovery_queries. Checker reads of frozen producer retained originals/cache use retrieval_kind=retained_reread; they are rereads rather than acquisitions. Total checker rereads are at most three times retained sources; new acquisitions keep all established retrieval/query budgets and frozen corpus confinement. All successful rows and retained provenance bind helper-log original-byte SHA256. No native web tools or any other source interface are permitted. Control inputs (claim input, rubric, schemas, frozen config and non-research bindings) use control op only: frozen byte-bound non-research files, at most 3 complete control attempts per file per Dispatch. Log nonce and returned-text coverage apply; control_reads records attempts separately. Controls never count toward source_reads, complete_source_reads, retrieval_attempts or retained sources and never constitute claim evidence. "
+    }
+  },
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source",
+        "locator",
+        "source_date",
+        "accessed_at",
+        "content_sha256",
+        "basis"
+      ],
+      "properties": {
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "passage": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 600
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_date": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accessed_at": {
+          "type": "string",
+          "minLength": 1
+        },
+        "content_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "basis": {
+          "enum": [
+            "read_source",
+            "search_result_only"
+          ]
+        },
+        "operation_nonce": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{32}$"
+        },
+        "snippet": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 600
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "basis": {
+                "const": "search_result_only"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "operation_nonce"
+            ]
+          },
+          "else": {
+            "required": [
+              "passage"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "$comment": "native_capabilities.validate additionally checks exact claim parity, source bytes, retrieval linkage, read-vs-search, timestamps and budgets; no entailment judgment."
+}

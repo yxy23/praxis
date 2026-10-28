@@ -1,0 +1,98 @@
+{
+  "status": "all ten residual known-pattern hits classified as synthetic enumeration labels",
+  "source_original_sha256": "7777ae1a4c10abcfa7ad354d216d7509530f8a1ef3b22486bb0122a685b64e02",
+  "public_journal_sha256": "8d8f657d188645198eecf63e294b0a549228bfd70ae29eb5ba48daca277e3554",
+  "hits": [
+    {
+      "seq": 677340,
+      "paired_seq": 677355,
+      "field": "/event/envelope/body_text",
+      "original_record_sha256": "94c0223d880edc189814fd28f5b3ec3c1570a87cae9663d4b644b922cb405527",
+      "field_utf8_sha256": "a798d09d4d2828011f9e2579a9f65e8114d6339d084b4c71327b374cff143156",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    },
+    {
+      "seq": 677355,
+      "paired_seq": 677340,
+      "field": "/event/response/reasoning_channel/text",
+      "original_record_sha256": "ebe74bfdb91a94143e533770a281774492923916ec95d3dcbe75bcffed888dfe",
+      "field_utf8_sha256": "6366b040a9da5b74408311b99abfad009c08195dae346ae2f34df8e226d303a6",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    },
+    {
+      "seq": 778399,
+      "paired_seq": 778411,
+      "field": "/event/envelope/body_text",
+      "original_record_sha256": "e645740684bcbf0c78b2e8717e9684fe159886fc9e5338e4611dd05ca7df864a",
+      "field_utf8_sha256": "3801b6d673734a1b997dbcd3760e0ac55b9157ac0dfb3ad1d3d4708037124e2e",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    },
+    {
+      "seq": 778411,
+      "paired_seq": 778399,
+      "field": "/event/response/reasoning_channel/text",
+      "original_record_sha256": "3f7b2ce78237e503a95d9aa59695ea30ec0789e1de9d2e2a6f31fd8550ea33bd",
+      "field_utf8_sha256": "ef57e96149307e91b0c1681ffde666204dbbed727529b0a4c8b0da1a8c149021",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    },
+    {
+      "seq": 1284509,
+      "paired_seq": 1284554,
+      "field": "/event/envelope/body_text",
+      "original_record_sha256": "90a0249f9053be2ac1f5bc04d370b57c981b4709b31815b0fe892b375935ca42",
+      "field_utf8_sha256": "9f7ddd9b0439211231f276a66a19ea913255e913d72c4a3d5494eec51e8f530d",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    },
+    {
+      "seq": 1284554,
+      "paired_seq": 1284509,
+      "field": "/event/response/reasoning_channel/text",
+      "original_record_sha256": "8582b336c138fb38131984182c6adf7997833b6d8fe76c51372bd3c1b9c72081",
+      "field_utf8_sha256": "cc30c148badb43f2658cc23d4dd3ea74befb0a0b1ef8b98630d0833744cca5e6",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    },
+    {
+      "seq": 1358947,
+      "paired_seq": 1358984,
+      "field": "/event/envelope/body_text",
+      "original_record_sha256": "8c27102418c8e57c53e121b9d4d4bb8d43fc530d7fd5de6b926404c023fd805a",
+      "field_utf8_sha256": "3abf765b8d3e1f0f4b62c404c33977578604c84ecb3437922c7c00ab14aa5771",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    },
+    {
+      "seq": 1358984,
+      "paired_seq": 1358947,
+      "field": "/event/response/reasoning_channel/text",
+      "original_record_sha256": "4403540dcb6989306090025cf6ca291d92ac1eb585e4b838fab66f445b9cb294",
+      "field_utf8_sha256": "098402dc8fdd154e74f77f6f80a5583ec07f0ee3eaea579159f862ce5661e4bc",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    },
+    {
+      "seq": 1364239,
+      "paired_seq": 1364268,
+      "field": "/event/envelope/body_text",
+      "original_record_sha256": "4fc47e5da19266c1521454517b316a7fd0dd6f65eb9ae2feacc9d86f28bb225e",
+      "field_utf8_sha256": "b7e7c3f8f4c89d8216f0027f3aabcf226ad5c7121f65aadc5e12b0784d5f237c",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    },
+    {
+      "seq": 1364268,
+      "paired_seq": 1364239,
+      "field": "/event/response/reasoning_channel/text",
+      "original_record_sha256": "8e19a853a7ad17f89933c14b3d6c518205df2372ec2c2a42bdc1461db012d594",
+      "field_utf8_sha256": "ec5a3d3682895f9f94c974e3b6accd4cf0e87f499c901b753c2aaed977c1254b",
+      "classification": "synthetic response alphabetic enumeration label yy), or its provider stream fragment; no personal identity",
+      "action": "retained unchanged"
+    }
+  ],
+  "scope": "Parent full39pattern scan and independent51pattern stream scan found the same10locations and no other matches. This receipt records bounded exact field inspection, not a guarantee against every possible undiscovered identifier."
+}

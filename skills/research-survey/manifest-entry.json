@@ -1,20 +1,17 @@
 {
   "name": "research-survey",
-  "version": "2026-04-29",
+  "version": "4.5-public",
+  "tier": 1,
   "triggers": [
     "/research-survey",
-    "literature survey",
-    "backward search",
-    "forward search",
-    "citation search",
-    "find papers on"
+    "$research-survey"
   ],
   "tools": [
-    "filesystem",
-    "zotero",
-    "web_fetch"
+    "Read",
+    "Bash"
   ],
   "category": "research",
-  "cluster": "research-toolkit",
-  "skill_path": "~/.claude/skills/research-survey/SKILL.md"
+  "cluster": "_solo",
+  "skill_path": "~/.claude/skills/research-survey/SKILL.md",
+  "knowledge_path": "system/memory/agents/research-survey/KNOWLEDGE.md"
 }

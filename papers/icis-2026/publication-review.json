@@ -1,0 +1,10 @@
+{
+  "papers/icis-2026/ICIS-Supplementary-Materials-2026-10-28.pdf": {
+    "status": "reviewed",
+    "sha256": "6e22ea6066d2e400dc9ce18507f8ce4581899e226c05094e1f1073aa56a147ae",
+    "source_sha256": "6e22ea6066d2e400dc9ce18507f8ce4581899e226c05094e1f1073aa56a147ae",
+    "pages": 59,
+    "change": "None. Exact submitted supplementary materials. Author contact information intentionally retained.",
+    "scope": "All extracted text, metadata, annotations, attachments, local links and known private identifiers checked. The only known identifier matches are the author contact email. No embedded attachments, JavaScript, form fields or local links."
+  }
+}

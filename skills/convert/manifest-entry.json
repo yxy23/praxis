@@ -1,21 +1,17 @@
 {
   "name": "convert",
-  "version": "2026-04-29",
+  "version": "4.5-public",
+  "tier": 1,
   "triggers": [
     "/convert",
-    "convert file",
-    "convert document",
-    "pandoc",
-    "docx to latex",
-    "docx to markdown",
-    "latex to word",
-    "stage collaborator edits"
+    "$convert"
   ],
   "tools": [
-    "filesystem",
-    "bash"
+    "Read",
+    "Bash"
   ],
-  "category": "research-tools",
-  "cluster": "document-tools",
-  "skill_path": "~/.claude/skills/convert/SKILL.md"
+  "category": "source-method",
+  "cluster": "_solo",
+  "skill_path": "~/.claude/skills/convert/SKILL.md",
+  "knowledge_path": "system/memory/agents/convert/KNOWLEDGE.md"
 }

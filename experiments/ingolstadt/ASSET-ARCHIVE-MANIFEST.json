@@ -1,0 +1,23 @@
+{
+  "verified": true,
+  "file": "ingolstadt-scientific-assets.tar.zst",
+  "bytes": 277705316,
+  "sha256": "728bf266ab0e68d4987a3fddd80ede747a54ac675ceb935bcc803876856af316",
+  "uncompressed_tar_bytes": 4317542400,
+  "uncompressed_tar_sha256": "b000343e0ca3558d5c4908449e9537afd0efca5e4d4f2a168f95ccf498f0836b",
+  "files": 45363,
+  "metadata": {
+    "uid": 0,
+    "gid": 0,
+    "uname": "",
+    "gname": "",
+    "mtime": 0,
+    "mode": "0644",
+    "regular_files_only": true,
+    "relative_paths_only": true
+  },
+  "elapsed_seconds": 21.808475971221924,
+  "status": "locally prepared and verified; not uploaded",
+  "package_manifest_sha256": "440bb2f4e647589471556286fbb5c12bd0d1a97fd88b072d4a3565506a7f3d1a",
+  "scientific_manifest_sha256": "86cfd01324f2ef9b9c861192ea2b89b1773e3b19bb3b0198bc817f25573ce849"
+}

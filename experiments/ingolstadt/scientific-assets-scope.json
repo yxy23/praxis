@@ -1,0 +1,131 @@
+{
+  "summary": {
+    "files": 45358,
+    "source_bytes": 4202867704,
+    "public_bytes": 4154249318,
+    "changed_files": 2962,
+    "excluded_private_bookkeeping_files": 2,
+    "categories": {
+      "scientific-provenance-document": 59,
+      "scientific-analysis-code-or-data": 1617,
+      "scientific-run-state": 41094,
+      "repository-import-closure-support": 26,
+      "frozen-manifest-scientific-pin": 2496,
+      "frozen-study-manifest": 13,
+      "repository-dependency-declaration": 2,
+      "scientific-control-provenance": 30,
+      "accepted-scientific-output-closure": 21
+    }
+  },
+  "explicit_exclusions": [
+    {
+      "public_candidate_path": "analysis/scully/c2-stage-c-recheck/verify_reads_and_documents.py",
+      "source_sha256": "6c4c0031bd3d07bc37fc29d85b50235aa8763143d49b90881e18214844704a46",
+      "categories": [
+        "personal_workflow_reference"
+      ],
+      "status": "held-for-content-review",
+      "reason": "private workflow/source-reading bookkeeping; scientific study model, data and outcome analysis retained"
+    },
+    {
+      "public_candidate_path": "analysis/scully/phase2-residual-closure/finish_records.py",
+      "source_sha256": "0aa27c80bed31124d78e7db223b100c8e842ab2aa3c4036be4fdc8176ec3949f",
+      "categories": [],
+      "status": "held-for-content-review",
+      "reason": "private workflow/source-reading bookkeeping; scientific study model, data and outcome analysis retained"
+    },
+    {
+      "public_candidate_path": "analysis/avery/phase2-analysis/p2-3b-repair/reviewer-owned/runtime-cache/fontlist-v3.11.0.json",
+      "source_sha256": "b23a38a64d5ca4d0b2e155ed8dc31cb1faf99a2b2c976ef90ef7b48e37971e2e",
+      "reason": "derived local font/runtime cache; scientific outputs retained"
+    },
+    {
+      "public_candidate_path": "analysis/avery/phase2-analysis/p2-3d-serialization/reviewer-owned/runtime-cache/fontlist-v3.11.0.json",
+      "source_sha256": "ee10311213514fb95c6cc87049002a0a5009f24a46cb43ecf57b02e70fa7bd1e",
+      "reason": "derived local font/runtime cache; scientific outputs retained"
+    },
+    {
+      "public_candidate_path": "analysis/avery/phase2-analysis/p2-3d-serialization/runtime-cache/fontlist-v3.11.0.json",
+      "source_sha256": "0912d3c08dbb8e676679bdbd88fc0ca39084ddf5e34da48715aa358e7115b498",
+      "reason": "derived local font/runtime cache; scientific outputs retained"
+    },
+    {
+      "public_candidate_path": "analysis/scully/phase2-final-technical-recheck/runtime-cache/fontlist-v3.11.0.json",
+      "source_sha256": "da9a981767599be6159752528df1bcca98054f2cb7e375b789d4540ed73fa02e",
+      "reason": "derived local font/runtime cache; scientific outputs retained"
+    },
+    {
+      "public_candidate_path": "analysis/scully/phase2-recheck/runtime-cache/fontlist-v3.11.0.json",
+      "source_sha256": "fc30e70c833089c3f6fa26479fd363182fb25f48f20107d82d000254bddbe962",
+      "reason": "derived local font/runtime cache; scientific outputs retained"
+    }
+  ],
+  "accepted_scientific_output_closure": {
+    "manifest": "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/output-manifest.json",
+    "files": 87,
+    "newly_included": [
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F1-caption.txt",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F1.png",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F1.svg",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F2-caption.txt",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F2.png",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F2.svg",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F3-caption.txt",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F3.png",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F3.svg",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F4-caption.txt",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F4.png",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F4.svg",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F5-caption.txt",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F5.png",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F5.svg",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F6-caption.txt",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F6.png",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/figures/F6.svg",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/process-accounting.csv",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/request-configurations-diagnostic.jsonl",
+      "analysis/avery/phase2-analysis/p2-3d-serialization/corrected-run/requested-configuration-diagnostics.csv"
+    ],
+    "status": "all manifest members included; projection differences recorded by file"
+  },
+  "additional_import_closure_files": [
+    "source/bank.py",
+    "source/contracts.py",
+    "source/hd5_contracts.py",
+    "source/hd5_dose.py",
+    "source/hd5_q4_3b_context.py",
+    "source/hd5_q4_bank.py",
+    "source/hd5_q4_engine.py",
+    "source/hd5_q4_offline.py",
+    "source/hd5_q4_verify.py",
+    "source/hd5_route1_reconcile.py",
+    "source/hd5_route1b_postflight.py",
+    "source/hd5_study_budget_preflight.py",
+    "source/pilot_common.py",
+    "source/pilot_context.py",
+    "source/verify_hd5_offline.py",
+    "source/adviser_schema.py",
+    "source/hd5_bank.py",
+    "source/hd5_offline.py",
+    "source/hd5_q4_context.py",
+    "source/hd5_q4_runtime.py",
+    "source/legacy_prompt_rules.py",
+    "source/measurement_memory.py",
+    "source/continuation_runtime.py",
+    "source/hd5_engine.py",
+    "source/pilot_transport.py",
+    "source/hd5_context.py"
+  ],
+  "status": "prepared and independently privacy-reviewed; release asset not uploaded",
+  "files_manifest_inside_archive": "ASSET-MANIFEST.json",
+  "package_manifest_inside_archive": "PACKAGE-MANIFEST.json",
+  "scientific_manifest_sha256": "86cfd01324f2ef9b9c861192ea2b89b1773e3b19bb3b0198bc817f25573ce849",
+  "package_manifest_sha256": "440bb2f4e647589471556286fbb5c12bd0d1a97fd88b072d4a3565506a7f3d1a",
+  "projection_changes": {
+    "file": "projection-changes.jsonl",
+    "bytes": 103622156,
+    "sha256": "898c72e6761d6c9b257fa6b9d34b5f62f7e8970be073b7c8da2fbc4934dca131",
+    "scope": "original-to-public changes plus explicit subsequent projection corrections; raw private field values are withheld"
+  },
+  "review_scope": "Full file hash and decoded-payload category scan; focused exact documentary/privacy changes and Python computation preservation. No fresh scientific replication."
+}

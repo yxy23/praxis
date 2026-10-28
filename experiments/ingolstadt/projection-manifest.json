@@ -1,0 +1,28 @@
+{
+  "elapsed_seconds": 132.58392810821533,
+  "first_seq": 0,
+  "format": "praxis-public-scientific-journal-v1",
+  "integrity_scope": "Separate public chain. Original row commitments are preserved; private original path values cannot be reconstructed or original row hashes recomputed for changed rows from this public data alone. Scientific contents are retained; local paths become portable archive locators. Hashes do not establish factual correctness.",
+  "last_seq": 1532390,
+  "original": {
+    "bytes": 75088281448,
+    "head": "1828d84d901471067a5058758954e64ce71dcdf14d37a687777d427e6cd8b402",
+    "original_unmodified": true,
+    "sha256": "7777ae1a4c10abcfa7ad354d216d7509530f8a1ef3b22486bb0122a685b64e02"
+  },
+  "public": {
+    "bytes": 75352240251,
+    "file": "journal.public.jsonl",
+    "head": "f8516e7dc7c793c4ce86f01f5094e79e751800a082c8aba6cbf897ce1b44d31e",
+    "sha256": "8d8f657d188645198eecf63e294b0a549228bfd70ae29eb5ba48daca277e3554"
+  },
+  "publication_status": "compressed, fully stream-verified and independently reviewed locally; release assets not uploaded",
+  "records": 1532391,
+  "redactions": {
+    "file": "redactions.jsonl",
+    "local_path_fields_projected": 215,
+    "records_changed": 132,
+    "scientific_attribution_values_retained": 2,
+    "sha256": "4ecea9c9e81aa5e65445a38ecbd9483dcce89b7dccf5cc272513c6f141330949"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "verified": true,
+  "archive_sha256": "728bf266ab0e68d4987a3fddd80ede747a54ac675ceb935bcc803876856af316",
+  "compressed_bytes": 277705316,
+  "uncompressed_tar_bytes": 4317542400,
+  "uncompressed_tar_sha256": "b000343e0ca3558d5c4908449e9537afd0efca5e4d4f2a168f95ccf498f0836b",
+  "files": 45363,
+  "normalized_metadata": true,
+  "full_decompressed_identity_and_zero_only_tar_trailer_verified": true,
+  "verifier_sha256": "09b16ac1e775f629f4d9df734a56c3923628188c3744d0ce03463b8d0c2cc6c1",
+  "scope": "Complete local supporting archive verification, no extraction, experimental execution or publication"
+}
