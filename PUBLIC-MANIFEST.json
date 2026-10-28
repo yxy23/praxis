@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "snapshot": "v1.1.0",
-  "source_kind": "release-snapshot",
+  "snapshot": "pre-refactor-2026-05-11",
+  "source_kind": "archival-snapshot",
   "projection_scope": "partial research-methods-only reconstruction",
-  "source_commit": "38b7831c5a2e7e0f737176cc4090faa808814e1a",
-  "content_tree_sha256": "8fae84887fed182832f33a2c500878945a54465524a2110c3936333368a2b214",
-  "tree_sha256": "8fae84887fed182832f33a2c500878945a54465524a2110c3936333368a2b214",
-  "omitted_selected_source_paths": 42,
+  "source_commit": "b911d211fe6d969aceec7898b00023d6226fef86",
+  "content_tree_sha256": "b4ab0cd2c8e69480ee05508020ea8310e5dada8b995623fdce4166e7cb622ca5",
+  "tree_sha256": "b4ab0cd2c8e69480ee05508020ea8310e5dada8b995623fdce4166e7cb622ca5",
+  "omitted_selected_source_paths": 71,
   "files": [
     {
       "path": ".gitignore",
@@ -23,15 +23,15 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "sha256": "4ba824f897d6965a9b7033cc893db4e1fe8fa9822662de6ad8433ddcaba42f76",
-      "bytes": 1679,
+      "sha256": "5d0f8932f215573a775180d1772d0a8b1e7c1c838679f9d6b88d0a37573c31a8",
+      "bytes": 1664,
       "origin": "new scoped archival documentation"
     },
     {
       "path": "docs/user-guide.md",
       "mode": "100644",
-      "sha256": "48be43d8312629f9470f1aea7680f24b2401c546e2d3e4db74fae6f663cd1b4e",
-      "bytes": 326,
+      "sha256": "b576f01e35b4f5f415d6229b8e5d8a2f0d3a8aa2812bdf286fbb557c0d8a25bb",
+      "bytes": 293,
       "origin": "new scoped archival documentation"
     },
     {
@@ -51,6 +51,78 @@
       "mode": "100755",
       "sha256": "3b7040c09495d9540ac51bda31ae5f5278e791e2ba58ca28dab985c2390f73fc",
       "bytes": 897
+    },
+    {
+      "path": "skills/convert/SKILL.md",
+      "mode": "100644",
+      "sha256": "fbdbcaed4dd6917f638c1dc26974cf9ab9b5893fc05048a9d3c408c589753d36",
+      "bytes": 8813
+    },
+    {
+      "path": "skills/convert/manifest-entry.json",
+      "mode": "100644",
+      "sha256": "a9a3b126986d5f4d845ca960501d15381caf1fa52a91e65812ff4413bbbc53d5",
+      "bytes": 942
+    },
+    {
+      "path": "skills/paper-fetch/SKILL.md",
+      "mode": "100644",
+      "sha256": "b9a8d5f65de2a47232e17aacaca7e59ec0c6ad470b0027619f3bfc8e93bed18c",
+      "bytes": 6943
+    },
+    {
+      "path": "skills/paper-fetch/manifest-entry.json",
+      "mode": "100644",
+      "sha256": "622ad29b1b586d6fd914620a759b7d46af33dc7c82c25e081d3e41abb5d3ed08",
+      "bytes": 1128
+    },
+    {
+      "path": "skills/reading/SKILL.md",
+      "mode": "100644",
+      "sha256": "8b899178b8dd6178e5d78684efaa83fd92722c1f5fcb34bd4c8cc5863fae138a",
+      "bytes": 8965
+    },
+    {
+      "path": "skills/reading/manifest-entry.json",
+      "mode": "100644",
+      "sha256": "4a437824ee63c80b80a119469e6fac822ed2c297ab1f6f68ba6603970b608503",
+      "bytes": 816
+    },
+    {
+      "path": "skills/research-survey/SKILL.md",
+      "mode": "100644",
+      "sha256": "d1fe8a27fbe8765c0975cad5043cc5dfa1b9f2c4f0f62dce3762e26ae254419a",
+      "bytes": 9197
+    },
+    {
+      "path": "skills/research-survey/manifest-entry.json",
+      "mode": "100644",
+      "sha256": "38f2a34026b53a222769a3ea98fe4bdedb3f8b6ab361f52682411ac8dc4ed4da",
+      "bytes": 1063
+    },
+    {
+      "path": "slash-commands/convert.md",
+      "mode": "100644",
+      "sha256": "9fddff84286f84bcd3af4b78c126574c77af56911df84a73e9d3cd43079e1257",
+      "bytes": 1982
+    },
+    {
+      "path": "slash-commands/paper-fetch.md",
+      "mode": "100644",
+      "sha256": "db157e9d8173e34e1d0f273ccf0ba8691641648166a9b40ee8940cea34afd981",
+      "bytes": 1811
+    },
+    {
+      "path": "slash-commands/reading.md",
+      "mode": "100644",
+      "sha256": "caa71248913c3be4b1a18c641035d9d1eea8906662e88288219d34122879b794",
+      "bytes": 1449
+    },
+    {
+      "path": "slash-commands/research-survey.md",
+      "mode": "100644",
+      "sha256": "2b8e9fea9fee94883ba195f71a7faf2be7e7bcd40c9ee0658455cf5d887cd18e",
+      "bytes": 1780
     }
   ]
 }

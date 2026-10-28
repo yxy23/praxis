@@ -1,6 +1,6 @@
-# Praxis v1.1.0 — partial public reconstruction
+# Praxis pre-refactor-2026-05-11 — partial public reconstruction
 
-Source checkpoint: `38b7831c5a2e7e0f737176cc4090faa808814e1a`. Source kind: `release-snapshot`.
+Source checkpoint: `b911d211fe6d969aceec7898b00023d6226fef86`. Source kind: `archival-snapshot`.
 
 This newly prepared archive exposes only reusable research methods and selected generic technical components. It is not the full original release. Original personal workflow content and its Git history remain excluded.
 
@@ -8,7 +8,10 @@ The public skill boundary is limited to document conversion, paper retrieval, an
 
 Available research skills:
 
-No workflow skill from this source checkpoint falls inside the current public scope.
+- convert
+- paper-fetch
+- reading
+- research-survey
 
 Personal lifecycle, administration, editorial, voice, writing, teaching, meetings, mail, travel, and reading-management procedures are excluded as complete categories, together with their stubs, manifests, templates, schedules, hooks, and manuals. No accumulated knowledge, institutional registry, charter, fixture, live state, or captured record is included.
 

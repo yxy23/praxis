@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "version": "public/v1.1.0",
-  "tree_sha256": "5fef586ed303c5cc9af633199aad419d46e1360dab5e6d469061882a66728e9c",
+  "version": "public/pre-refactor-2026-05-11",
+  "tree_sha256": "35c70c946939fed29aeec0356905169b4f6d8c1abfada7162aff665cf38dddd2",
   "files": [
     {
       "path": ".gitignore",
@@ -15,28 +15,28 @@
     },
     {
       "path": "PUBLIC-MANIFEST.json",
-      "sha256": "28e2dee3b0869bd20163a8a0902153939ecc4c10fed3bbcdcae7070b594ec32c",
-      "bytes": 1781
+      "sha256": "6cef3d68ea9928830bc7a83de67bd6b6478143330b89a1460a9d0e5ff2fe451b",
+      "bytes": 4069
     },
     {
       "path": "PUBLIC-SNAPSHOT.json",
-      "sha256": "36e3fa3df6d1f646f70e64136c7bf507cf4c653e2e08a11ca0760958ff033473",
-      "bytes": 366
+      "sha256": "02f942eb500449e206310b9921e192b57128db9b539ef8f26bc57c1b6d3cc201",
+      "bytes": 400
     },
     {
       "path": "PUBLIC-SNAPSHOT.md",
-      "sha256": "3f644a9961a48624104a87ab2613a6120ebb9696491d99fc3b66c983a034586b",
-      "bytes": 1942
+      "sha256": "eab05b04b24f4a18fa106c0e22dab68aeeffdac09d66f738a3c40c3a0d2ec8ac",
+      "bytes": 1928
     },
     {
       "path": "README.md",
-      "sha256": "4ba824f897d6965a9b7033cc893db4e1fe8fa9822662de6ad8433ddcaba42f76",
-      "bytes": 1679
+      "sha256": "5d0f8932f215573a775180d1772d0a8b1e7c1c838679f9d6b88d0a37573c31a8",
+      "bytes": 1664
     },
     {
       "path": "docs/user-guide.md",
-      "sha256": "48be43d8312629f9470f1aea7680f24b2401c546e2d3e4db74fae6f663cd1b4e",
-      "bytes": 326
+      "sha256": "b576f01e35b4f5f415d6229b8e5d8a2f0d3a8aa2812bdf286fbb557c0d8a25bb",
+      "bytes": 293
     },
     {
       "path": "scripts/pre-commit-hook.sh",
@@ -52,6 +52,66 @@
       "path": "scripts/setup-hooks.sh",
       "sha256": "3b7040c09495d9540ac51bda31ae5f5278e791e2ba58ca28dab985c2390f73fc",
       "bytes": 897
+    },
+    {
+      "path": "skills/convert/SKILL.md",
+      "sha256": "fbdbcaed4dd6917f638c1dc26974cf9ab9b5893fc05048a9d3c408c589753d36",
+      "bytes": 8813
+    },
+    {
+      "path": "skills/convert/manifest-entry.json",
+      "sha256": "a9a3b126986d5f4d845ca960501d15381caf1fa52a91e65812ff4413bbbc53d5",
+      "bytes": 942
+    },
+    {
+      "path": "skills/paper-fetch/SKILL.md",
+      "sha256": "b9a8d5f65de2a47232e17aacaca7e59ec0c6ad470b0027619f3bfc8e93bed18c",
+      "bytes": 6943
+    },
+    {
+      "path": "skills/paper-fetch/manifest-entry.json",
+      "sha256": "622ad29b1b586d6fd914620a759b7d46af33dc7c82c25e081d3e41abb5d3ed08",
+      "bytes": 1128
+    },
+    {
+      "path": "skills/reading/SKILL.md",
+      "sha256": "8b899178b8dd6178e5d78684efaa83fd92722c1f5fcb34bd4c8cc5863fae138a",
+      "bytes": 8965
+    },
+    {
+      "path": "skills/reading/manifest-entry.json",
+      "sha256": "4a437824ee63c80b80a119469e6fac822ed2c297ab1f6f68ba6603970b608503",
+      "bytes": 816
+    },
+    {
+      "path": "skills/research-survey/SKILL.md",
+      "sha256": "d1fe8a27fbe8765c0975cad5043cc5dfa1b9f2c4f0f62dce3762e26ae254419a",
+      "bytes": 9197
+    },
+    {
+      "path": "skills/research-survey/manifest-entry.json",
+      "sha256": "38f2a34026b53a222769a3ea98fe4bdedb3f8b6ab361f52682411ac8dc4ed4da",
+      "bytes": 1063
+    },
+    {
+      "path": "slash-commands/convert.md",
+      "sha256": "9fddff84286f84bcd3af4b78c126574c77af56911df84a73e9d3cd43079e1257",
+      "bytes": 1982
+    },
+    {
+      "path": "slash-commands/paper-fetch.md",
+      "sha256": "db157e9d8173e34e1d0f273ccf0ba8691641648166a9b40ee8940cea34afd981",
+      "bytes": 1811
+    },
+    {
+      "path": "slash-commands/reading.md",
+      "sha256": "caa71248913c3be4b1a18c641035d9d1eea8906662e88288219d34122879b794",
+      "bytes": 1449
+    },
+    {
+      "path": "slash-commands/research-survey.md",
+      "sha256": "2b8e9fea9fee94883ba195f71a7faf2be7e7bcd40c9ee0658455cf5d887cd18e",
+      "bytes": 1780
     }
   ]
 }
