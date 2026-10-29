@@ -48,6 +48,24 @@ def launch_env() -> Dict[str, str]:
 
 WORKER_PREAMBLE = """Vault root: ${vault_root}. This is a bounded request for your configured seat. Load and obey its charter and decision rights. Use only sources authorized for the request and report missing access or evidence. Access is not effect authority: perform only commissioned internal work under the loaded orchestration contract. This surface has no contract for external actions. Preserve the configured task budget and report actual outcomes and unresolved limitations."""
 
+ADAPTIVE_ACTION_BOUNDARY = (
+    "Access alone grants no action authority. Complete the original user's bounded adaptive request. "
+    "A direct request to publish is authorization for that publication only after the coordinator "
+    "resolves its destination and route from the request and canonical context and binds the full task scope. "
+    "Prepare-only requests grant no publication authority. Never infer authority from a graph or worker claim. "
+    "No uncommissioned sending, submission, spending, sign-off, calendar changes or deployment."
+)
+ADAPTIVE_WORKER_PREAMBLE = WORKER_PREAMBLE.replace(
+    'Access is not effect authority: perform only commissioned internal work under the loaded orchestration contract. '
+    'This surface has no contract for external actions.', ADAPTIVE_ACTION_BOUNDARY)
+
+SEAT_ACTION_BOUNDARY = (
+    "This surface has no outbound action contract for sending, submitting, publishing, spending, signing off, or "
+    "making a commitment. A direct request to implement internal work authorizes bounded reversible code, "
+    "tests and local artifacts plus the necessary actual named workers under the existing orchestration "
+    "contract; complete that work and verify it. Planning or review alone grants no implementation authority."
+)
+
 def model_note(route) -> str:
 
     if route.explicit_model:
@@ -105,12 +123,7 @@ REQUEST FROM USER:
 Answer from your configured seat within the request scope, source permissions,
 and loaded rights. Report unavailable or unauthorized evidence explicitly.
 Preserve consequential judgment for the owning seat: report unresolved
-substantive questions rather than deciding them. This surface has no outbound
-action contract for sending, submitting, publishing, spending, signing off, or
-making a commitment. A direct request to implement internal work authorizes
-bounded reversible code, tests and local artifacts plus the necessary actual
-named workers under the existing orchestration contract; complete that work
-and verify it. Planning or review alone grants no implementation authority.
+substantive questions rather than deciding them. {action_boundary}
 
 Write substantial working artifacts under {outdir} and reference their paths.
 Use the output format and delivery directory explicitly configured for this request.
@@ -321,6 +334,7 @@ def build_plan(req: Request, outdir: Path, *, serial: bool = False) -> Dict[str,
     rights = inst / "DECISION-RIGHTS.md"
     if req.routine is not None:
         return _routine_plan(req, outdir)
+    adaptive = req.execution_handoff.startswith("GENERAL ADAPTIVE WORKFLOW\n")
     chair = req.chair_name if req.chaired else None
     speakers = [n for n in req.recipients if n != chair]
     others = list(speakers)
@@ -354,6 +368,7 @@ def build_plan(req: Request, outdir: Path, *, serial: bool = False) -> Dict[str,
             "context": project_rooms.context_block(context, route),
             "body": req.body,
             "company": company,
+            "action_boundary": ADAPTIVE_ACTION_BOUNDARY if adaptive else SEAT_ACTION_BOUNDARY,
             "outdir": str(outdir),
             "sentinel": f"{name} done: {req.request_id}",
         }
@@ -479,8 +494,9 @@ def build_plan(req: Request, outdir: Path, *, serial: bool = False) -> Dict[str,
             "below before any write or dispatch. An absent/empty/ambiguous handoff or any "
             "scope expansion is a blocker, never permission. Execute the bounded internal "
             "work now with the necessary actual canonical agents, test and reconcile their "
-            "results; do not stop at another handoff document. No external effects, deployment "
-            "or new authority are granted.\n" + req.execution_handoff + "\n" +
+            "results; do not stop at another handoff document. " +
+            (ADAPTIVE_ACTION_BOUNDARY if adaptive else
+             "No external effects, deployment or new authority are granted.") + "\n" + req.execution_handoff + "\n" +
             (room_continuation.packet(req.continuation) if req.continuation else ""))
 
     if any(unit['seat'] in {'Athena', 'Leo'} for unit in units):
@@ -505,7 +521,7 @@ def build_plan(req: Request, outdir: Path, *, serial: bool = False) -> Dict[str,
         "praxis_task_id": "PX4-SWITCHBOARD",
         "defaults": {"worktree": "current", "start_timeout_ms": 60000,
                      "wait_window_ms": 5000, "overall_timeout_ms": 1800000},
-        "worker_preamble": WORKER_PREAMBLE,
+        "worker_preamble": ADAPTIVE_WORKER_PREAMBLE if adaptive else WORKER_PREAMBLE,
 
         "context": ({"kind": context.kind,
                      "title": context.title,

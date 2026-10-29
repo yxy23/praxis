@@ -81,7 +81,13 @@ Deep Research and Fact Check retain exact source/code hashes, Run/Task/Dispatch
 binding, operation logs, acquisition budgets, and missing-evidence results.
 The general adaptive runtime retains custody, finite resource bounds, explicit
 authority, and a serialized allowlist of terminal close/rename and workspace
-display-name/comment effects. It reports `production_admitted=False`.
+display-name/comment effects. General `native_task` nodes also produce declared
+files, run repeatable checks, and perform explicitly requested publication with
+independent readback through existing host tools. Request-bound coordinator
+assignments govern those tasks. See [General adaptive tasks](ADAPTIVE-TASKS.md)
+for the schema, fictional example, retained evidence and reconciliation.
+`production_admitted=False` labels the general runner path; it does not mean
+that explicitly authorized file creation or publication is disabled.
 
 Personal routines, inbox and calendar workflows, editorial/voice procedures,
 teaching and administrative loaders, and their qualification entrypoints are

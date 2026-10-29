@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased: general adaptive tasks, October 28, 2026
+
+- Project the reviewed general task runner, actual output checks, request-bound scope, publication readback and original-task reconciliation.
+- Keep reference snapshots separate from current operating instructions and retain successful outputs across fresh continuations.
+- Update the configured room and dispatcher contracts; include a fictional, zero-launch graph preparation helper.
+- Preserve the seven-method catalog and all personal-category exclusions. Native qualification of a configured public deployment remains separate.
+
 ## 4.5 public edition
 
 - Publish seven technical/source methods: conversion, bibliographic acquisition, scientific reading, PDF annotation recovery, literature survey, graph retrieval and semantic retrieval.

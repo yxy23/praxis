@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "kind": "sanitized-configured-source",
-  "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+  "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
   "files": [
     {
       "path": "hooks/agent_home_guard.py",
       "source_path": "hooks/agent_home_guard.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "f132fa3c5b4a196ac5ddcc612a92501ebb462f34cb764361e10e2922360951eb",
       "projected_sha256": "d7495408039a28bbea3fad4f4808c8aaec7d380bee8f60b24185cdda84755bce",
       "transforms": [
@@ -18,7 +18,7 @@
     {
       "path": "scripts/artifact_links.py",
       "source_path": "scripts/artifact_links.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "e7caebceaa35287bee87794afa3e227608a7ece18e4411c363f636aa8ca17eb7",
       "projected_sha256": "e83faf529108f92b0589a3a26c129d604340e65ef09060206e56d559dcec2c3c",
       "transforms": [
@@ -29,7 +29,7 @@
     {
       "path": "scripts/install-switchboard-runtime.sh",
       "source_path": "scripts/install-switchboard-runtime.sh",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "3d476f8ad12eabc95579e504f28427922ee9cdf6992a259d62079885a4fff9c6",
       "projected_sha256": "3d476f8ad12eabc95579e504f28427922ee9cdf6992a259d62079885a4fff9c6",
       "transforms": [
@@ -40,7 +40,7 @@
     {
       "path": "services/praxis-switchboard/ROOM-UI.md",
       "source_path": "services/praxis-switchboard/ROOM-UI.md",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "2bd74bf4b6e7e5bcc34ce778eef381fe7798cf8f43771a8471bdf9530f7b5856",
       "projected_sha256": "8d29fc182ab57dfc9243af7569d9ce8b1540b5c1b6e5bad72481b3d58bf612d8",
       "transforms": [
@@ -52,7 +52,7 @@
     {
       "path": "services/praxis-switchboard/adaptive_runtime.py",
       "source_path": "services/praxis-switchboard/adaptive_runtime.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "1c613c0c6b0d2a1fb9dde10e2d6b71eea0d8dca16845e5265fa05d41a255b675",
       "projected_sha256": "1954eff60b523b48bb61b3f9c4e1ce51d0845b256737cd068cb2bc62217f5fb8",
       "transforms": [
@@ -64,7 +64,7 @@
     {
       "path": "services/praxis-switchboard/guards.py",
       "source_path": "services/praxis-switchboard/guards.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "7d5e0e946daf4fd90dccb0adc644dbd78fc30725494faa210a72060b19018fab",
       "projected_sha256": "f60793fcd0040fb7ff34ab8f2a15c3c6112c77998be29b189cc2cd97de223ec6",
       "transforms": [
@@ -75,7 +75,7 @@
     {
       "path": "services/praxis-switchboard/live_room.py",
       "source_path": "services/praxis-switchboard/live_room.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "d4c9fe3f3bec16faa3dc6a7afade798fe533cd62bef81b27fc909ae97f6c1106",
       "projected_sha256": "c2fbe9fa2ae9143521ad7f6ccf3794ad43ed916abc774589740f086af411819c",
       "transforms": [
@@ -87,7 +87,7 @@
     {
       "path": "services/praxis-switchboard/local.py",
       "source_path": "services/praxis-switchboard/local.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "233f3b60d1fe9816354b9b137fef3bc20af44beef467c685c1f2f16ed06fa9f6",
       "projected_sha256": "6e82433c44fceb2edfe959a5e29814eeb520b9ddf750b17d10d3c9ff41d3ed92",
       "transforms": [
@@ -99,7 +99,7 @@
     {
       "path": "services/praxis-switchboard/named_launch.py",
       "source_path": "services/praxis-switchboard/named_launch.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "28122b237f6b813648514d32fc83541f728af1895d5a25e57290cb5716ffce6b",
       "projected_sha256": "6a0dc6cf7dda6644cffb67bd38f0f6346d66d6287e60607baec8fa8ca87a7799",
       "transforms": [
@@ -111,7 +111,7 @@
     {
       "path": "services/praxis-switchboard/project_rooms.py",
       "source_path": "services/praxis-switchboard/project_rooms.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "fce336c571d61511d6cebdbb159b8d4372aa4995480da7737a85093ad25bf183",
       "projected_sha256": "5a5156640ad2a08e147a41dd48a1635d249393748ae724457aa081a1cbbbaba4",
       "transforms": [
@@ -124,7 +124,7 @@
     {
       "path": "services/praxis-switchboard/registry.py",
       "source_path": "services/praxis-switchboard/registry.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "88ebc7a7ed77cee984b823b3a32cdaee7841886528a3c87fb06733a339e475a9",
       "projected_sha256": "908a59803aef843df5e93850099d93499ba0fa3289cb8f4c01c3499d7fc85a81",
       "transforms": [
@@ -136,7 +136,7 @@
     {
       "path": "services/praxis-switchboard/requirements.txt",
       "source_path": "services/praxis-switchboard/requirements.txt",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "4a170e1157a6ee30a0ddf8fb4022921660a1c33acac3f1ecdafbc2bdd1f48020",
       "projected_sha256": "4a170e1157a6ee30a0ddf8fb4022921660a1c33acac3f1ecdafbc2bdd1f48020",
       "transforms": [
@@ -147,7 +147,7 @@
     {
       "path": "services/praxis-switchboard/research_trace.py",
       "source_path": "services/praxis-switchboard/research_trace.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "26dbdd5497c2257e3cdac2a35c081b69af452061b2f8ca770b6d66aa4917eebc",
       "projected_sha256": "5d682d7d5355b1b29ac8cd054fe43d235746001aebc159ea3de307af7e24ab6a",
       "transforms": [
@@ -159,9 +159,9 @@
     {
       "path": "services/praxis-switchboard/room_adaptive.py",
       "source_path": "services/praxis-switchboard/room_adaptive.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
-      "source_sha256": "287f4e3c63f6105bbc475455c6e94a1da19685550351c92d1b36934131cbbfbe",
-      "projected_sha256": "9814c99c52d3f852af6af6c0747521dceabf4dff36d6b9ad935059bb9fdc2e98",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
+      "source_sha256": "2c39aaa24c150cbc94c2001a40e5b94b6011222660993d7677a6738e4f7ec48e",
+      "projected_sha256": "32ce1abe11bbf4dcef349bb1c60e22f3dbec580ae7fc653913055e13398bbafa",
       "transforms": [
         "public-identities-v1",
         "exclude-source-comments-and-docstrings"
@@ -170,7 +170,7 @@
     {
       "path": "services/praxis-switchboard/room_attractor.py",
       "source_path": "services/praxis-switchboard/room_attractor.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "0d15e260d1f3f3f2a2611e5cae7f9e383c60996cd4839e6f6ff95340eab35dad",
       "projected_sha256": "f43163d954c896b8595ccfdbd9396877f22007d13b4c14627745d23654f1cd72",
       "transforms": [
@@ -181,7 +181,7 @@
     {
       "path": "services/praxis-switchboard/room_commands.py",
       "source_path": "services/praxis-switchboard/room_commands.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "8b925478a54ebae445b8de8440b6f6a6c8b354894dc69075a0410edfbc1d5028",
       "projected_sha256": "2e26f9ae7feb947a36d9a5afc8e71e6a7d2f7474c600e874f313cc98e8c6b2d8",
       "transforms": [
@@ -192,7 +192,7 @@
     {
       "path": "services/praxis-switchboard/room_continuation.py",
       "source_path": "services/praxis-switchboard/room_continuation.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "0c889283ba037e2e1c9173812420a5d5ed42db21da79ffc1846188c9f34da3ef",
       "projected_sha256": "df875fb1f60eefe8a648eec43edd1fab2a199ad2d0b2a77bc9193dca725ffd20",
       "transforms": [
@@ -203,7 +203,7 @@
     {
       "path": "services/praxis-switchboard/room_identity.py",
       "source_path": "services/praxis-switchboard/room_identity.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "968016d7d0ce06871b6fef3b49b5ef87fc19022243af22e3f755d903e37b4af6",
       "projected_sha256": "8784cd3354f9932e9aca9dc8c5dbd435216d5cfcb4de6363ece1f06f1b73c1b1",
       "transforms": [
@@ -214,7 +214,7 @@
     {
       "path": "services/praxis-switchboard/room_planning.py",
       "source_path": "services/praxis-switchboard/room_planning.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "36299826763a672a4fad5bb6a6d260e6150f5ac838d61e90bf0f95dd6e829f2b",
       "projected_sha256": "69650f219b2c79472731bbde26e884c02311b0822de7f7d03dd682661113fa63",
       "transforms": [
@@ -227,7 +227,7 @@
     {
       "path": "services/praxis-switchboard/room_runtime.py",
       "source_path": "services/praxis-switchboard/room_runtime.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "361f26da636cb815e7e32562acbdfdf6e448d76046099dce48f9085ee027c779",
       "projected_sha256": "27bb336bfdd0e3c9cf82e79d98c4d4dc385c6a556fc2c6d006bd00b46b06ca5e",
       "transforms": [
@@ -238,7 +238,7 @@
     {
       "path": "services/praxis-switchboard/room_ui.py",
       "source_path": "services/praxis-switchboard/room_ui.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "8e255155df9e715e95d6fe85ba5a3293233d88bb0ab4858b6a4d4d9462531874",
       "projected_sha256": "bb026f9e2cdd9245b9eea85dfe449526e99a255159615d91af780f7e59bb419b",
       "transforms": [
@@ -249,7 +249,7 @@
     {
       "path": "services/praxis-switchboard/rooms.py",
       "source_path": "services/praxis-switchboard/rooms.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "bc9b529cb4ed2c79ecc4573ee6942003abb95b8ba118038efbebe3a0589e944e",
       "projected_sha256": "b3ed05e8ccd50554177845ca892c0055584dc6c97c77fbd1b89c8a71128d4885",
       "transforms": [
@@ -260,7 +260,7 @@
     {
       "path": "services/praxis-switchboard/routing.py",
       "source_path": "services/praxis-switchboard/routing.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "0d9ec7bae90b4f53cb6b3fdecdc7a40bed1b3b0363303c2b10b8eb4dac997740",
       "projected_sha256": "6a1005ed6d63d38d3b8cc873312e8c9b65f40f7fa7c72758e0fa83b99b32bdd1",
       "transforms": [
@@ -272,9 +272,9 @@
     {
       "path": "services/praxis-switchboard/runner.py",
       "source_path": "services/praxis-switchboard/runner.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
-      "source_sha256": "bcca1676b74bf5f1358cb207f6bb33f27371bb529b52cd773a789d46ec48c039",
-      "projected_sha256": "6b645e29a01338dcd6eded5df31f20d2a90f009bfbe13ab96b124258cc643378",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
+      "source_sha256": "332f30403eb5c02617f256b06ca2fc98838dbedefdc369517a4c6ad291239927",
+      "projected_sha256": "ed4768d716a4617d0451046b76c534353e8387f465f745d761a5da69090bb0d5",
       "transforms": [
         "public-identities-v1",
         "exclude-source-comments-and-docstrings",
@@ -284,7 +284,7 @@
     {
       "path": "services/praxis-switchboard/service.py",
       "source_path": "services/praxis-switchboard/service.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "afece30ce32e5cab4129b063a4eaa50af2d5526ce86104c9961c30c919dac633",
       "projected_sha256": "b2d0c3157c9f080c4a32b43b74062eeb36e49763f7d57b66c1be17fa14a1a7f3",
       "transforms": [
@@ -295,7 +295,7 @@
     {
       "path": "services/praxis-switchboard/state.py",
       "source_path": "services/praxis-switchboard/state.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "6441955197ba5ced05b3e3b0f478bc709bd636959f8093d293ac08a9f20ba09a",
       "projected_sha256": "07e1697549ea0b956f9c4ec624ab3632d8d419b854d39f006a11d24116fe3261",
       "transforms": [
@@ -306,7 +306,7 @@
     {
       "path": "services/praxis-switchboard/switchboard.py",
       "source_path": "services/praxis-switchboard/switchboard.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "1ca3ab752bd9f97b115c692436d477e5437e49a5f25ccac5e506ea49bbd8e613",
       "projected_sha256": "20dd704e5f822026d1e1759e9bddb2b16c4fd46f9f1683b19038c1c1203f78e3",
       "transforms": [
@@ -317,7 +317,7 @@
     {
       "path": "services/praxis-switchboard/test_room_ui.py",
       "source_path": "services/praxis-switchboard/test_room_ui.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "e538f35664d036877ba67c5f9d27382be3aaa0ed3fe1cea355871419d76d3348",
       "projected_sha256": "ddea7650727e7047493d6b1ada0e9f3fec28a6dd5a77c5cc4b1fec3a9d172854",
       "transforms": [
@@ -329,7 +329,7 @@
     {
       "path": "services/praxis-switchboard/transport_local.py",
       "source_path": "services/praxis-switchboard/transport_local.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "a499c1b4ec76f3c5fcc5aee7b76ff4080ffc363e8b0b2dd11b161d18323a058f",
       "projected_sha256": "44d13a53fcc66442b2c92084e237bc3260f3caaa2f0838b9ae51beb32dcb09eb",
       "transforms": [
@@ -341,7 +341,7 @@
     {
       "path": "services/praxis45/acquisition.py",
       "source_path": "services/praxis45/acquisition.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "e49cbaf8677c6c07e2cf97b1cd45c3d6b04ef890c97ffa59cb055538db756b30",
       "projected_sha256": "ef0728678094fed0a5a4f94fa4d2379661796760f00a657cb2456534abfb2f4e",
       "transforms": [
@@ -353,7 +353,7 @@
     {
       "path": "services/praxis45/adaptive_ci.py",
       "source_path": "services/praxis45/adaptive_ci.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "8b673ebbdc2fdb0e85f8fa84b6d19811aff72a67c41b0fc8d273d29a7097dbdb",
       "projected_sha256": "2e2bb8b425ac72b91b1321902e887a4233a14643f3fb948e6b19da80d81ca6e4",
       "transforms": [
@@ -365,7 +365,7 @@
     {
       "path": "services/praxis45/adaptive_collectors.py",
       "source_path": "services/praxis45/adaptive_collectors.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "a5c1d86c3ba2ff8cb19153ab74cc03bc1336581268eddf2c5ea4b745b0c2ad3c",
       "projected_sha256": "0572becef8ca68e97b03081764990d4c75a8c0b833768d2253bbb14a3bec38e3",
       "transforms": [
@@ -376,9 +376,9 @@
     {
       "path": "services/praxis45/adaptive_contract.py",
       "source_path": "services/praxis45/adaptive_contract.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
-      "source_sha256": "4c3ea32b502c6088ac900a7740c641fca5e165f5be403a65b8082b1301421abc",
-      "projected_sha256": "06ece4e32e3f4bcf8608180ff1a8505ac68ca1c5ca1bd95fd03ec7df52a2bd26",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
+      "source_sha256": "8ca4dfc21ddb0f3a03b0db06f28b99ae351890b7229f7a052ed7dec073d96a8a",
+      "projected_sha256": "18a561cebfac22434410477dd0f71cba584fb662ca006ed124342c77760a0a57",
       "transforms": [
         "public-identities-v1",
         "exclude-source-comments-and-docstrings",
@@ -388,7 +388,7 @@
     {
       "path": "services/praxis45/adaptive_coordinator.py",
       "source_path": "services/praxis45/adaptive_coordinator.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "d1df7ce8c1fa20bfc3a9a97137af6c8212f4e9c29608eb7891b8dc881fd9d0f0",
       "projected_sha256": "ecd8c80e1f255a9cbdcdd9ce83647bab32dd4f830de63ef3d28ea007d882692a",
       "transforms": [
@@ -400,7 +400,7 @@
     {
       "path": "services/praxis45/adaptive_engine.py",
       "source_path": "services/praxis45/adaptive_engine.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "3fccd9d36a9ffd0dd7dac451586c2cd2b1fd2d00537e02e1f72c4bf6a00e0495",
       "projected_sha256": "cf896f7b379759216be3c295ef6a9caec026392a81f9d1459b12d71b8194307d",
       "transforms": [
@@ -411,7 +411,7 @@
     {
       "path": "services/praxis45/adaptive_evidence.py",
       "source_path": "services/praxis45/adaptive_evidence.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "d39193e2d78e6f797c9365448bab3cd1409b0962dd5be9cb5e6fcfdac5328526",
       "projected_sha256": "7c6cdf45997b19b788d77c638980beb8f587db7cfa44f08bd92fdbd0735d5d90",
       "transforms": [
@@ -423,19 +423,20 @@
     {
       "path": "services/praxis45/adaptive_general.py",
       "source_path": "services/praxis45/adaptive_general.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
-      "source_sha256": "30e10b6fde1061811b9f15cfe35835839c65103a682c2d4ef7dae1c67bf14d1c",
-      "projected_sha256": "99f0ec41850108577d7ebbe1832f84341befc220551668664998aa277fe8c14c",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
+      "source_sha256": "3da43a5226ea6517916002a618a40e8b4ce02a5f84f18215ef7b26bf3419e0a9",
+      "projected_sha256": "3cb682ea1a032ac76cfbaa41c47982c62294ee594b9fc8e58399ea23336a6cde",
       "transforms": [
         "public-identities-v1",
         "exclude-source-comments-and-docstrings",
-        "import-extracted-native-support-guards"
+        "import-extracted-native-support-guards",
+        "normalize-projected-whitespace"
       ]
     },
     {
       "path": "services/praxis45/adaptive_learning.py",
       "source_path": "services/praxis45/adaptive_learning.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "810d0895d5aa9eef70f26c4f928e180cdfd38897253d06e49f880352db3f7202",
       "projected_sha256": "13a15053094f5ea2d2e61f4c578f41f224a74117fc651b8d9f2b7c1ec26d3b0b",
       "transforms": [
@@ -447,7 +448,7 @@
     {
       "path": "services/praxis45/adaptive_mutations.py",
       "source_path": "services/praxis45/adaptive_mutations.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "699020db6749d717429b20327109ac7a6cb513aa1bfe7f250778f9405994618c",
       "projected_sha256": "5d300b5312518e008d229c7986237fddd3300b759dd22110e6d4d6885b48460f",
       "transforms": [
@@ -458,7 +459,7 @@
     {
       "path": "services/praxis45/adaptive_native.py",
       "source_path": "services/praxis45/adaptive_native.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "4a2988c270be86f57f75e18d206ae51497d297892afd5ee6d78a4d7dfaee3c3f",
       "projected_sha256": "8a6f2570386954940537ecfe5e481b4264e083a612a5e5998f60dbb8ad4c042c",
       "transforms": [
@@ -469,7 +470,7 @@
     {
       "path": "services/praxis45/adaptive_state.py",
       "source_path": "services/praxis45/adaptive_state.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "389c8ac7e6c0c1df6bbd501e5ac4b0aa15eb321a7ac8b47dc8cd98090adb884e",
       "projected_sha256": "919d38624e2cd76781736d3fc108681ad3954333cd1f252a73b88a0ba6d49897",
       "transforms": [
@@ -480,7 +481,7 @@
     {
       "path": "services/praxis45/adaptive_supervision.py",
       "source_path": "services/praxis45/adaptive_supervision.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "7bf95abc164f75bd8d96a5165504ba38b55a1741eae24d40e5a7b25986bec140",
       "projected_sha256": "a5e6f6276241e678b118bf9b2f655d56259d4f8eb51932f61c64d5224f1c9df7",
       "transforms": [
@@ -489,9 +490,35 @@
       ]
     },
     {
+      "path": "services/praxis45/adaptive_task_example.py",
+      "source_path": "services/praxis45/adaptive_task_example.py",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
+      "source_sha256": "5a3044a407e469494839932b5d4ac740c7b947387c57f4837380deea62ad8736",
+      "projected_sha256": "464608ed9b0a7e8fe9167149a714de35668b2e062e1c87e97b79ad1b362582db",
+      "transforms": [
+        "public-identities-v1",
+        "exclude-source-comments-and-docstrings",
+        "fictional-project-context",
+        "normalize-projected-whitespace"
+      ]
+    },
+    {
+      "path": "services/praxis45/adaptive_tasks.py",
+      "source_path": "services/praxis45/adaptive_tasks.py",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
+      "source_sha256": "d5b1ceca248276395788e28ef629037498b5a844d657a30929fd1bd74439ff39",
+      "projected_sha256": "c30d50984ce697402719176281e1cc16427770cc5ea401276b5cfb33fdd41b84",
+      "transforms": [
+        "public-identities-v1",
+        "exclude-source-comments-and-docstrings",
+        "import-extracted-native-support-guards",
+        "normalize-projected-whitespace"
+      ]
+    },
+    {
       "path": "services/praxis45/candidate_run.py",
       "source_path": "services/praxis45/candidate_run.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "32d0d10d6ead628066ab37fef43b3cfe70037c8d26cba3174c93a262ae2c0f6e",
       "projected_sha256": "c4677dc047f8cfc002a0b936ca5df35f0df106bc40be2f4857fe258c3cd3a09a",
       "transforms": [
@@ -502,7 +529,7 @@
     {
       "path": "services/praxis45/coverage_policy.py",
       "source_path": "services/praxis45/coverage_policy.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "599e899850f1ae44b78830e83d8eae4b45519d194e59f5ec348176992e4fafa6",
       "projected_sha256": "fc6ad5737d88397b1fe85e9a31194d73dc2d89640b50dc24b83ded561a87391c",
       "transforms": [
@@ -513,7 +540,7 @@
     {
       "path": "services/praxis45/engine-lock.json",
       "source_path": "services/praxis45/engine-lock.json",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "3342038aeeffad69d38628fe5e2442374084ae98eed4e2cf9aa3ce51a5056771",
       "projected_sha256": "862b22638f8d51291c93c41d946440bd6aba5ada17c06119238f9629714559d7",
       "transforms": [
@@ -525,7 +552,7 @@
     {
       "path": "services/praxis45/engine_boundary.py",
       "source_path": "services/praxis45/engine_boundary.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "97b75ebcacb7003edb5d387fa523674d94e8a6156cc2b52ae321ed376eef1b03",
       "projected_sha256": "a076d1f8543cc0cf2511ab382807c1f448d7c8aedd79c398385ecdc5518f472d",
       "transforms": [
@@ -536,7 +563,7 @@
     {
       "path": "services/praxis45/engine_qualification.py",
       "source_path": "services/praxis45/engine_qualification.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "99fd1323e2219ed56ddad7fe6fc1eca044f9969d0309ee16124d1df211c3a9dc",
       "projected_sha256": "cbd43c24259bc85fc5513e2eb2d6f99f657eb3deb8d8d7c65d38224443b96df7",
       "transforms": [
@@ -547,7 +574,7 @@
     {
       "path": "services/praxis45/freeze_rehearsal.py",
       "source_path": "services/praxis45/freeze_rehearsal.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "8312cbce93dc96661b327edfc0cb812a390152f5f7d99f6b86693b105933f359",
       "projected_sha256": "7a722cf8354d4d597ccd988be4a75dee33790231f35584fd8554083c03a537ab",
       "transforms": [
@@ -559,7 +586,7 @@
     {
       "path": "services/praxis45/global_memory_guard.py",
       "source_path": "services/praxis45/global_memory_guard.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "90aea145b80204329d64ff862a5294733032d3750d4afce3fa0e07dfbe4d3e99",
       "projected_sha256": "fdc8862755a0a5382ab04c12f9476d22301adf2b306c20716cb5f800e1c51810",
       "transforms": [
@@ -570,7 +597,7 @@
     {
       "path": "services/praxis45/immutable_code.py",
       "source_path": "services/praxis45/immutable_code.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "850d162c42d59d4631f74dd335f35885c25815a7558e13c0e66b9e6042d79634",
       "projected_sha256": "7a1c162c4ba5ab07f65025d712503c68f1bcc5cd1dc7ef2005f7cb36f3daa88d",
       "transforms": [
@@ -583,7 +610,7 @@
     {
       "path": "services/praxis45/native_adapter.py",
       "source_path": "services/praxis45/native_adapter.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "57dfabe361b56ee60ebd4176d45ea3e639c945e8a9874595b2ba58118e2a2157",
       "projected_sha256": "08b267410f31aa0ae7de7067ccaf28106f44dcb8b0032918f5a6efea6ae45aac",
       "transforms": [
@@ -594,7 +621,7 @@
     {
       "path": "services/praxis45/native_capabilities.py",
       "source_path": "services/praxis45/native_capabilities.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "b8743246381e0bacd3c7c623f98b67217470c2488cb3d640ba10172e5b8e80fa",
       "projected_sha256": "75c6b09ec728e2352f4cc38a39003bd2a1fc4ef16e364aba25e63c193a461f2a",
       "transforms": [
@@ -605,7 +632,7 @@
     {
       "path": "services/praxis45/native_ci.py",
       "source_path": "services/praxis45/native_ci.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "36b7cefb492088c1b5dfd2661be5fd9fee2f8574e6ab8d627a65ce03830e64e1",
       "projected_sha256": "3cfaf5889211bedfbc4dcd8fd8536fb40366f190b2707f5f87eb7c904f4998e4",
       "transforms": [
@@ -616,7 +643,7 @@
     {
       "path": "services/praxis45/operation_evidence.py",
       "source_path": "services/praxis45/operation_evidence.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "e38a05a2fe8e2314f4b56670adca938148b7f8862448059f61a8eeb9ca5931ec",
       "projected_sha256": "8714a63db9b1dcc3ceecc06fce478f3ae3897f378add9855e8bf14302d88074a",
       "transforms": [
@@ -627,7 +654,7 @@
     {
       "path": "services/praxis45/operation_recount.py",
       "source_path": "services/praxis45/operation_recount.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "a264be28fb1a03083781043c6ed934b8a25fa7914f79d1c7044c0fecfe03ec52",
       "projected_sha256": "75a97c8ec7e1736229dc7f8b1a6ce58888345fc826597c9d6598fd51cc315206",
       "transforms": [
@@ -638,7 +665,7 @@
     {
       "path": "services/praxis45/ordinary.py",
       "source_path": "services/praxis45/ordinary.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "d472f611fcbe5c92358d99a0792c9e1ad50541e8a8a959d96e211ff408a88d30",
       "projected_sha256": "67407390bbd310a6cbde52883f2841397cf14a200586c10baaa43f206ecdf80a",
       "transforms": [
@@ -651,7 +678,7 @@
     {
       "path": "services/praxis45/p4_contract.py",
       "source_path": "services/praxis45/p4_contract.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "4fa7685bee5bc9213bbd7e9fbfb8eafcf3dacb76cd24f66801170771ed648d6b",
       "projected_sha256": "93122e56140e7ecda93bd4dc8b76f20573cab2a3ac450c1c2568cc6303ba5727",
       "transforms": [
@@ -663,7 +690,7 @@
     {
       "path": "services/praxis45/p4_output_contract.py",
       "source_path": "services/praxis45/p4_output_contract.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "d3eecc9cb0e349a68bb7274738b0483872cbb9999a6224689fe29693a968ee6b",
       "projected_sha256": "f006ebd31601c01114b091ffe2216081f466f59973cc93dd9f8010ea569881a3",
       "transforms": [
@@ -675,7 +702,7 @@
     {
       "path": "services/praxis45/p4_run.py",
       "source_path": "services/praxis45/p4_run.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "38a9a593782733ab9d85151ae2653bfd392c9949a75da3a003657ac1c2e72bb1",
       "projected_sha256": "daf568bfea8d040e70bc36a39ea3c322245f17b990125f7a5a35dc8ad5367868",
       "transforms": [
@@ -686,7 +713,7 @@
     {
       "path": "services/praxis45/projection.py",
       "source_path": "services/praxis45/projection.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "7c45bf6780f8b545b4b2c5a2fb4bb05e10bf2f6a7a25d00e8c988a5bd7916879",
       "projected_sha256": "08f745d23d83a5423eaecbcd396b17a34d4b0404a77c7ce2075c0c566e3b2828",
       "transforms": [
@@ -697,7 +724,7 @@
     {
       "path": "services/praxis45/schemas/praxis_native_claim_check.schema.json",
       "source_path": "services/praxis45/schemas/praxis_native_claim_check.schema.json",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "3cc1183fe63237ca6fa703475873af63c4ebe7d7a8e72afdc48ed81bb860449c",
       "projected_sha256": "3cc1183fe63237ca6fa703475873af63c4ebe7d7a8e72afdc48ed81bb860449c",
       "transforms": [
@@ -708,7 +735,7 @@
     {
       "path": "services/praxis45/schemas/praxis_native_evidence_research.schema.json",
       "source_path": "services/praxis45/schemas/praxis_native_evidence_research.schema.json",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "9bf37b90bc956a033c8afdb0c9d9e9fee6d6bc4a827c3b3fc453178b0b137b40",
       "projected_sha256": "9bf37b90bc956a033c8afdb0c9d9e9fee6d6bc4a827c3b3fc453178b0b137b40",
       "transforms": [
@@ -719,7 +746,7 @@
     {
       "path": "services/praxis45/source_access.py",
       "source_path": "services/praxis45/source_access.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "75ebe73ea5b5ab772c62f1e50ea4c2c5274bb144c2968998ce35cff867ea50d1",
       "projected_sha256": "cb5e44e84576e4154013372b27325a573266a02ea67a9fc26e0e30ee976e2dbb",
       "transforms": [
@@ -730,7 +757,7 @@
     {
       "path": "services/praxis45/templates/praxis_native_claim_check.node.json",
       "source_path": "services/praxis45/templates/praxis_native_claim_check.node.json",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "e8395cedecfff3b777df2cc9b8ad557a382b32b6a272368640cf5e52b576bf7d",
       "projected_sha256": "8aaf3dc444a54be581e58123af0c528f182d5415317b28c0791b1bd3dd5400ed",
       "transforms": [
@@ -741,7 +768,7 @@
     {
       "path": "services/praxis45/templates/praxis_native_evidence_research.node.json",
       "source_path": "services/praxis45/templates/praxis_native_evidence_research.node.json",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "a3cec9c9ba31c8dcb2b2ea434fa3da6708900a4cf0e0ce2c91a97e9186d28d95",
       "projected_sha256": "2305692624a4db328e1efa2bcef162c0c8ca96219e2cb1c604f726a0b00e3e92",
       "transforms": [
@@ -752,7 +779,7 @@
     {
       "path": "skills/chief-of-staff/router.py",
       "source_path": "skills/chief-of-staff/router.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "18990dceac03b8420e3042e6ca1dc281141bb58148f6b125c37eafe1a7372bfe",
       "projected_sha256": "6a21c71a223911dadf4cd42331d2b3c1401f2286fb206c6af1827f2f6d0e11b9",
       "transforms": [
@@ -764,7 +791,7 @@
     {
       "path": "skills/orca-dispatch/adaptive_dispatcher.py",
       "source_path": "skills/orca-dispatch/adaptive_dispatcher.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "d5b53b2fb78b658b51616faef096a630bd0af66afba759e14f6522857666e632",
       "projected_sha256": "366426fd8e00d079786a7380431ab7bf732245f180604582bca546a7c5690d0d",
       "transforms": [
@@ -775,9 +802,9 @@
     {
       "path": "skills/orca-dispatch/dispatcher.py",
       "source_path": "skills/orca-dispatch/dispatcher.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
-      "source_sha256": "3475023e7b1743ca331f08e9348d7abd62134d288a7043c57cf786925060b3b1",
-      "projected_sha256": "c081d15300921bdf05f96df132a9012da0ca6fbd4a4cb20309e054c1311a73c1",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
+      "source_sha256": "81be92c2febc6f8ae7f793473d690ce17530a1b124300c2763f9e0e3635e44b8",
+      "projected_sha256": "76bb8f0bf3f84d4b425baa2182c9c5120be007c23f9382a6bb335effb40512e9",
       "transforms": [
         "public-identities-v1",
         "exclude-source-comments-and-docstrings",
@@ -787,7 +814,7 @@
     {
       "path": "skills/orca-dispatch/planning_contract.py",
       "source_path": "skills/orca-dispatch/planning_contract.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "9fd2852b72ae67c103e0a19f7d0f79f27db57686031f3e0fbbca2ac2480be641",
       "projected_sha256": "7589f50919b264d9a86c0b03000739f23e75755931cd0263ce8233e03f76667e",
       "transforms": [
@@ -798,7 +825,7 @@
     {
       "path": "skills/orca-dispatch/session_usage.py",
       "source_path": "skills/orca-dispatch/session_usage.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "fdb6348012ab5e30c1f963851496de1b460fd551233326b545dc62a0b471b4f6",
       "projected_sha256": "d6b00d71b1e3f20fcf7d2fe0fd1fa890801ae79618c74f526fecf1ac17b1234f",
       "transforms": [
@@ -809,7 +836,7 @@
     {
       "path": "services/praxis45/engine-closure.public.json",
       "source_path": "services/praxis45/engine-lock.json",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "3342038aeeffad69d38628fe5e2442374084ae98eed4e2cf9aa3ce51a5056771",
       "projected_sha256": "e72114472c788dce8202a65bcf6794a41da331e23637401d81822d67ae74a2ca",
       "transforms": [
@@ -819,7 +846,7 @@
     {
       "path": "services/praxis45/adaptive_support.py",
       "source_path": "services/praxis45/adaptive_qualification.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "49d51139f7f0173bbd03c2a52030ec1e75e13c1d5d3068392e9beaea67dcd800",
       "projected_sha256": "d289634529c07e993bb42abef99c939ded49d5b4607b60a282aa46bd22ac7127",
       "transforms": [
@@ -829,14 +856,14 @@
         {
           "source_path": "services/praxis45/adaptive_routines.py",
           "source_sha256": "5c7dfe104f0c441bbe2d0dc567ef55555d076e18ca3839eaf1069d0635abab58",
-          "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140"
+          "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3"
         }
       ]
     },
     {
       "path": "services/praxis45/read_evidence.py",
       "source_path": "services/praxis45/adaptive_shadow.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "d9207e145dc3739c85f65b2e84f1e7c954f2a51dbf2b0ab02605a63721bf3b7d",
       "projected_sha256": "de1965ea65186febfc66242e6574c605b74aea152c36d251515b4155d6f541ff",
       "transforms": [
@@ -846,7 +873,7 @@
     {
       "path": "services/praxis45/release_support.py",
       "source_path": "services/praxis45/release_install.py",
-      "source_commit": "80b76416cb3880e20cc2ce769f567074bebda140",
+      "source_commit": "024ba7f0e8642dc8ff1ba3b671a78da1520aaca3",
       "source_sha256": "1d6340439140aaf07ab47a867f3388c153827cb7e71273d5df02f9f1cbc5214f",
       "projected_sha256": "bbbe5a50792e8d0f99aafedc155b2c25155221de19122d5d962c988954b7db12",
       "transforms": [
@@ -872,6 +899,15 @@
       ]
     },
     {
+      "path": "scripts/test_adaptive_tasks_public.py",
+      "source_path": "public-release/runtime/overrides/scripts/test_adaptive_tasks_public.py",
+      "source_sha256": "b1b89394d8e5edbd78edb55a4ee9754149043aa6d40a221faebab2af3edbcd53",
+      "projected_sha256": "b1b89394d8e5edbd78edb55a4ee9754149043aa6d40a221faebab2af3edbcd53",
+      "transforms": [
+        "new-public-support"
+      ]
+    },
+    {
       "path": "scripts/test_public_runtime.py",
       "source_path": "public-release/runtime/overrides/scripts/test_public_runtime.py",
       "source_sha256": "548b468bb2761edd30545e4a09b1d8a3bdf225dc6a3478f5ce84ce58b960ad35",
@@ -881,10 +917,19 @@
       ]
     },
     {
+      "path": "services/praxis45/ADAPTIVE-TASKS.md",
+      "source_path": "public-release/runtime/overrides/services/praxis45/ADAPTIVE-TASKS.md",
+      "source_sha256": "537d3522ccc775149d74bba7e037853351bbf8373315a86555590e89ff18daf6",
+      "projected_sha256": "537d3522ccc775149d74bba7e037853351bbf8373315a86555590e89ff18daf6",
+      "transforms": [
+        "new-public-support"
+      ]
+    },
+    {
       "path": "services/praxis45/PUBLIC-RUNTIME.md",
       "source_path": "public-release/runtime/overrides/services/praxis45/PUBLIC-RUNTIME.md",
-      "source_sha256": "acdce0772c00e5c46a1d940cd2282e2981deae0e3ca9d317ec34a29db89707d9",
-      "projected_sha256": "acdce0772c00e5c46a1d940cd2282e2981deae0e3ca9d317ec34a29db89707d9",
+      "source_sha256": "4d08394e7ad773516accd896c4265ef276bf5c82d93225a1aa9c945739d68ace",
+      "projected_sha256": "4d08394e7ad773516accd896c4265ef276bf5c82d93225a1aa9c945739d68ace",
       "transforms": [
         "new-public-support"
       ]

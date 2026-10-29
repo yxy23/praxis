@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "version": "public/v4.5.0",
-  "tree_sha256": "35c14ee2e6c0cadec7a21b008529b589607e98ed75886ad858e0366b8d7d3c68",
+  "tree_sha256": "49340368e1d3b83d10a3528b89d7f802b8ded5e8d8f445031759ffea12e375b2",
   "files": [
     {
       "path": ".gitignore",
@@ -15,8 +15,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "cb1c7cdec29fa0596d2308e693c6044f2a50a307b68671449258a80439366c44",
-      "bytes": 991
+      "sha256": "0fe69a433f8ebfa369079822795d0ddebf0d574eb4fdd0cd23fa0f1ceda109ee",
+      "bytes": 1582
     },
     {
       "path": "CLAUDE.md",
@@ -30,13 +30,13 @@
     },
     {
       "path": "PUBLIC-SNAPSHOT.json",
-      "sha256": "642834076cb952c35ba92140c3e16d7affc0b29939d91afd112d02dd80dff975",
-      "bytes": 467
+      "sha256": "3a29df5c4e2c8b7f6b69c52b42aa080cb6c4c9ee5feff1ff86ae7c95a6bcbd11",
+      "bytes": 577
     },
     {
       "path": "README.md",
-      "sha256": "afb821483406c39dbe6e288f7877075fe42244d0c776dfb050b40da011ef5ecc",
-      "bytes": 5850
+      "sha256": "37e3d39b5b28395782808c8000a65e12a1bd4c5be4655a7d05cc78f87db23cae",
+      "bytes": 6574
     },
     {
       "path": "docs/architecture.md",
@@ -55,8 +55,8 @@
     },
     {
       "path": "docs/features-and-limits.md",
-      "sha256": "876c1afcb8ca096d40969faf1ac0c0d51ec2594a9e16ef38e726525e70460990",
-      "bytes": 2628
+      "sha256": "febdfe5ed6eb8f01b5e6a91e85ba22bf7d2be2c0356349520a7af2e819a043c5",
+      "bytes": 3325
     },
     {
       "path": "docs/migration.md",
@@ -210,8 +210,8 @@
     },
     {
       "path": "runtime-provenance.json",
-      "sha256": "483c7f918ad17b5a67a6b19d7c505e5a4c608174300fc4ff490f9051150e6029",
-      "bytes": 40959
+      "sha256": "30bb0259a8e15b596074981f633712a051392d2c2b397b06d3ea9c5012c20e9a",
+      "bytes": 42974
     },
     {
       "path": "scripts/artifact_links.py",
@@ -247,6 +247,11 @@
       "path": "scripts/sanitize.sh",
       "sha256": "b3364733c954d11c8c7e51ffdecab42828b4cfda46bb1ade24590b3708b247a6",
       "bytes": 471
+    },
+    {
+      "path": "scripts/test_adaptive_tasks_public.py",
+      "sha256": "b1b89394d8e5edbd78edb55a4ee9754149043aa6d40a221faebab2af3edbcd53",
+      "bytes": 8313
     },
     {
       "path": "scripts/test_public_runtime.py",
@@ -315,8 +320,8 @@
     },
     {
       "path": "services/praxis-switchboard/room_adaptive.py",
-      "sha256": "9814c99c52d3f852af6af6c0747521dceabf4dff36d6b9ad935059bb9fdc2e98",
-      "bytes": 6869
+      "sha256": "32ce1abe11bbf4dcef349bb1c60e22f3dbec580ae7fc653913055e13398bbafa",
+      "bytes": 9670
     },
     {
       "path": "services/praxis-switchboard/room_attractor.py",
@@ -365,8 +370,8 @@
     },
     {
       "path": "services/praxis-switchboard/runner.py",
-      "sha256": "6b645e29a01338dcd6eded5df31f20d2a90f009bfbe13ab96b124258cc643378",
-      "bytes": 32272
+      "sha256": "ed4768d716a4617d0451046b76c534353e8387f465f745d761a5da69090bb0d5",
+      "bytes": 33438
     },
     {
       "path": "services/praxis-switchboard/service.py",
@@ -394,9 +399,14 @@
       "bytes": 11746
     },
     {
+      "path": "services/praxis45/ADAPTIVE-TASKS.md",
+      "sha256": "537d3522ccc775149d74bba7e037853351bbf8373315a86555590e89ff18daf6",
+      "bytes": 12327
+    },
+    {
       "path": "services/praxis45/PUBLIC-RUNTIME.md",
-      "sha256": "acdce0772c00e5c46a1d940cd2282e2981deae0e3ca9d317ec34a29db89707d9",
-      "bytes": 6679
+      "sha256": "4d08394e7ad773516accd896c4265ef276bf5c82d93225a1aa9c945739d68ace",
+      "bytes": 7144
     },
     {
       "path": "services/praxis45/acquisition.py",
@@ -415,8 +425,8 @@
     },
     {
       "path": "services/praxis45/adaptive_contract.py",
-      "sha256": "06ece4e32e3f4bcf8608180ff1a8505ac68ca1c5ca1bd95fd03ec7df52a2bd26",
-      "bytes": 12012
+      "sha256": "18a561cebfac22434410477dd0f71cba584fb662ca006ed124342c77760a0a57",
+      "bytes": 12027
     },
     {
       "path": "services/praxis45/adaptive_coordinator.py",
@@ -435,8 +445,8 @@
     },
     {
       "path": "services/praxis45/adaptive_general.py",
-      "sha256": "99f0ec41850108577d7ebbe1832f84341befc220551668664998aa277fe8c14c",
-      "bytes": 36873
+      "sha256": "3cb682ea1a032ac76cfbaa41c47982c62294ee594b9fc8e58399ea23336a6cde",
+      "bytes": 46814
     },
     {
       "path": "services/praxis45/adaptive_learning.py",
@@ -467,6 +477,16 @@
       "path": "services/praxis45/adaptive_support.py",
       "sha256": "d289634529c07e993bb42abef99c939ded49d5b4607b60a282aa46bd22ac7127",
       "bytes": 1446
+    },
+    {
+      "path": "services/praxis45/adaptive_task_example.py",
+      "sha256": "464608ed9b0a7e8fe9167149a714de35668b2e062e1c87e97b79ad1b362582db",
+      "bytes": 8851
+    },
+    {
+      "path": "services/praxis45/adaptive_tasks.py",
+      "sha256": "c30d50984ce697402719176281e1cc16427770cc5ea401276b5cfb33fdd41b84",
+      "bytes": 40282
     },
     {
       "path": "services/praxis45/candidate_run.py",
@@ -620,8 +640,8 @@
     },
     {
       "path": "skills/orca-dispatch/dispatcher.py",
-      "sha256": "c081d15300921bdf05f96df132a9012da0ca6fbd4a4cb20309e054c1311a73c1",
-      "bytes": 150324
+      "sha256": "76bb8f0bf3f84d4b425baa2182c9c5120be007c23f9382a6bb335effb40512e9",
+      "bytes": 151488
     },
     {
       "path": "skills/orca-dispatch/planning_contract.py",

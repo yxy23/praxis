@@ -28,6 +28,18 @@ python3 scripts/praxis-runner.py rehearse --engine-root "$PWD/.praxis-engine" --
 
 Run these from a clone of this repository. The [runner guide](services/praxis45/PUBLIC-RUNTIME.md) explains dependency verification, offline setup, supported platforms and the additional configuration for native agents. The rehearsal uses the real graph engine with synthetic operations; it does not launch agents or activate a service.
 
+## General adaptive tasks
+
+Configured rooms can use `/adaptive <objective>` for writing, editable slides,
+code and tests, website builds, and explicitly requested publication. General
+`native_task` nodes bind actual outputs, repeatable checks and workspace/tool
+scope to the original request. The runner captures output bytes, verifies them,
+and can reconcile a settled failed check without relaunching or republishing.
+Read the [task guide](services/praxis45/ADAPTIVE-TASKS.md) for authority, source
+snapshots, publication readback, continuation and the fictional example.
+Native use still requires your own host, tools, accounts and registries; this
+public update does not include personal workflows or live-run records.
+
 ## Use an individual skill
 
 Browse the [skill catalog](docs/user-guide.md), configure the tools needed by the selected skill, and follow the [installation guide](docs/deploying.md). Claude Code and Codex consume the same `SKILL.md` procedures. Runtime-specific entry points do not change a skill's evidence or authorization requirements.

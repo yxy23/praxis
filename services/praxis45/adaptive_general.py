@@ -27,7 +27,7 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[1]
 EFFECT_OPERATIONS = frozenset({'orca_terminal_close', 'orca_terminal_rename',
     'orca_worktree_set_display_name', 'orca_worktree_set_comment'})
-NATIVE_KINDS = frozenset({'native_readonly_worker', 'existing_authorized_effect'})
+NATIVE_KINDS = frozenset({'native_readonly_worker', 'existing_authorized_effect', 'native_task'})
 
 def local_custody_host():
 
@@ -62,6 +62,8 @@ def verify_effect_authority(compiled, root, fixture_authority=None):
         if not isinstance(event, dict):
             raise ValueError('authorizing event required')
         record = json.loads(store.read_bytes())['requests'][event['request_id']]
+        if record.get('lifecycle') in {'rejected','cancelled','canceled','revoked'} or record.get('authority_revoked') is True:
+            raise ValueError('original request authority revoked')
         prompt_path = Path(record['output_dir'])/'request.md'
         raw_prompt = prompt_path.read_bytes()
         prompt = raw_prompt.decode('utf-8')
@@ -76,6 +78,7 @@ def verify_effect_authority(compiled, root, fixture_authority=None):
             for effect in node.get('effects', []):
                 if effect['authority']['quote'] not in prompt:
                     raise ValueError('authority quote absent from user prompt')
+        return prompt
     except (OSError, ValueError, KeyError, TypeError) as exc:
         raise ValueError('effect_authority_refused: '+str(exc)) from exc
 
@@ -165,14 +168,19 @@ def bind(path):
 def validate_general(compiled, root, fixture_authority=None):
 
     nodes = compiled['logical_graph']['nodes']
+    if compiled.get('scope_bindings'): check_bindings(compiled['scope_bindings'])
     if any(key in value for value in [compiled['logical_graph'], compiled['policy']] for key in ('requested_model', 'explicit_model', 'model')):
         raise ValueError('general graph model selection belongs to the router')
-    if any(n['kind'] == 'existing_authorized_effect' for n in nodes):
-        verify_effect_authority(compiled, root, fixture_authority)
+    prompt = None
+    if any(n['kind'] in {'existing_authorized_effect', 'native_task'} for n in nodes):
+        prompt = verify_effect_authority(compiled, root, fixture_authority)
     for node in nodes:
         if any(key in value for value in (node, node.get('route') or {}) for key in ('requested_model', 'explicit_model', 'model')):
             raise ValueError('general graph model selection belongs to the router')
-        if node['kind'] == 'existing_authorized_effect':
+        if node['kind'] == 'native_task':
+            from adaptive_tasks import validate_task, assigned_scope
+            validate_task(node, prompt, root, assigned_scope(compiled, node, root, fixture_authority))
+        elif node['kind'] == 'existing_authorized_effect':
             if node.get('route') != {'seat': 'Leo'}:
                 raise ValueError('effect_requires_canonical_Leo')
             effects = node.get('effects')
@@ -211,17 +219,39 @@ def validate_general(compiled, root, fixture_authority=None):
         if sum(n['kind'] in NATIVE_KINDS and n['id'] in layer for n in nodes)>compiled['policy']['max_parallel']:
             raise ValueError('native layer exceeds admitted parallel worker bound')
         if any(n['kind'] in NATIVE_KINDS and n['id'] in layer for n in nodes):
-            layer_plan(root,compiled,layer)                                              
+            layer_plan(root,compiled,layer,fixture_authority=fixture_authority)
 
-def compile_entry(logical, policy, graph_id, root, *, origin='supplied', fixture_authority=None):
+def compile_entry(logical, policy, graph_id, root, *, origin='supplied', fixture_authority=None, continue_from=None):
     root = Path(root).absolute()
     if root.is_symlink() or not (root/'ADAPTIVE_FIXTURE_ROOT').is_file():
         raise ValueError('explicit isolated ADAPTIVE_FIXTURE_ROOT required')
     root=root.resolve()
     document = json.loads(Path(logical).read_bytes())
-    compiled = compile_graph(document, graph_id, json.loads(Path(policy).read_bytes()), origin=origin)
+    from adaptive_tasks import snapshots
+    selected = [g for g in document['graph_definitions'] if g['id']==graph_id]
+    if len(selected) != 1: raise ValueError('unique graph identity required')
+    has_tasks = any(n['kind']=='native_task' for n in selected[0]['nodes'])
+    admitted_document = snapshots(document, root) if has_tasks else document
+    if has_tasks:
+        prompt = verify_effect_authority({'logical_graph': selected[0]}, root, fixture_authority)
+        from adaptive_state import atomic_bytes
+        request_source = root/'original-request.md'
+        if request_source.exists() and request_source.read_text() != prompt: raise ValueError('immutable original request differs')
+        if not request_source.exists(): atomic_bytes(request_source, prompt.encode())
+        admitted_document['source_bindings']['original_request'] = bind(request_source)
+    compiled = compile_graph(admitted_document, graph_id, json.loads(Path(policy).read_bytes()), origin=origin)
+    if admitted_document.get('operating_sources'):
+        compiled['operating_sources'] = admitted_document['operating_sources']
+        compiled.pop('compiled_sha256'); compiled['compiled_sha256'] = digest(compiled)
+    if any(n['kind']=='native_task' for n in compiled['logical_graph']['nodes']):
+        from adaptive_tasks import scope_directory, assigned_scope
+        for n in compiled['logical_graph']['nodes']:
+            if n['kind']=='native_task': assigned_scope(compiled, n, root, fixture_authority)
+        directory = scope_directory(compiled, root, fixture_authority)
+        compiled['scope_bindings'] = {n['id']:bind(directory/(n['id']+'.json')) for n in compiled['logical_graph']['nodes'] if n['kind']=='native_task'}
+        compiled.pop('compiled_sha256'); compiled['compiled_sha256'] = digest(compiled)
     validate_general(compiled,root,fixture_authority)
-                                                                              
+
     for name, source in [('logical.json', logical), ('policy.json', policy)]:
         destination=root/name; raw=Path(source).read_bytes()
         if destination.exists() and destination.read_bytes()!=raw:
@@ -233,6 +263,11 @@ def compile_entry(logical, policy, graph_id, root, *, origin='supplied', fixture
     receipt={'status':'compiled', 'native_launches':0, 'compiled':bind(root/'compiled.json'),
              'logical':bind(root/'logical.json'), 'policy':bind(root/'policy.json'), 'origin':origin,
              'graph_id':graph_id, 'layers':compiled['layers'], 'production_admitted':False}
+    if continue_from is not None:
+        previous = Path(continue_from).resolve()
+        if previous == root: raise ValueError('continuation requires a fresh occurrence root')
+        receipt['continuation'] = {'root': str(previous), 'compiled': bind(previous/'compiled.json'),
+                                   'bindings': __import__('adaptive_tasks').continuation_bindings(previous)}
     save_once(root/'compile-receipt.json', receipt)
     return receipt
 
@@ -251,23 +286,28 @@ def rules_for(root, compiled, outbox, corrections):
     if not rules: raise ValueError('no applicable accepted correction; no consumption claimed')
     return rules, learning
 
-def layer_plan(root, compiled, layer, *, rules=(), receipts=None):
-                                                                                   
+def layer_plan(root, compiled, layer, *, rules=(), receipts=None, reused=(), fixture_authority=None):
+
     dispatcher=load_dispatcher(); boundary=dispatcher.named_launch_module()
     roster=boundary.registry.seats()
     units=[]
     for node in compiled['logical_graph']['nodes']:
-        if node['id'] not in layer or node['kind'] not in NATIVE_KINDS: continue
+        if node['id'] not in layer or node['kind'] not in NATIVE_KINDS or node['id'] in reused: continue
         if receipts is not None and any(receipts.get(dep,{}).get('state')!='succeeded' for dep in node['depends_on']):continue
         seat=roster.get(node['route']['seat'])
         if seat is None: raise ValueError('unknown canonical seat')
         effect_node = node['kind'] == 'existing_authorized_effect'
+        task_node = node['kind'] == 'native_task'
         output=Path(root)/(('effect-receipt-' if effect_node else 'artifact-')+node['id']+'.json')
         if output.exists() or output.is_symlink():raise ValueError('preserve existing output; fresh occurrence required')
         sources=list(compiled['source_bindings'].values())
+        if task_node and compiled.get('scope_bindings',{}).get(node['id']):
+            sources.append(compiled['scope_bindings'][node['id']])
         for dep in node['depends_on']:
             artifact=(receipts or {}).get(dep,{}).get('artifact')
             if artifact:check_bindings({dep:artifact});sources.append(artifact)
+            for artifact in (receipts or {}).get(dep,{}).get('outputs',[]):
+                check_bindings({dep:artifact});sources.append(artifact)
         rule_text=[{'record':r, 'text':Path(r['path']).read_text()} for r in rules]
         spec=("Execute only this bounded effect-free graph node. Read only the frozen sources below and canonical operating instructions. "
             "No mailbox/calendar/network, routine invocation, project/tracker/owner writes, install, subworkers or external effects. "
@@ -301,16 +341,22 @@ def layer_plan(root, compiled, layer, *, rules=(), receipts=None):
                 "General node: "+node['id']+"; exactly one General outcome: ran or failed closing line. "
                 "Task: "+node['task']+"\nOutput: "+str(output)+"\nSources: "+json.dumps(sources,sort_keys=True)+
                 "\nDeclarations: "+json.dumps(declarations,sort_keys=True))
+        if task_node:
+            from adaptive_tasks import task_spec
+            prompt = verify_effect_authority(compiled, root, fixture_authority)
+            from adaptive_tasks import operating_at_launch
+            operating = operating_at_launch(compiled)
+            spec = task_spec(node, prompt, output, sources+[bind(r['path']) for r in rules], rule_text, operating)
         unit={'id':node['id'],'seat':seat.name,'task_class':seat.route,'title':'Adaptive node '+node['id'],
               'sensitivity':'internal','risk':'low','data_domains':[], 'spec':spec,
               'source_bindings':sources+[bind(r['path']) for r in rules],
-              'outputs':[{'path':str(output),'required':True}],
+              'outputs':[{'path':str(output),'required':True}]+([{'path':o['path'],'required':True} for o in node['outputs']] if task_node else []),
               'return_contract':{'required_substrings':['General node: '+node['id'],'General outcome:'],
                 'max_chars':2000,'outcome_contract':{'prefix':'General outcome:','allowed':['ran','failed'],
                     'substantive':['ran'],'failure':['failed'],'hold':[]}}}
         units.append(unit)
     layer_id='adaptive-layer-'+digest([str(root),layer])[:16]
-                                                                                
+
     plan={'schema_version':'1','id':layer_id,
           'objective':'Bounded adaptive graph native layer '+layer_id,
           'defaults':{'start_timeout_ms':compiled['policy']['start_ms'],'wait_window_ms':60000,
@@ -331,7 +377,7 @@ def validate_artifact(root, node, sources, rules, learning):
         matching=[r for r in uses if r.get('rule_sha256')==rule['sha256'] and r.get('target')==rule['target']]
         if len(matching)!=1 or not matching[0].get('evidence'):
             raise ValueError('accepted correction lacks actual use evidence')
-                                                                              
+
         use_path=Path(root)/('rule-use-'+node+'-'+rule['sha256']+'.json')
         save_once(use_path,matching[0]); observed.append(learning.observed_use(rule,bind(use_path)))
     return {'artifact':bind(path),'rule_use':observed}
@@ -350,9 +396,47 @@ def query(root):
         return {'status':'derived_evidence','events':len(rows),'rows':rows,'authority':'none'}
     finally: db.close()
 
-async def run_graph(root, compiled, dispatcher, router, client, *, corrections=None, fixture_authority=None):
+def reconcile_entry(root, node_id, expected_compile_sha256, *, fixture_authority=None):
+
+    from adaptive_tasks import RequestExecution, reconcile
+    root = Path(root).resolve()
+    if not (root/'ADAPTIVE_FIXTURE_ROOT').is_file(): raise ValueError('explicit isolated root required')
+    if sha(root/'compile-receipt.json') != expected_compile_sha256:
+        raise ValueError('compile receipt drift; no reconciliation')
+    receipt = json.loads((root/'compile-receipt.json').read_bytes())
+    check_bindings({'compiled': receipt['compiled']})
+    compiled = json.loads((root/'compiled.json').read_bytes()); verify_compiled(compiled)
+    with (root/'.general-entry.lock').open('a+b') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        fence = RequestExecution(compiled, root, reconcile=True)
+        try:
+            dispatcher = load_dispatcher()
+            client = dispatcher.OrcaClient(dispatcher.resolve_orca(None))
+            return reconcile(root, compiled, node_id, client, fixture_authority)
+        finally:
+            fence.close()
+
+async def run_graph(root, compiled, dispatcher, router, client, *, corrections=None, fixture_authority=None, continuation=None):
+    from adaptive_tasks import RequestExecution
+    root = Path(root); verify_compiled(compiled); validate_general(compiled, root, fixture_authority)
+
+    fence = (RequestExecution(compiled, root, continuation['root'] if continuation else None, advance=False)
+             if any(n['kind']=='native_task' for n in compiled['logical_graph']['nodes']) else None)
+    try:
+        return await _run_graph(root, compiled, dispatcher, router, client, corrections=corrections,
+            fixture_authority=fixture_authority, continuation=continuation, request_fence=fence)
+    finally:
+        if fence: fence.close()
+
+async def _run_graph(root, compiled, dispatcher, router, client, *, corrections, fixture_authority, continuation, request_fence):
     from adaptive_engine import run_shadow
-    root=Path(root); verify_compiled(compiled);validate_general(compiled,root,fixture_authority)
+    reused = {}
+    if continuation is not None:
+        from adaptive_tasks import continuation as validate_continuation, continuation_bindings
+        check_bindings(continuation['bindings'])
+        if continuation['bindings'] != continuation_bindings(continuation['root']):
+            raise ValueError('continuation evidence changed; compile after original reconciliation')
+        reused = validate_continuation(continuation['root'], compiled, client)
     host=local_custody_host(); journal=Journal(root); occurrence=occurrence_key('room',compiled['logical_graph']['id'],token=str(root))
     custody={'host':host,'owner':'canonical-leo-general-entry','fence':1}
     journal.acquire(occurrence,host,custody['owner'],{'graph':compiled['compiled_sha256']})
@@ -365,19 +449,25 @@ async def run_graph(root, compiled, dispatcher, router, client, *, corrections=N
     graph_binding=bind(root/'compiled.json')
     tasks={}; bridges={}; bundles={}; counts=[];bound_sources={}
     layer_of={name:i for i,layer in enumerate(compiled['layers']) for name in layer}
-    save_once(root/'engine-intent.json',{'compiled_sha256':compiled['compiled_sha256'],'occurrence':occurrence})
+    if request_fence: request_fence.advance()
+    save_once(root/'engine-intent.json',{'compiled_sha256':compiled['compiled_sha256'],'occurrence':occurrence,'custody':custody})
 
     async def dispatch_layer(index, context):
         layer=compiled['layers'][index]
         if any(c['state']!='closed' for c in counts):raise ValueError('prior native custody unresolved; no successor launches')
-        plan=layer_plan(root,compiled,layer,rules=rules,receipts=context.get('praxis.receipts',{}))
+        plan=layer_plan(root,compiled,layer,rules=rules,receipts=context.get('praxis.receipts',{}),reused=reused,fixture_authority=fixture_authority)
+        if not plan['units']: return
         for node in compiled['logical_graph']['nodes']:
             if node['id'] in layer and node['kind'] == 'existing_authorized_effect' and any(u['id'] == node['id'] for u in plan['units']):
                 reserve_effects(root, compiled, node, occurrence)
         work=root/('layer-'+str(index));work.mkdir();(work/'ADAPTIVE_FIXTURE_ROOT').touch()
         boxes={};mapping={}; loop=asyncio.get_running_loop()
         for unit in plan['units']:
-            name=unit['id'];bound_sources[name]=unit['source_bindings'];bridge=NativeBridge(journal,occurrence,name,custody);bridges[name]=bridge
+            name=unit['id']
+            if next(n for n in compiled['logical_graph']['nodes'] if n['id']==name)['kind']=='native_task':
+                from adaptive_tasks import operating_at_launch
+                save_once(root/('operating-'+name+'.json'), operating_at_launch(compiled))
+            bound_sources[name]=unit['source_bindings'];bridge=NativeBridge(journal,occurrence,name,custody);bridges[name]=bridge
             bridge.prepare({'compiled_sha256':compiled['compiled_sha256'],'plan_sha256':digest(plan)})
             boxes[name]=NativeOutbox(root,graph=graph_binding,sources=compiled['source_bindings'],
                 local_reads=[],rules=rules,max_events=compiled['policy']['max_nodes']*2,max_sequence=64)
@@ -398,12 +488,16 @@ async def run_graph(root, compiled, dispatcher, router, client, *, corrections=N
                 root=work,policy=compiled['policy'],dry_run=False,log_routes=False,run_key=key,lease=lease,
                 output_path=work/'bundle.json',receipt_observer=observe)
             save_once(work/'bundle.json',bundle);bundles[str(index)]=bundle
-            counts.append(close_released_lease(lease,bundle,dispatcher))
+            closed = close_released_lease(lease,bundle,dispatcher)
+            counts.append(closed)
+            save_once(root/('custody-layer-'+str(index)+'.json'), closed)
         finally:
             for box in boxes.values():box.close()
 
     async def execute(node,context,identity):
         name=node['id']
+        if name in reused:
+            return dict(reused[name], **identity)
         if node['kind'] in NATIVE_KINDS:
             blocked=[dep for dep in node['depends_on'] if context.get('praxis.receipts',{}).get(dep,{}).get('state')!='succeeded']
             if blocked:
@@ -436,7 +530,25 @@ async def run_graph(root, compiled, dispatcher, router, client, *, corrections=N
                                 state='uncertain',native=row.get('native'),receipt=None)
                     finally: ledger.close()
                     row.update(state='held',reason='effect original native did not succeed; reconcile originals; no replay',rule_use=[])
-            elif row['state']=='succeeded':row.update(validate_artifact(root,name,bound_sources[name],rules,learning))
+            elif row['state']=='succeeded':
+                row.update(validate_artifact(root,name,bound_sources[name],rules,learning))
+                if node['kind'] == 'native_task':
+                    from adaptive_tasks import validate_outputs, run_checks, validate_publication, observe_task, check_observation
+                    observation = observe_task(root, compiled, node, row, bound_sources[name])
+                    row['observation'] = observation
+                    artifact = json.loads(Path(row['artifact']['path']).read_bytes())
+                    outputs = validate_outputs(node)
+                    checks = run_checks(root, node)
+                    if validate_outputs(node) != outputs: raise ValueError('task check changed declared outputs')
+                    publication = validate_publication(node, artifact, root)
+                    observed = check_observation(observation)
+                    retained = observed['outputs']
+                    if publication.get('readback_check'): checks.append(publication['readback_check'])
+                    if publication.get('publication_receipt'):
+                        publication['publication_receipt'] = observed['publication_receipt']
+                    if publication.get('build_artifact'):
+                        publication['build_artifact'] = next(o for o in retained if o['sha256']==publication['build_artifact']['sha256'])
+                    row.update(outputs=retained, checks=checks, delivery=publication)
             if row['state']=='succeeded' and row.get('rule_use'):
                 from adaptive_evidence import event
                 provenance={'source_bindings':dict(compiled['source_bindings'],artifact=row['artifact'],graph=graph_binding),
@@ -449,20 +561,38 @@ async def run_graph(root, compiled, dispatcher, router, client, *, corrections=N
             if any(not deps.get(n,{}).get('artifact') and next(x for x in compiled['logical_graph']['nodes'] if x['id']==n)['kind'] in NATIVE_KINDS for n in node['depends_on']):
                 return dict(identity,state='held',reason='join requires both original native receipts and source-bound artifacts')
         return dict(identity,state='succeeded',semantics='structural admission/join only; no business action')
+    async def checkpointed_execute(node, context, identity):
+        try:
+            row = await execute(node, context, identity)
+        except Exception as exc:
+            native = journal.get(occurrence, node['id'])
+            row = dict(identity,state='unknown',reason=type(exc).__name__+': '+str(exc),
+                       native=native.get('native') if native else None)
+            observation = root/('task-observation-'+node['id']+'.json')
+            if node['kind']=='native_task' and observation.is_file():
+                row['observation'] = bind(observation)
+                row['verification_evidence'] = [bind(p) for p in sorted(root.glob('check-'+node['id']+'-*.json'))]
+                row['verification_evidence'] += [bind(p) for p in sorted(root.glob('check-'+node['id']+'_publication-*.json'))]
+        save_once(root/('node-result-'+node['id']+'.json'), {'receipt':row,
+            'node_sha256':digest(node), 'reference_sources':__import__('adaptive_tasks').reference_identity(compiled)})
+        return row
+
     try:
-        result=await run_shadow(compiled,occurrence,execute,root/'engine')
+        result=await run_shadow(compiled,occurrence,checkpointed_execute,root/'engine')
         projected=outbox.project(root/'ci-projection.sqlite'); evidence=query(root)
         captured=sum((b.folder/'launch.json').is_file() for b in bridges.values())
         effect_rows = [r for receipt in result['receipts'].values() for r in receipt.get('effects', []) if isinstance(r,dict)]
         has_effects = any(n['kind'] == 'existing_authorized_effect' for n in compiled['logical_graph']['nodes'])
         result.update(custody=custody, relaunch_authorized=False, native_launches='unknown_after_intent' if any(not (b.folder/'launch.json').is_file() for b in bridges.values()) else captured,
             captured_native_launches=captured,
-            execution_profile='praxis.adaptive.authorized-internal-effects.v1' if has_effects else 'praxis.adaptive.native-readonly.v1',compiler_profile=compiled['profile'],
+            reused_nodes=sorted(reused),
+            source_drift=__import__('adaptive_tasks').source_drift(compiled),
+            execution_profile='praxis.adaptive.native-task.v1' if any(n['kind']=='native_task' for n in compiled['logical_graph']['nodes']) else 'praxis.adaptive.authorized-internal-effects.v1' if has_effects else 'praxis.adaptive.native-readonly.v1',compiler_profile=compiled['profile'],
             executed_graph_sha256=compiled['logical_graph_sha256'],ci_projection=projected,ci_query=evidence,
             cleanup=counts,live_effects=dict(audit_effects(bundles), declared_internal_effects=effect_rows, applied_internal_effects=sum(r.get('applied') is True for r in effect_rows)),production_admitted=False,
             learning={'admitted_rules':len(rules),'observed_use':[r.get('rule_use',[]) for r in result['receipts'].values()],
                       'benefit':'unmeasured'},
-            limits=(['allowlisted authorized internal effects only'] if has_effects else ['effect-free named workers only'])+['tool restrictions are instructions, not a physical sandbox',
+            limits=(['request-scoped native tasks'] if any(n['kind']=='native_task' for n in compiled['logical_graph']['nodes']) else ['allowlisted authorized internal effects only'] if has_effects else ['effect-free named workers only'])+['tool restrictions are instructions, not a physical sandbox',
                     'one canonical dispatcher Run per engine-ready native layer','no upstream resume or automatic retry'])
         if any(r.get('ci')=='incomplete' for b in bundles.values() for r in b.get('receipt_observer_results',[]) if isinstance(r,dict)) or len([r for r in evidence['rows'] if r['kind']=='native_settlement'])!=len(bridges) or any(c['state']!='closed' for c in counts):
             result['status']='incomplete'
@@ -473,9 +603,10 @@ async def run_graph(root, compiled, dispatcher, router, client, *, corrections=N
 
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('command',choices=['compile','execute','_in-terminal','query'])
+    p.add_argument('command',choices=['authorize','compile','continue','execute','_in-terminal','query','reconcile'])
     p.add_argument('--root',type=Path,required=True);p.add_argument('--logical',type=Path);p.add_argument('--policy',type=Path)
-    p.add_argument('--graph-id');p.add_argument('--origin',choices=['supplied','athena'],default='supplied')
+    p.add_argument('--continue-from',type=Path);p.add_argument('--assignment',type=Path)
+    p.add_argument('--node');p.add_argument('--graph-id');p.add_argument('--origin',choices=['supplied','athena'],default='supplied')
     p.add_argument('--expected-compile-sha256');p.add_argument('--corrections',type=Path)
     p.add_argument('--engine-source',type=Path);p.add_argument('--engine-closure',type=Path)
     p.add_argument('--fixture-authority', type=Path);p.add_argument('--fixture-authority-sha256')
@@ -483,10 +614,21 @@ def main(argv=None):
     fixture_authority = ({'path': str(a.fixture_authority), 'sha256': a.fixture_authority_sha256}
                          if a.fixture_authority else None)
     try:
-        if a.command=='compile':
+        if a.command=='authorize':
+            if not all([a.logical,a.graph_id,a.assignment]): raise ValueError('logical, graph-id, assignment required')
+            from adaptive_tasks import authorize_scopes
+            selected = [g for g in json.loads(a.logical.read_bytes())['graph_definitions'] if g['id']==a.graph_id]
+            if len(selected)!=1: raise ValueError('unique graph identity required')
+            graph = selected[0]
+            result = authorize_scopes({'logical_graph':graph},root,json.loads(a.assignment.read_bytes()),fixture_authority)
+        elif a.command in {'compile','continue'}:
             if not all([a.logical,a.policy,a.graph_id]):raise ValueError('logical, policy and graph-id required')
-            result=compile_entry(a.logical,a.policy,a.graph_id,root,origin=a.origin,fixture_authority=fixture_authority)
+            if a.command=='continue' and not a.continue_from: raise ValueError('continue-from required')
+            result=compile_entry(a.logical,a.policy,a.graph_id,root,origin=a.origin,fixture_authority=fixture_authority,continue_from=a.continue_from)
         elif a.command=='query':result=query(root)
+        elif a.command=='reconcile':
+            if not a.node: raise ValueError('node required for reconciliation')
+            result=reconcile_entry(root,a.node,a.expected_compile_sha256,fixture_authority=fixture_authority)
         else:
             if not (root/'ADAPTIVE_FIXTURE_ROOT').is_file():raise ValueError('explicit isolated root required')
             if sha(root/'compile-receipt.json')!=a.expected_compile_sha256:raise ValueError('compile receipt drift; no launch')
@@ -513,7 +655,7 @@ def main(argv=None):
                 router=dispatcher.RouterClient(dispatcher.default_router())
                 with (root/'.general-entry.lock').open('a+b') as lock:
                     fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-                    result=asyncio.run(run_graph(root,compiled,dispatcher,router,client,corrections=a.corrections,fixture_authority=fixture_authority))
+                    result=asyncio.run(run_graph(root,compiled,dispatcher,router,client,corrections=a.corrections,fixture_authority=fixture_authority,continuation=receipt.get('continuation')))
                 save_once(root/'qualification-result.json',result)
         print(json.dumps(result,indent=2));return 0 if result.get('status') not in {'held','incomplete'} else 4
     except (OSError,ValueError,RuntimeError,KeyError,TypeError) as exc:

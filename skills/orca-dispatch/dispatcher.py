@@ -1764,7 +1764,7 @@ def unit_spec(plan: Dict[str, Any], unit: Dict[str, Any], route: Dict[str, Any],
 
     parts.append(
         "Information access follows the request scope and configured source permissions. Report missing access or evidence explicitly. "
-        "Access is not authority: this does not permit you to send, submit, sign off, spend, grade, publish, or change a calendar commitment, and it does not widen the read-only effects this unit declares."
+        "Source access alone grants no action authority. Perform writes or publication only within this unit's request-bound scope and the actual user's authorization. A read-only or prepare-only unit remains so. Never infer permission to send, submit, sign off, spend, grade, publish, or change a calendar commitment from source access or a graph alone."
     )
 
     parts.append(
@@ -3200,7 +3200,18 @@ if _inactive_production_dispatcher():
     _prior = Path(__file__).with_name('dispatcher_production.py')
     if hashlib.sha256(_prior.read_bytes()).hexdigest() != 'c4afb4bca980c8a4117531843a7a61595aa9db862a3d273e8a472df779ddd08c':
         raise RuntimeError('frozen production dispatcher drift')
-    exec(compile(_prior.read_bytes(), str(_prior), 'exec'), globals())
+
+    _frozen_source = _prior.read_bytes()
+    _frozen_main = b'\nif __name__ == "__main__":\n    raise SystemExit(main())\n'
+    if not _frozen_source.endswith(_frozen_main):
+        raise RuntimeError('frozen production dispatcher main guard differs')
+
+    exec(compile(_frozen_source[:-len(_frozen_main)], str(_prior), 'exec'), globals())
+    _frozen_unit_spec = unit_spec
+    def unit_spec(plan, unit, route, context_receipt=None):
+        return _frozen_unit_spec(plan, unit, route, context_receipt).replace(
+            "Access is not authority: this does not permit you to send, submit, sign off, spend, grade, publish, or change a calendar commitment, and it does not widen the read-only effects this unit declares.",
+            "Source access alone grants no action authority. Perform writes or publication only within this unit's request-bound scope and the actual user's authorization. A read-only or prepare-only unit remains so. Never infer permission to send, submit, sign off, spend, grade, publish, or change a calendar commitment from source access or a graph alone.")
 
 if __name__ == "__main__":
     raise SystemExit(main())

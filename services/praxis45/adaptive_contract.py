@@ -27,7 +27,7 @@ KINDS = frozenset({"input", "planner", "conditional_join", "validator", "termina
     "same_writer_serialized_effect", "same_writer_validator",
     "same_writer_all_input_join", "evidence_capture", "analysis", "proposal",
     "isolated_evaluation", "authority_gate", "existing_authorized_effect",
-    "cross_occurrence_receipt_gate", "conditional_authorized_effect"})
+    "cross_occurrence_receipt_gate", "conditional_authorized_effect", "native_task"})
 BOUNDS = ("max_nodes", "max_edges", "max_parallel", "max_items", "start_ms",
           "activity_ms", "no_progress_ms", "queue_ms")
 

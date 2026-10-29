@@ -1,6 +1,9 @@
 {
   "schema_version": 1,
   "version": "public/v4.5.0",
-  "source_label": "Praxis 4.5 sanitized projection; canonical source 0088f2a6a43e61bba071c2d0c19c49879925b1cb; runtime source 80b76416cb3880e20cc2ce769f567074bebda140; reviewed Ingolstadt scientific evidence index.",
-  "notice": "Sanitized public projection in a new history. Original private development commits and operational state are excluded. Native agents require user configuration and qualification."
+  "source_label": "Praxis 4.5 sanitized projection; canonical source 0088f2a6a43e61bba071c2d0c19c49879925b1cb; runtime source 024ba7f0e8642dc8ff1ba3b671a78da1520aaca3; reviewed Ingolstadt scientific evidence index.",
+  "notice": "Sanitized public projection in a new history. Original private development commits and operational state are excluded. Native agents require user configuration and qualification.",
+  "main_updates": [
+    "General adaptive tasks, October 28, 2026; public/v4.5.0 tag remains unchanged."
+  ]
 }
